@@ -1,0 +1,341 @@
+---
+title: "Plotting notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+source('set_up.R')
+
+```
+
+
+```{r municipalities}
+municipalities <- read_csv('data/municipalities_data.csv', col_types = cols()) %>% 
+	mutate(commuters_in = commuters_in/population_model,
+				 commuters_out = commuters_out/population_model
+				 )
+
+commuters <- read_csv('data/commuters_long.csv', col_types = cols()) %>% 
+	janitor::clean_names() %>% 
+	left_join(municipalities %>% select(municipality, population, county)) %>% 
+	rename(home = municipality,
+				 destination = to,
+				 population_home = population,
+				 county_home = county) %>% 
+	left_join(municipalities %>% 
+							select(municipality, population, county) %>% 
+							rename(population_dest = population,
+										 destination = municipality,
+										 county_dest = county)
+						) 
+commuters
+```
+
+
+```{r commuter_matrix, eval=FALSE}
+breaks = c(3, 30, 300, 3000)
+
+commuters %>% 
+	filter(county_home == 'Trøndelag' & county_dest == 'Trøndelag') %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	ggplot(aes(destination, home, fill = commuters)) +
+	geom_raster() +
+	scale_fill_viridis_c(trans = 'log1p', breaks = breaks, option = 'mako') +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Commuters'
+	) +
+	theme(
+		axis.text.y = element_text(size = 10),
+		axis.text.x = element_text(size = 10, angle = 90),
+		legend.position = 'bottom',
+		legend.direction = 'horizontal',
+		legend.text = element_text(size = 12, angle = 0, vjust = 0.0, hjust = 0.0)
+	)  
+
+ggsave('heatmap_commuters_trondelag_mako.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+
+
+```{r commuter_correlation_matrix, eval=FALSE}
+commuters %>% 
+	filter(county_home == 'Trøndelag' & county_dest == 'Trøndelag') %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	select(c(home, destination, commuters)) %>% 
+	pivot_wider(names_from = destination, values_from = commuters) %>% 
+	select(where(is.numeric)) %>% 
+	correlate(use = 'pairwise.complete.obs', method = 'pearson', diagonal = 0) %>% 
+	stretch() %>% 
+	rename(home = x, destination = y, correlation = r) %>% 
+	right_join(commuters, by = c('home', 'destination')) %>% 
+	filter(county_home == 'Trøndelag' & county_dest == 'Trøndelag') %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	ggplot(aes(destination, home, fill = correlation)) +
+	geom_raster() +
+	scale_fill_continuous(breaks = c(0,0.4,0.8)) +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Correlation'
+	) +
+	theme(
+		axis.text.y = element_text(size = 10),
+		axis.text.x = element_text(size = 10, angle = 90),
+		legend.text = element_text(size = 12),
+	)  
+
+ggsave('heatmap_correlation_commuters_trondelag.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+
+```{r, eval=FALSE}
+# breaks = c(3, 30, 300, 3000)
+
+commuters %>% 
+	filter(county_home %in% c('Oslo','Viken') & county_dest  %in% c('Oslo','Viken')) %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	ggplot(aes(destination, home, fill = commuters)) +
+	geom_raster() +
+	scale_fill_viridis_c(trans = 'log1p', option = 'inferno', breaks = c(0, 10, 100,1000, 10000)) +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Commuters'
+	) +
+	theme(
+		axis.text.y = element_text(size = 8),
+		axis.text.x = element_text(size = 8, angle = 90),
+		legend.text = element_text(size = 10),
+		legend.key.width = unit(0.3,'in'),
+		# legend.position = 'top'
+	)
+
+ggsave('heatmap_commuters_osloviken_inferno.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+
+```{r, eval=FALSE}
+commuters %>% 
+	filter(county_home %in% c('Oslo','Viken') & county_dest  %in% c('Oslo','Viken')) %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	select(c(home, destination, commuters)) %>% 
+	pivot_wider(names_from = destination, values_from = commuters) %>% 
+	select(where(is.numeric)) %>% 
+	correlate(use = 'pairwise.complete.obs', method = 'pearson', diagonal = 0) %>% 
+	stretch() %>% 
+	rename(home = x, destination = y, correlation = r) %>% 
+	right_join(commuters, by = c('home', 'destination')) %>% 
+	filter(county_home %in% c('Oslo','Viken') & county_dest  %in% c('Oslo','Viken')) %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	ggplot(aes(destination, home, fill = correlation)) +
+	geom_raster() +
+	scale_fill_continuous(breaks = c(0,0.4,0.8)) +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Correlation'
+	) +
+	theme(
+		axis.text.y = element_text(size = 8),
+		axis.text.x = element_text(size = 8, angle = 90),
+		legend.text = element_text(size = 12),
+	)  
+
+ggsave('heatmap_correlation_commuters_osloviken.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+
+```{r heatmap_commuters_norge, eval=FALSE}
+breaks = c(3, 30, 300, 3000)
+
+heatmap_commuters_norge <- commuters %>% 
+	# filter(population_home > 20000 & population_dest > 20000) %>% 
+	mutate(county_home = ifelse(county_home %in% c('Oslo','Viken'),'Oslo & Viken',county_home),
+				 county_dest = ifelse(county_dest %in% c('Oslo','Viken'),'Oslo & Viken',county_dest)) %>% 
+	mutate(
+		destination = fct_reorder2(destination, population_dest, county_dest, .desc = TRUE),
+		home = fct_reorder2(home, population_home, county_home, .desc = TRUE),
+		) %>% 
+	ggplot(aes(destination, home, fill = commuters)) +
+	geom_raster() +
+	scale_fill_viridis_c(trans = 'log1p', option = 'inferno', breaks = breaks) +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Commuters'
+	) +
+	theme(
+		axis.text = element_text(size = 1),
+		axis.text.x = element_text(angle = 90),
+		legend.text = element_text(size = 10)
+	) +
+	scale_y_discrete(limits = rev)
+
+ggsave('heatmap_commuters_norge_bycounty.png', width = width*0.5, height = height, dpi = dpi*2, path = path)
+```
+
+
+```{r heatmap_norway, eval=FALSE}
+commuters %>% 
+	filter(population_home > 20000 & population_dest > 20000) %>% 
+	select(c(home, destination, commuters)) %>% 
+	pivot_wider(names_from = destination, values_from = commuters) %>% 
+	select(where(is.numeric)) %>% 
+	correlate(use = 'pairwise.complete.obs', method = 'pearson', diagonal = 0) %>% 
+	stretch() %>% 
+	rename(home = x, destination = y, correlation = r) %>% 
+	right_join(commuters, by = c('home', 'destination')) %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home),
+		) %>%
+	filter(population_home > 20000 & population_dest > 20000) %>%
+	ggplot(aes(destination, home, fill = correlation)) +
+	geom_raster() +
+	scale_fill_continuous(breaks = c(0,0.4,0.8)) +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Commuters'
+	) +
+	theme(
+		axis.text.y = element_text(size = 8),
+		axis.text.x = element_text(size = 8, angle = 90),
+		legend.text = element_text(size = 12),
+	)  
+
+ggsave('heatmap_correlation_commuters_norway.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+
+```{r heatmap_correlation_commuters_norway_bycounty, eval=FALSE}
+commuters %>% 
+	filter(commuters >= 0) %>%
+	select(c(home, destination, commuters)) %>% 
+	pivot_wider(names_from = destination, values_from = commuters, values_fn = sum) %>% 
+	select(where(is.numeric)) %>%
+	correlate(use = 'pairwise.complete.obs', method = 'pearson', diagonal = 0) %>% 
+	stretch() %>% 
+	rename(home = x, destination = y, correlation = r) %>% 
+	right_join(commuters, by = c('home', 'destination')) %>% 
+	mutate(county_home = ifelse(county_home %in% c('Oslo','Viken'),'Oslo & Viken',county_home),
+				 county_dest = ifelse(county_dest %in% c('Oslo','Viken'),'Oslo & Viken',county_dest)) %>% 
+	mutate(
+		destination = fct_reorder2(destination, population_dest, county_dest, .desc = TRUE),
+		home = fct_reorder2(home, population_home, county_home, .desc = TRUE),
+		) %>%
+	ggplot(aes(destination, home, fill = correlation)) +
+	geom_raster() +
+	scale_fill_continuous(breaks = c(0,0.4,0.8)) +
+	labs(
+		x = 'Destination municipality',
+		y = 'Home municipality',
+		fill = 'Correlation'
+	) +
+	theme(
+		axis.text = element_text(size = 1),
+		axis.text.x = element_text(angle = 90),
+		legend.text = element_text(size = 12),
+	) +
+	scale_y_discrete(limits = rev)
+
+ggsave('heatmap_correlation_commuters_norway_bycounty.png', width = width*0.5, height = height, dpi = dpi*2, path = path)
+```
+
+
+```{r commuters_per_county}
+county_population <- commuters %>% 
+	select(home, population_home, county_home) %>% 
+	unique() %>% 
+	group_by(county_home) %>% 
+	summarise(population = sum(population_home)) %>% 
+	ungroup() %>% 
+	rename(county = county_home)
+	
+commuters_county <- commuters %>% 
+	group_by(county_home, county_dest) %>% 
+	summarise(commuters = sum(commuters), .groups = 'keep') %>% 
+	ungroup() %>% 
+	left_join(county_population %>% rename(population_home = population), by = c('county_home' = 'county')) %>% 
+	left_join(county_population %>% rename(population_dest = population), by = c('county_dest' = 'county'))
+	
+```
+
+```{r heatmap_commuters_counties, eval=FALSE}
+commuters_county %>% 
+	drop_na() %>% 
+	mutate(
+		county_dest = fct_reorder(county_dest, population_dest, .desc = TRUE),
+		county_home = fct_reorder(county_home, population_home, .desc = TRUE),
+		) %>% 
+	ggplot(aes(county_dest, county_home, fill = commuters)) +
+	geom_raster() +
+	scale_fill_viridis_c(trans = 'log10', option = 'inferno', na.value = 'black', breaks = c(50, 500,5000,50000), labels = label_number()) +
+	labs(
+		x = 'Destination county',
+		y = 'Home county',
+		fill = 'Commuters'
+	) +
+	theme(
+		axis.text.y = element_text(size = 14),
+		axis.text.x = element_text(size = 14, angle = 45, hjust = 0.95),
+		legend.text = element_text(size = 12),
+		legend.key.width = unit(0.8, "cm")
+	) +
+	scale_y_discrete(limits = rev)
+
+ggsave('heatmap_commuters_counties.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+
+```{r heatmap_correlation_commuters_counties, eval=FALSE}
+commuters_county %>% 
+	select(c(county_home, county_dest, commuters)) %>% 
+	pivot_wider(names_from = county_dest, values_from = commuters) %>% 
+	select(where(is.numeric)) %>% 
+	correlate(use = 'pairwise.complete.obs', method = 'pearson', diagonal = 0) %>% 
+	stretch() %>% 
+	rename(home = x, destination = y, correlation = r) %>% 
+	left_join(commuters_county %>% select(county_home, population_home) %>% unique(), by = c('home' = 'county_home')) %>% 
+	left_join(commuters_county %>% select(county_home, population_home) %>% unique(), by = c('destination' = 'county_home')) %>% 
+	rename(population_home = population_home.x, population_dest = population_home.y) %>% 
+	mutate(
+		destination = fct_reorder(destination, population_dest, .desc = TRUE),
+		home = fct_reorder(home, population_home, .desc = TRUE),
+		) %>%
+	drop_na() %>% 
+	ggplot(aes(destination, home, fill = correlation)) +
+	geom_raster() +
+	scale_fill_continuous(breaks = c(-0.2,0,0.2,0.4)) +
+	labs(
+		x = 'Destination county',
+		y = 'Home county',
+		fill = 'Commuters'
+	) +
+	theme(
+		axis.text = element_text(size = 14),
+		axis.text.x = element_text(angle = 45, hjust = 1),
+		legend.text = element_text(size = 12),
+		legend.key.width = unit(0.8, "cm")
+	) +
+	scale_y_discrete(limits = rev)
+
+ggsave('heatmap_correlation_commuters_counties.png', width = width*0.5, height = height, dpi = dpi, path = path)
+```
+

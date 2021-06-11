@@ -1,0 +1,134 @@
+,age,contents,year,value
+0,0-17 years,Children with no siblings,2019,218119
+1,0-17 years,"Children with siblings, total",2019,889405
+2,0-17 years,Children with 1 sibling,2019,519438
+3,0-17 years,Children with 2 siblings,2019,276983
+4,0-17 years,Children with 3 siblings,2019,65160
+5,0-17 years,Children with 4 siblings,2019,17321
+6,0-17 years,Children with 5 siblings or more,2019,10503
+7,0 years,Children with no siblings,2019,23541
+8,0 years,"Children with siblings, total",2019,31736
+9,0 years,Children with 1 sibling,2019,21296
+10,0 years,Children with 2 siblings,2019,7894
+11,0 years,Children with 3 siblings,2019,1831
+12,0 years,Children with 4 siblings,2019,464
+13,0 years,Children with 5 siblings or more,2019,251
+14,1 year,Children with no siblings,2019,23145
+15,1 year,"Children with siblings, total",2019,34173
+16,1 year,Children with 1 sibling,2019,22778
+17,1 year,Children with 2 siblings,2019,8526
+18,1 year,Children with 3 siblings,2019,2037
+19,1 year,Children with 4 siblings,2019,540
+20,1 year,Children with 5 siblings or more,2019,292
+21,2 years,Children with no siblings,2019,18675
+22,2 years,"Children with siblings, total",2019,41340
+23,2 years,Children with 1 sibling,2019,27929
+24,2 years,Children with 2 siblings,2019,10161
+25,2 years,Children with 3 siblings,2019,2277
+26,2 years,Children with 4 siblings,2019,614
+27,2 years,Children with 5 siblings or more,2019,359
+28,3 years,Children with no siblings,2019,13034
+29,3 years,"Children with siblings, total",2019,47170
+30,3 years,Children with 1 sibling,2019,31654
+31,3 years,Children with 2 siblings,2019,11756
+32,3 years,Children with 3 siblings,2019,2672
+33,3 years,Children with 4 siblings,2019,690
+34,3 years,Children with 5 siblings or more,2019,398
+35,4 years,Children with no siblings,2019,10172
+36,4 years,"Children with siblings, total",2019,50327
+37,4 years,Children with 1 sibling,2019,32793
+38,4 years,Children with 2 siblings,2019,13491
+39,4 years,Children with 3 siblings,2019,2867
+40,4 years,Children with 4 siblings,2019,739
+41,4 years,Children with 5 siblings or more,2019,437
+42,5 years,Children with no siblings,2019,8874
+43,5 years,"Children with siblings, total",2019,51866
+44,5 years,Children with 1 sibling,2019,32185
+45,5 years,Children with 2 siblings,2019,15130
+46,5 years,Children with 3 siblings,2019,3239
+47,5 years,Children with 4 siblings,2019,834
+48,5 years,Children with 5 siblings or more,2019,478
+49,6 years,Children with no siblings,2019,8312
+50,6 years,"Children with siblings, total",2019,54169
+51,6 years,Children with 1 sibling,2019,31995
+52,6 years,Children with 2 siblings,2019,16979
+53,6 years,Children with 3 siblings,2019,3693
+54,6 years,Children with 4 siblings,2019,932
+55,6 years,Children with 5 siblings or more,2019,570
+56,7 years,Children with no siblings,2019,8019
+57,7 years,"Children with siblings, total",2019,54962
+58,7 years,Children with 1 sibling,2019,31383
+59,7 years,Children with 2 siblings,2019,18044
+60,7 years,Children with 3 siblings,2019,3908
+61,7 years,Children with 4 siblings,2019,1042
+62,7 years,Children with 5 siblings or more,2019,585
+63,8 years,Children with no siblings,2019,8133
+64,8 years,"Children with siblings, total",2019,56641
+65,8 years,Children with 1 sibling,2019,31472
+66,8 years,Children with 2 siblings,2019,19103
+67,8 years,Children with 3 siblings,2019,4347
+68,8 years,Children with 4 siblings,2019,1099
+69,8 years,Children with 5 siblings or more,2019,620
+70,9 years,Children with no siblings,2019,8494
+71,9 years,"Children with siblings, total",2019,57206
+72,9 years,Children with 1 sibling,2019,30932
+73,9 years,Children with 2 siblings,2019,19800
+74,9 years,Children with 3 siblings,2019,4539
+75,9 years,Children with 4 siblings,2019,1190
+76,9 years,Children with 5 siblings or more,2019,745
+77,10 years,Children with no siblings,2019,8406
+78,10 years,"Children with siblings, total",2019,56381
+79,10 years,Children with 1 sibling,2019,30020
+80,10 years,Children with 2 siblings,2019,19592
+81,10 years,Children with 3 siblings,2019,4822
+82,10 years,Children with 4 siblings,2019,1215
+83,10 years,Children with 5 siblings or more,2019,732
+84,11 years,Children with no siblings,2019,8463
+85,11 years,"Children with siblings, total",2019,54766
+86,11 years,Children with 1 sibling,2019,29074
+87,11 years,Children with 2 siblings,2019,19169
+88,11 years,Children with 3 siblings,2019,4624
+89,11 years,Children with 4 siblings,2019,1167
+90,11 years,Children with 5 siblings or more,2019,732
+91,12 years,Children with no siblings,2019,8881
+92,12 years,"Children with siblings, total",2019,54555
+93,12 years,Children with 1 sibling,2019,29184
+94,12 years,Children with 2 siblings,2019,18807
+95,12 years,Children with 3 siblings,2019,4546
+96,12 years,Children with 4 siblings,2019,1265
+97,12 years,Children with 5 siblings or more,2019,753
+98,13 years,Children with no siblings,2019,9350
+99,13 years,"Children with siblings, total",2019,52521
+100,13 years,Children with 1 sibling,2019,28325
+101,13 years,Children with 2 siblings,2019,17755
+102,13 years,Children with 3 siblings,2019,4476
+103,13 years,Children with 4 siblings,2019,1214
+104,13 years,Children with 5 siblings or more,2019,751
+105,14 years,Children with no siblings,2019,10577
+106,14 years,"Children with siblings, total",2019,51495
+107,14 years,Children with 1 sibling,2019,28219
+108,14 years,Children with 2 siblings,2019,17208
+109,14 years,Children with 3 siblings,2019,4147
+110,14 years,Children with 4 siblings,2019,1185
+111,14 years,Children with 5 siblings or more,2019,736
+112,15 years,Children with no siblings,2019,11856
+113,15 years,"Children with siblings, total",2019,49503
+114,15 years,Children with 1 sibling,2019,27802
+115,15 years,Children with 2 siblings,2019,15754
+116,15 years,Children with 3 siblings,2019,4042
+117,15 years,Children with 4 siblings,2019,1156
+118,15 years,Children with 5 siblings or more,2019,749
+119,16 years,Children with no siblings,2019,13627
+120,16 years,"Children with siblings, total",2019,46330
+121,16 years,Children with 1 sibling,2019,26456
+122,16 years,Children with 2 siblings,2019,14446
+123,16 years,Children with 3 siblings,2019,3687
+124,16 years,Children with 4 siblings,2019,1013
+125,16 years,Children with 5 siblings or more,2019,728
+126,17 years,Children with no siblings,2019,16560
+127,17 years,"Children with siblings, total",2019,44264
+128,17 years,Children with 1 sibling,2019,25941
+129,17 years,Children with 2 siblings,2019,13368
+130,17 years,Children with 3 siblings,2019,3406
+131,17 years,Children with 4 siblings,2019,962
+132,17 years,Children with 5 siblings or more,2019,587

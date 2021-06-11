@@ -1,0 +1,357 @@
+Number,Name,Adm. center,County,Population,Area,CountyMap,Arms,Language form,Mayor,Party
+0301,Oslo,Oslo,Oslo,"673,469",454.03,,,Neutral,Marianne Borgen,SV
+1101,Eigersund,Egersund,Rogaland,"14,898",431.66,,,Bokmål,Leif Erik Egaas,H
+1103,Stavanger,Stavanger,Rogaland,"141,186",262.52,,,Bokmål,Kari Nessa Nordtun,Ap
+1106,Haugesund,Haugesund,Rogaland,"37,167",72.72,,,Bokmål,Petter Steen jr,H
+1108,Sandnes,Sandnes,Rogaland,"76,328",304.46,,,Neutral,Stanley Wirak,Ap
+1111,Sokndal,Hauge,Rogaland,"3,331",294.79,,,Neutral,Trond Arne Pedersen,KrF
+1112,Lund,Moi,Rogaland,"3,237",408.51,,,Neutral,Pål Anker Ravndal,KrF
+1114,Bjerkreim,Vikeså,Rogaland,"2,826",650.58,,,Nynorsk,Marthon Skårland,Hx
+1119,Hå,Varhaug,Rogaland,"18,762",258.22,,,Neutral,Mons Skrettingland,H
+1120,Klepp,Kleppe,Rogaland,"19,042",113.49,,,Nynorsk,Sigmund Rolfsen,Sp
+1121,Time,Bryne,Rogaland,"18,656",183.19,,,Nynorsk,Reinert Kverneland,H
+1122,Gjesdal,Ålgård,Rogaland,"11,902",617.98,,,Neutral,Frode Fjeldsbø,Ap
+1124,Sola,Solakrossen,Rogaland,"26,016",69.04,,,Neutral,Tom Henning Slethei,Frp
+1127,Randaberg,Randaberg,Rogaland,"10,873",24.71,,,Neutral,Jarle Bø,Sp
+1130,Strand,Jørpeland,Rogaland,"12,662",261.69,,,Neutral,Irene Heng Lauvsnes,H
+1133,Hjelmeland,Hjelmelandsvågen,Rogaland,"2,708","1,067.78",,,Nynorsk,Bjørn Laugaland,Sp
+1134,Suldal,Sand,Rogaland,"3,853","1,736.89",,,Nynorsk,Gerd Helen Bø,Sp
+1135,Sauda,Sauda,Rogaland,"4,760",546.32,,,Nynorsk,Asbjørn Birkeland,Sp
+1144,Kvitsøy,Ydstebøhavn,Rogaland,534,6.29,,,Neutral,Stian Bjørsvik,KrF
+1145,Bokn,Føresvik,Rogaland,855,47.16,,,Nynorsk,Osmund Våga,Sp
+1146,Tysvær,Aksdal,Rogaland,"11,041",425.41,,,Nynorsk,Sigmund Lier,Ap
+1149,Karmøy,Kopervik,Rogaland,"42,229",229.95,,,Neutral,Jarle Nilsen,Ap
+1151,Utsira,Utsira,Rogaland,201,6.33,,,Neutral,Marte Eide Klovning,Ap
+1160,Vindafjord,Ølensjøen,Rogaland,"8,828",620.59,,,Nynorsk,Ole Johan Vierdal,Sp
+1505,Kristiansund,Kristiansund,Møre og Romsdal,"24,442",87.44,,,Neutral,Kjell Neergaard,Ap
+1506,Molde,Molde,Møre og Romsdal,"26,822",362.69,,,Neutral,Torgeir Dahl,H
+1507,Ålesund,Ålesund,Møre og Romsdal,"66,258",632.42,,,Neutral,Eva Vinje Aurdal,Ap
+1511,Vanylven,Fiskåbygd,Møre og Romsdal,"3,203",385.21,,,Nynorsk,Lena M. Landsverk Sande,V
+1514,Sande,Larsnes,Møre og Romsdal,"2,540",93.21,,,Nynorsk,Olav Myklebust,Sp
+1515,Herøy,Fosnavåg,Møre og Romsdal,"8,957",119.53,,,Nynorsk,Bjørn-Halvor Prytz,Ap
+1516,Ulstein,Ulsteinvik,Møre og Romsdal,"8,457",97.19,,,Nynorsk,Knut Erik Engh,Frp
+1517,Hareid,Hareid,Møre og Romsdal,"5,185",82.26,,,Nynorsk,Bernt Brandal,LL
+1520,Ørsta,Ørsta,Møre og Romsdal,"10,744",804.43,,,Nynorsk,Stein Aam,Sp
+1525,Stranda,Stranda,Møre og Romsdal,"4,623",865.86,,,Nynorsk,Jan Ove Tryggestad,Sp
+1528,Sykkylven,Aure,Møre og Romsdal,"7,695",337.80,,,Nynorsk,Odd Jostein Drotninghaug,Sp
+1531,Sula,Langevåg,Møre og Romsdal,"9,007",58.50,,,Nynorsk,Jim Arve Røssevoll,Ap
+1532,Giske,Valderøya,Møre og Romsdal,"8,176",40.53,,,Nynorsk,Harry Valderhaug,KrF
+1535,Vestnes,Vestnes,Møre og Romsdal,"6,577",352.02,,,Nynorsk,Geir Inge Lien,Sp
+1539,Rauma,Åndalsnes,Møre og Romsdal,"7,503","1,502.15",,,Neutral,Yvonne Wold,SV
+1547,Aukra,Falkhytta,Møre og Romsdal,"3,547",59.08,,,Nynorsk,Odd Jørgen Nilssen,H
+1554,Averøy,Bruhagen,Møre og Romsdal,"5,856",175.68,,,Neutral,Ingrid Ovidie Rangønes,Ap
+1557,Gjemnes,Batnfjordsøra,Møre og Romsdal,"2,611",381.63,,,Neutral,Knut Sjømæling,Sp
+1560,Tingvoll,Tingvollvågen,Møre og Romsdal,"3,109",336.76,,,Neutral,Milly Bente Nørsett,Ap
+1563,Sunndal,Sunndalsøra,Møre og Romsdal,"7,126","1,713.44",,,Neutral,Ståle Refstie,Ap
+1566,Surnadal,Skei,Møre og Romsdal,"5,986","1,366.05",,,Nynorsk,Margrethe Svinvik,Sp
+1573,Smøla,Hopen,Møre og Romsdal,"2,160",271.91,,,Neutral,Svein Roksvåg,Sp
+1576,Aure,Aure,Møre og Romsdal,"3,590",641.38,,,Neutral,Hanne Berit Brekken,Ap
+1577,Volda,Volda,Møre og Romsdal,"9,102",547.24,,,Nynorsk,Sølvi Dimmen,Sp
+1578,Fjord,Sylte,Møre og Romsdal,"2,642",94.6,,,Nynorsk,Eva Hove,Ap
+1579,Hustadvika,Elnesvågen,Møre og Romsdal,"13,215",521.83,,,Neutral,Tove Henøen,Sp
+1804,Bodø,Bodø,Nordland,"51,022","1,395.28",,,Neutral,Ida Maria Pinnerød,Ap
+1806,Narvik,Narvik,Nordland,"18,756","3,432.17",,,Bokmål,Rune Edvardsen,Ap
+1811,Bindal,Terråk,Nordland,"1,473","1,264.25",,,Bokmål,Britt Helstad,Ap
+1812,Sømna,Vik,Nordland,"2,047",195.26,,,Bokmål,Hans Gunnar Holand,Sp
+1813,Brønnøy,Brønnøysund,Nordland,"7,956","1,046.44",,,Neutral,Eilif Kristian Trælnes,Sp
+1815,Vega,Gladstad,Nordland,"1,234",164.79,,,Bokmål,Andre Møller,Ap
+1816,Vevelstad,Forvika,Nordland,528,538.90,,,Bokmål,Torhild Haugann,LL
+1818,Herøy,Silvalen,Nordland,"1,788",64.40,,,Bokmål,Eldbjørg Larsen,Ap
+1820,Alstahaug,Sandnessjøen,Nordland,"7,428",187.61,,,Neutral,Peter Talseth,Sp
+1822,Leirfjord,Leland,Nordland,"2,278",465.22,,,Neutral,Ivan Haugland,Ap
+1824,Vefsn,Mosjøen,Nordland,"13,465","1,929.10",,,Neutral,Berit Hundåla,Sp
+1825,Grane,Trofors,Nordland,"1,469","2,004.15",,,Neutral,Ellen Schjølberg,Sp
+1826,Hattfjelldal,Hattfjelldal,Nordland,"1,414","2,684.31",,,Neutral,Harald Lie,Sp
+1827,Dønna,Solfjellsjøen,Nordland,"1,410",191.94,,,Bokmål,Nils Olav Jenssen,Sp
+1828,Nesna,Nesna,Nordland,"1,837",183.18,,,Bokmål,Hanne Davidsen,Ap
+1832,Hemnes,Korgen,Nordland,"4,524","1,589.42",,,Neutral,Paul Asphaug,SP
+1833,Rana,Mo i Rana,Nordland,"26,101","4,459.98",,,Neutral,Geir Waage,Ap
+1834,Lurøy,Lurøy,Nordland,"1,920",265.19,,,Bokmål,Håkon Lund,H
+1835,Træna,Husøy,Nordland,465,16.52,,,Bokmål,Jan Helge Andersen,Ap
+1836,Rødøy,Vågaholmen,Nordland,"1,267",711.29,,,Neutral,Inger Dagmar Monsen,LL
+1837,Meløy,Ørnes,Nordland,"6,435",873.83,,,Bokmål,Sigurd Stormo,Ap
+1838,Gildeskål,Inndyr,Nordland,"2,024",664.68,,,Neutral,Bjørn Magne Pedersen,H
+1839,Beiarn,Moldjord,Nordland,"1,043","1,222.32",,,Bokmål,Monika Sande,Sp
+1840,Saltdal,Rognan,Nordland,"4,702","2,216.17",,,Bokmål,Rune Berg,Sp
+1841,Fauske,Fauske,Nordland,"9,729","1,201.37",,,Bokmål,Marlen Rendall Berg,Sp
+1845,Sørfold,Straumen,Nordland,"1,958","1,637.35",,,Bokmål,Gisle Erik Hansen,Sp
+1848,Steigen,Leinesfjord,Nordland,"2,543","1,009.08",,,Bokmål,Aase Refsnes,SV
+1851,Lødingen,Lødingen,Nordland,"2,134",527.49,,,Bokmål,Hugo Bongard Jacobsen,Ap
+1853,Evenes,Bogen,Nordland,"1,402",252.78,,,Bokmål,Terje Bartholsen,Ap
+1856,Røst,Røstlandet,Nordland,535,10.13,,,Bokmål,Elisabeth Kristin Mikalsen,LL
+1857,Værøy,Sørland,Nordland,744,18.64,,,Bokmål,Susan Berg Kristiansen,LL
+1859,Flakstad,Ramberg,Nordland,"1,349",178.38,,,Neutral,Trond Kroken,Sp
+1860,Vestvågøy,Leknes,Nordland,"11,294",424.55,,,Neutral,Remi Solberg,Ap
+1865,Vågan,Svolvær,Nordland,"9,444",479.15,,,Neutral,Frank Gudmund Johnsen,Sp
+1866,Hadsel,Stokmarknes,Nordland,"8,009",566.56,,,Bokmål,Kurt Eirik Jenssen,Sp
+1867,Bø,Straume,Nordland,"2,624",246.69,,,Neutral,Sture Pedersen,H
+1868,Øksnes,Myre,Nordland,"4,580",319.51,,,Neutral,John Danielsen,Sp
+1870,Sortland,Sortland,Nordland,"10,378",721.92,,,Neutral,Karl-Erling Nordlund,Sp
+1871,Andøy,Andenes,Nordland,"4,908",656.12,,,Neutral,Knut Andreas Nordmo,Sp
+1874,Moskenes,Reine,Nordland,"1,073",118.79,,,Neutral,Lillian Rasmussen,LL
+1875,HamarøyHábmer,Oppeid,Nordland,"1,810","2,020.45",,,NeutralLule Sami,Britt Kristoffersen,Sp
+3001,Halden,Halden,Viken,"30,790",642.30,,,Bokmål,Thor Edquist,H
+3002,Moss,Moss,Viken,"32,407",63.57,,,Neutral,Hanne Tollerud,Ap
+3003,Sarpsborg,Sarpsborg,Viken,"55,127",405.61,,,Bokmål,Sindre Martinsen-Evje,Ap
+3004,Fredrikstad,Fredrikstad,Viken,"80,121",292.55,,,Bokmål,Jon-Ivar Nygård,Ap
+3005,Drammen,Drammen,Viken,"68,363",317.68,,,Neutral,Monica Myrvold Berg,Ap
+3006,Kongsberg,Kongsberg,Viken,"27,216",793.09,,,Bokmål,Kari Anne Sand,Sp
+3007,Ringerike,Hønefoss,Viken,"30,034","1,555.08",,,Bokmål,Kirsten Orebråten,Ap
+3011,Hvaler,Skjærhalden,Viken,"4,517",90.12,,,Bokmål,Eivind N. Borge,Frp
+3012,Aremark,Fosby,Viken,"1,398",319.27,,,Bokmål,Geir Aarbu,Sp
+3013,Marker,Ørje,Viken,"3,597",412.90,,,Bokmål,Kjersti Nythe Nilsen,Ap
+3014,Indre Østfold,Indre Østfold,Viken,"45,000",791.93,,,Bokmål,Svend Saxe Frøshaug,Sp
+3015,Skiptvet,Meieribyen,Viken,"3,783",101.21,,,Bokmål,Anne-Grethe Larsen,Sp
+3016,Rakkestad,Rakkestad,Viken,"8,173",434.71,,,Bokmål,Karoline Fjelstad,Sp
+3017,Råde,Karlshus,Viken,"7,398",118.77,,,Bokmål,René Rafshol,H
+3018,Våler,Kirkebygden,Viken,"5,335",256.96,,,Bokmål,Reidar Kaabbel,Sp
+3019,Vestby,Vestby,Viken,"17,188",133.97,,,Bokmål,Tom Anders Ludvigsen,Ap
+3020,Nordre Follo,Ski,Viken,"16,732",133.97,,,Bokmål,Hanne Opdan,Mdg
+3021,Ås,Ås,Viken,"19,288",102.68,,,Neutral,Ola Nordal,Ap
+3022,Frogn,Drøbak,Viken,"15,743",85.70,,,Bokmål,Odd Haktor Slåke,H
+3023,Nesodden,Nesoddtangen,Viken,"18,869",61.46,,,Bokmål,Truls Wickholm,Ap
+3024,Bærum,Sandvika,Viken,"124,008",192.26,,,Bokmål,Lisbeth Hammer Krog,H
+3025,Asker,Asker,Viken,"60,781",100.71,,,Bokmål,Lene Conradi,H
+3026,Aurskog-Høland,Bjørkelangen,Viken,"16,162",961.66,,,Bokmål,Gudbrand Kvaal,Sp
+3027,Rælingen,Fjerdingby,Viken,"17,730",71.68,,,Neutral,Ståle Grøtte,Ap
+3028,Enebakk,Kirkebygda,Viken,"10,927",232.58,,,Bokmål,Hans Kristian Solberg,Sp
+3029,Lørenskog,Kjenn and Solheim,Viken,"37,406",70.55,,,Neutral,Ragnhild Bergheim,Ap
+3030,Lillestrøm,Lillestrøm,Viken,"85,757",456.61,,,Neutral,Jørgen Vik,Ap
+3031,Nittedal,Rotnes,Viken,"23,213",186.22,,,Bokmål,Hilde Thorkildsen,Ap
+3032,Gjerdrum,Ask,Viken,"6,576",83.19,,,Bokmål,Anders Østensen,Ap
+3033,Ullensaker,Jessheim,Viken,"35,102",252.47,,,Bokmål,Eyvind Jørgensen Schumacher,Ap
+3034,Nes,Årnes,Viken,"21,241",637.35,,,Bokmål,Grete Sjøli,Ap
+3035,Eidsvoll,Sundet,Viken,"24,415",456.49,,,Bokmål,John-Erik Vika,Sp
+3036,Nannestad,Teigebyen,Viken,"12,657",340.99,,,Bokmål,Hans Thue,Ap
+3037,Hurdal,Hurdal,Viken,"2,910",284.96,,,Bokmål,Paul Johan Moltzau,Sp
+3038,Hole,Vik,Viken,"6,772",192.69,,,Bokmål,Syver Leivestad,H
+3039,Flå,Flå,Viken,"1,081",704.41,,,Bokmål,Merete Høntorp Gandrud,Ap
+3040,Nesbyen,Nesbyen,Viken,"3,357",809.67,,,Bokmål,Tore Haraldset,LL
+3041,Gol,Gol,Viken,"4,612",532.49,,,Nynorsk,Heidi Granli,Ap
+3042,Hemsedal,Trøym,Viken,"2,442",753.54,,,Nynorsk,Pål Terje Rørby,Sp
+3043,Ål,Ål,Viken,"4,719","1,174.92",,,Nynorsk,Solveig Vestenfor,Ap
+3044,Hol,Hol,Viken,"4,535","1,854.62",,,Neutral,Petter Rukke,Ap
+3045,Sigdal,Prestfoss,Viken,"3,502",842.28,,,Bokmål,Anne Kristin Norman,Sp
+3046,Krødsherad,Noresund,Viken,"2,257",374.51,,,Neutral,Knut Martin Glesne,LL
+3047,Modum,Vikersund,Viken,"13,786",517.18,,,Bokmål,Sunni G. Aamodt,Sp
+3048,Øvre Eiker,Hokksund,Viken,"18,562",456.69,,,Bokmål,Knut Kvale,Sp
+3049,Lier,Lierbyen,Viken,"25,749",301.67,,,Bokmål,Gunn Cecilie Ringdal,H
+3050,Flesberg,Lampeland,Viken,"2,696",561.91,,,Bokmål,Oddvar Garaas,Sp
+3051,Rollag,Rollag,Viken,"1,399",449.29,,,Neutral,Viel Jaren Heitmann,Sp
+3052,Nore og Uvdal,Rødberg,Viken,"2,530","2,502.29",,,Neutral,Jan Gaute Bjerke,Ap
+3053,Jevnaker,Jevnaker,Viken,"6,696",225.72,,,Bokmål,Morten Lafton,Ap
+3054,Lunner,Roa,Viken,"9,080",291.84,,,Bokmål,Harald Tyrdal,Ap
+3401,Kongsvinger,Kongsvinger,Innlandet,"17,857","1,036.45",,,Bokmål,Margrethe Haarr,Sp
+3403,Hamar,Hamar,Innlandet,"30,598",350.94,,,Neutral,Einar Busterud,LL
+3405,Lillehammer,Lillehammer,Innlandet,"27,781",478.17,,,Bokmål,Ingunn Trosholmen,Ap
+3407,Gjøvik,Gjøvik,Innlandet,"30,319",672.25,,,Bokmål,Torvild Sveen,Sp
+3411,Ringsaker,Brumunddal,Innlandet,"33,842","1,280.09",,,Bokmål,Anita Ihle Steen,Ap
+3412,Løten,Løten,Innlandet,"7,633",369.44,,,Bokmål,Marte Larsen Tønseth]],Sp
+3413,Stange,Stangebyen,Innlandet,"20,317",724.28,,,Bokmål,Nils A. Røhne,Ap
+3414,Nord-Odal,Sand,Innlandet,"5,100",508.14,,,Bokmål,Lise Selnes,Ap
+3415,Sør-Odal,Skarnes,Innlandet,"7,866",516.74,,,Bokmål,Knut Hvithammer,Ap
+3416,Eidskog,Skotterud,Innlandet,"6,127",640.39,,,Bokmål,Kamilla Thue,Ap
+3417,Grue,Kirkenær,Innlandet,"4,777",837.17,,,Bokmål,Rune Grenberg,Ap
+3418,Åsnes,Flisa,Innlandet,"7,329","1,040.94",,,Bokmål,Kari Heggelund,Sp
+3419,Våler,Våler,Innlandet,"3,743",705.28,,,Bokmål,Ola Cato Lie,Sp
+3420,Elverum,Elverum,Innlandet,"21,086","1,229.29",,,Neutral,Lilian Skjærvik,Ap
+3421,Trysil,Innbygda,Innlandet,"6,550","3,014.37",,,Bokmål,Erik Sletten,Sp
+3422,Åmot,Rena,Innlandet,"4,518","1,339.92",,,Bokmål,Ole Erik Hørstad,H
+3423,Stor-Elvdal,Koppang,Innlandet,"2,530","2,165.78",,,Bokmål,Even Moen,Sp
+3424,Rendalen,Bergset,Innlandet,"1,858","3,179.52",,,Bokmål,Linda Døsen,Ap
+3425,Engerdal,Engerdal,Innlandet,"1,274","2,196.54",,,Bokmål,Line Storsnes,LL
+3426,Tolga,Tolga,Innlandet,"1,620","1,122.59",,,Neutral,Bjørnar Tollan Jordet,SV
+3427,Tynset,Tynset,Innlandet,"5,584","1,880.51",,,Neutral,Merete Myhre Moen,Sp
+3428,Alvdal,Alvdal,Innlandet,"2,441",942.15,,,Neutral,Mona Murud,Sp
+3429,Folldal,Folldal,Innlandet,"1,577","1,276.88",,,Neutral,Kristin Langtjernet,Ap
+3430,Os,Os i Østerdalen,Innlandet,"1,963","1,040.40",,,Neutral,Runa Finborud,Sp
+3431,Dovre,Dovre,Innlandet,"2,675","1,364.39",,,Neutral,Astrid Skomakerstuen Ruste,Ap
+3432,Lesja,Lesja,Innlandet,"2,048","2,259.50",,,Neutral,Mariann Skotte,Sp
+3433,Skjåk,Bismo,Innlandet,"2,202","2,075.52",,,Nynorsk,Edel Kveen,Sp
+3434,Lom,Fossbergom,Innlandet,"2,360","1,968.55",,,Nynorsk,Bjarne Eiolf Holø,Sp
+3435,Vågå,Vågåmo,Innlandet,"3,640","1,330.00",,,Nynorsk,Harald Sve Bjørndal,LL
+3436,Nord-Fron,Vinstra,Innlandet,"5,723","1,141.48",,,Nynorsk,Rune Støstad,Ap
+3437,Sel,Otta,Innlandet,"5,916",904.93,,,Neutral,Eldri Siem,Sp
+3438,Sør-Fron,Hundorp,Innlandet,"3,163",742.18,,,Neutral,Ole Tvete Muriteigen,Sp
+3439,Ringebu,Vålebru,Innlandet,"4,502","1,247.53",,,Neutral,Arne Fossmo,Ap
+3440,Øyer,Tingberg,Innlandet,"5,082",639.90,,,Neutral,Jon Halvor Midtmagerli,Sp
+3441,Gausdal,Segalstad bru,Innlandet,"6,204","1,191.16",,,Neutral,Anette Musdalslien,Sp
+3442,Østre Toten,Lena,Innlandet,"14,887",562.57,,,Bokmål,Bror Helgestad,Sp
+3443,Vestre Toten,Raufoss,Innlandet,"13,179",249.52,,,Bokmål,Stian Olafsen,Ap
+3446,Gran,Jaren,Innlandet,"13,707",756.65,,,Bokmål,Randi Eek Thorsen,Ap
+3447,Søndre Land,Hov,Innlandet,"5,717",728.36,,,Bokmål,Anne Hagenborg,Ap
+3448,Nordre Land,Dokka,Innlandet,"6,773",955.31,,,Bokmål,Ola Tore Dokken,Sp
+3449,Sør-Aurdal,Bagn,Innlandet,"3,026","1,109.04",,,Neutral,Marit Hougsrud,Sp
+3450,Etnedal,Bruflat,Innlandet,"1,351",459.15,,,Neutral,Linda Mæhlum Robøle,Sp
+3451,Nord-Aurdal,Fagernes,Innlandet,"6,490",906.52,,,Neutral,Knut Arne Fjelltun,Sp
+3452,Vestre Slidre,Slidre,Innlandet,"2,114",463.25,,,Nynorsk,Haldor Ødegård,Sp
+3453,Øystre Slidre,Heggenes,Innlandet,"3,248",963.11,,,Nynorsk,Odd Erik Holden,Sp
+3454,Vang,Vang i Valdres,Innlandet,"1,596","1,505.45",,,Nynorsk,Vidar Eltun,Ap
+3801,Horten,Horten,Vestfold og Telemark,"27,202",70.96,,,Bokmål,Are Karlsen,Ap
+3802,Holmestrand,Holmestrand,Vestfold og Telemark,"14,037",432.36,,,Bokmål,Elin Weggesrud,Ap
+3803,Tønsberg,Tønsberg,Vestfold og Telemark,"44,922",110.03,,,Bokmål,Anne Rygh Pedersen,Ap
+3804,Sandefjord,Sandefjord,Vestfold og Telemark,"62,019",422.26,,,Bokmål,Bjørn Ole Gleditsch,H
+3805,Larvik,Larvik,Vestfold og Telemark,"46,557",812.88,,,Bokmål,Erik Bringedal,H
+3806,Porsgrunn,Porsgrunn,Vestfold og Telemark,"36,198",164.45,,,Neutral,Robin Martin Kåss,Ap
+3807,Skien,Skien,Vestfold og Telemark,"54,316",779.20,,,Neutral,Hedda Foss Five,Ap
+3808,Notodden,Notodden,Vestfold og Telemark,"12,757",983.89,,,Neutral,Gry Fuglestveit,Ap
+3811,Færder,Borgheim,Vestfold og Telemark,"26,676",99.96,,,Bokmål,Jon Sanness Andersen,Ap
+3812,Siljan,Siljan,Vestfold og Telemark,"2,357",213.96,,,Neutral,Kjell Abraham Sølverød,Sp
+3813,Bamble,Langesund,Vestfold og Telemark,"14,138",304.37,,,Neutral,Hallgeir Kjeldal,Ap
+3814,Kragerø,Kragerø,Vestfold og Telemark,"10,586",305.46,,,Neutral,Grunde Knudsen,Sp
+3815,Drangedal,Prestestranda,Vestfold og Telemark,"4,148","1,062.78",,,Neutral,Tor Peder Lohne,Sp
+3816,Nome,Ulefoss,Vestfold og Telemark,"6,585",429.69,,,Neutral,Bjørg Tveito Lundefaret,Ap
+3817,Midt-Telemark,Bø,Vestfold og Telemark,"10,439",518.51,,,Neutral,Siri Blichfeldt Dyrland,Sp
+3818,Tinn,Rjukan,Vestfold og Telemark,"5,894","2,045.14",,,Neutral,Steinar Bergsland,H
+3819,Hjartdal,Sauland,Vestfold og Telemark,"1,593",791.60,,,Nynorsk,Bengt Halvard Odden,Ap
+3820,Seljord,Seljord,Vestfold og Telemark,"2,979",715.09,,,Nynorsk,Beate Marie Dahl Eide,Sp
+3821,Kviteseid,Kviteseid,Vestfold og Telemark,"2,442",708.46,,,Nynorsk,Bjørn Nordskog,Sp
+3822,Nissedal,Treungen,Vestfold og Telemark,"1,476",905.18,,,Nynorsk,Halvor Homme,Ap
+3823,Fyresdal,Fyresdal,Vestfold og Telemark,"1,319","1,280.14",,,Nynorsk,Erik Skjervagen,Ap
+3824,Tokke,Dalen,Vestfold og Telemark,"2,228",984.48,,,Nynorsk,Jarand Felland,Sp
+3825,Vinje,Åmot,Vestfold og Telemark,"3,726","3,105.84",,,Nynorsk,Jon Rikard Kleven,Sp
+4201,Risør,Risør,Agder,"6,935",192.98,,,Neutral,Per Kristian Lunden,Ap
+4202,Grimstad,Grimstad,Agder,"22,692",303.58,,,Bokmål,Beate Skretting,H
+4203,Arendal,Arendal,Agder,"44,576",270.21,,,Bokmål,Robert Nordli,Ap
+4204,Kristiansand,Kristiansand,Agder,"111,458",276.88,,,Bokmål,Jan Oddvar Skisland,Ap
+4205,Lindesnes,Mandal,Agder,"23,025",934.32,,,Bokmål,Even Sagebakken,Ap
+4206,Farsund,Farsund,Agder,"9,769",262.55,,,Bokmål,Arnt Abrahamsen,Ap
+4207,Flekkefjord,Flekkefjord,Agder,"9,090",543.53,,,Bokmål,Torbjørn Klungland,Frp
+4211,Gjerstad,Gjerstad,Agder,"2,511",322.14,,,Neutral,Inger Haldis Løite,Ap
+4212,Vegårshei,Myra,Agder,"2,104",355.65,,,Neutral,Kjetil Torp,KrF
+4213,Tvedestrand,Tvedestrand,Agder,"6,051",215.05,,,Bokmål,Marianne Landsaas,H
+4214,Froland,Blakstad,Agder,"5,713",644.54,,,Neutral,Ove Gundersen,KrF
+4215,Lillesand,Lillesand,Agder,"10,702",190.43,,,Bokmål,Einar Holmen-Hoven,H
+4216,Birkenes,Birkeland,Agder,"5,178",637.36,,,Neutral,Gyro Heia,Sp
+4217,Åmli,Åmli,Agder,"1,856","1,130.61",,,Nynorsk,Bjørn Gunnar Baas,Sp
+4218,Iveland,Birketveit,Agder,"1,342",261.63,,,Neutral,Gro Anita Mykjåland,Sp
+4219,Evje og Hornnes,Evje,Agder,"3,614",587.08,,,Neutral,Svein Arne Haugen,Ap
+4220,Bygland,Bygland,Agder,"1,200","1,311.66",,,Nynorsk,Sigbjørn Åge Fossdal,Ap
+4221,Valle,Valle,Agder,"1,246","1,265.31",,,Nynorsk,Steinar Kyrvestad,Ap
+4222,Bykle,Bykle,Agder,952,"1,467.13",,,Nynorsk,Jon-Rolf Næss,Ap
+4223,Vennesla,Vennesla,Agder,"14,425",384.47,,,Neutral,Nils Olav Larsen,KrF
+4224,Åseral,Kyrkjebygda,Agder,937,887.52,,,Nynorsk,Inger Lise Lund Stulien,Ap
+4225,Lyngdal,Alleen,Agder,"10,368",642.80,,,Bokmål,Jan Kristensen,H
+4226,Hægebostad,Tingvatn,Agder,"1,702",461.33,,,Nynorsk,Margrethe Handeland,Sp
+4227,Kvinesdal,Liknes,Agder,"5,988",963.22,,,Neutral,Per Sverre Kvinlaug,KrF
+4228,Sirdal,Tonstad,Agder,"1,836","1,554.83",,,Neutral,Jonny Liland,Ap
+4601,Bergen,Bergen,Vestland,"278,556",464.70,,,Neutral,Marte Mjøs Persen,Ap
+4602,Kinn,Florø and Måløy,Vestland,"17,300",870.00,,,Neutral,Ola Teigen,Ap
+4611,Etne,Etnesjøen,Vestland,"4,135",735.28,,,Nynorsk,Mette Ekrheim Bergsvåg,Sp
+4612,Sveio,Sveio,Vestland,"5,656",246.14,,,Nynorsk,Linn Therese Erve,Ap
+4613,Bømlo,Svortland,Vestland,"11,806",246.56,,,Nynorsk,Sammy Olsen,Sp
+4614,Stord,Leirvik,Vestland,"18,821",143.69,,,Nynorsk,Gaute Straume Epland,Ap
+4615,Fitjar,Fitjar,Vestland,"3,189",142.43,,,Nynorsk,Harald Rydland,KrF
+4616,Tysnes,Uggdal,Vestland,"2,847",255.11,,,Nynorsk,Kåre Martin Kleppe,H
+4617,Kvinnherad,Rosendal,Vestland,"13,241","1,090.74",,,Nynorsk,Hans Inge Myrvold,Sp
+4618,Ullensvang,Odda,Vestland,"3,377","3,236.63",,,Nynorsk,Roald Aga Haug,Ap
+4619,Eidfjord,Eidfjord,Vestland,921,"1,491.46",,,Nynorsk,Anders Vatle,Sp
+4620,Ulvik,Ulvik,Vestland,"1,131",722.00,,,Nynorsk,Hans Petter Thorbjørnsen,Ap
+4621,Voss,Vossevangen,Vestland,"14,514","1,805.81",,,Nynorsk,Hans-Erik Ringkjøb,Ap
+4622,Kvam,Norheimsund,Vestland,"8,423",616.50,,,Nynorsk,Torgeir Næss,Ap
+4623,Samnanger,Tysse,Vestland,"2,488",269.07,,,Nynorsk,Knut Harald Frøland,LL
+4624,Bjørnafjorden,Osøyro,Vestland,"20,152",517.41,,,Nynorsk,Trine Lindborg,Ap
+4625,Austevoll,Storebø,Vestland,"5,156",117.18,,,Nynorsk,Morten Storebø,H
+4626,Øygarden,Straume,Vestland,"4,913",314.51,,,Nynorsk,Tom Georg Indrevik,H
+4627,Askøy,Kleppestø,Vestland,"28,821",101.12,,,Neutral,Siv Høgtun,H
+4628,Vaksdal,Dale,Vestland,"4,123",715.37,,,Nynorsk,Hege Eide Vik,Sp
+4629,Modalen,Mo,Vestland,383,411.99,,,Nynorsk,Kjetil Eikefet,LL
+4630,Osterøy,Lonevåg,Vestland,"8,026",255.12,,,Nynorsk,Lars Fjeldstad,Sp
+4631,Alver,Knarvik,Vestland,"28,997",679.00,,,Nynorsk,Sara Sekkingstad,Ap
+4632,Austrheim,Årås,Vestland,"2,858",57.56,,,Nynorsk,Per Lerøy,Ap
+4633,Fedje,Fedje,Vestland,587,9.28,,,Nynorsk,Stian Herøy,H
+4634,Masfjorden,Masfjordnes,Vestland,"1,710",556.07,,,Nynorsk,Karstein Totland,H
+4635,Gulen,Eivindvik,Vestland,"2,371",597.21,,,Nynorsk,Hallvard Oppedal,Sp
+4636,Solund,Hardbakke,Vestland,794,228.25,,,Nynorsk,Gunn Åmdal Mongstad,Sp
+4637,Hyllestad,Hyllestad,Vestland,"1,438",258.91,,,Nynorsk,Kjell,Ap
+4638,Høyanger,Høyanger,Vestland,"4,190","1,003.04",,,Nynorsk,Petter Sortland,Ap
+4639,Vik,Vikøyri,Vestland,"2,722",833.33,,,Nynorsk,Roy Egil Stadheim,Ap
+4640,Sogndal,Sogndalsfjøra,Vestland,"7,941","1,257.89",,,Nynorsk,Arnstein Menes,Sp
+4641,Aurland,Aurlandsvangen,Vestland,"1,787","1,467.69",,,Nynorsk,Trygve Skjerdal,Sp
+4642,Lærdal,Lærdalsøyri,Vestland,"2,159","1,342.48",,,Nynorsk,Jan Geir Solheim,Sp
+4643,Årdal,Årdalstangen,Vestland,"5,363",976.58,,,Nynorsk,Arild Ingar Lægreid,Ap
+4644,Luster,Gaupne,Vestland,"5,151","2,706.22",,,Nynorsk,Ivar Kvalen,Sp
+4645,Askvoll,Askvoll,Vestland,"3,065",326.17,,,Nynorsk,Ole André Klausen,H
+4646,Fjaler,Førde,Vestland,"2,830",416.59,,,Nynorsk,Kjetil Høgseth Felde,H
+4647,Sunnfjord,Førde,Vestland,"10,339","2,208.13",,,Nynorsk,Olve Grotle,H
+4648,Bremanger,Svelgen,Vestland,"3,847",832.85,,,Nynorsk,Anne Kristin Førde,Ap
+4649,Stad,Nordfjordeid,Vestland,"8,800",752.78,,,Nynorsk,Alfred Bjørlo,V
+4650,Gloppen,Sandane,Vestland,"5,783","1,030.51",,,Nynorsk,Leidulf Gloppestad,Sp
+4651,Stryn,Stryn,Vestland,"7,218","1,377.21",,,Nynorsk,Per Kjøllesdal,Sp
+5001,Trondheim,Trondheim,Trøndelag,"190,464",342.21,,,Neutral,Rita Ottervik,Ap
+5006,Steinkjer,Steinkjer,Trøndelag,"24,357","2,122.06",,,Neutral,Bjørn Arild Gram,Sp
+5007,Namsos,Namsos,Trøndelag,"13,051",2132.63,,,Neutral,Arnhild Holstad,Ap
+5014,Frøya,Sistranda,Trøndelag,"4,937",241.31,,,Bokmål,Kristin Furunes Strømskog,H
+5020,Osen,Steinsdalen,Trøndelag,978,387.18,,,Bokmål,John Einar Høvik,Ap
+5021,Oppdal,Oppdal,Trøndelag,"6,973","2,274.11",,,Neutral,Geir Arild Espnes,Sp
+5022,Rennebu,Berkåk,Trøndelag,"2,556",947.97,,,Neutral,Ola Øie,Ap
+5025,Røros,Røros,Trøndelag,"5,623","1,956.46",,,Neutral,Isak Veierud Busch,Ap
+5026,Holtålen,Renbygda,Trøndelag,"2,046","1,209.50",,,Neutral,Arve Hitterdal,LL
+5027,Midtre Gauldal,Støren,Trøndelag,"6,319","1,860.51",,,Bokmål,Sivert Moen,Sp
+5028,Melhus,Melhus,Trøndelag,"16,213",694.40,,,Neutral,Jorid Jagtøyen,Sp
+5029,Skaun,Børsa,Trøndelag,"8,000",224.21,,,Neutral,Gunn Iversen Stokke,Sp
+5031,Malvik,Hommelvik,Trøndelag,"13,820",168.44,,,Bokmål,Trond Hoseth,Ap
+5032,Selbu,Mebonden,Trøndelag,"4,098","1,234.84",,,Neutral,Ole Morten Balstad,Ap
+5033,Tydal,Ås,Trøndelag,861,"1,329.21",,,Bokmål,"Kvello, Jens Arne",Sp
+5034,Meråker,Midtbygda,Trøndelag,"2,508","1,273.42",,,Bokmål,Kjersti Kjenes,LL
+5035,Stjørdal,Stjørdalshalsen,Trøndelag,"23,625",938.28,,,Neutral,Ivar Vigdenes,Sp
+5036,Frosta,Frosta,Trøndelag,"2,630",76.32,,,Neutral,Frode Revhaug,H
+5037,Levanger,Levanger,Trøndelag,"19,892",645.80,,,Neutral,Anita Ravlo Sand,Sp
+5038,Verdal,Verdalsøra,Trøndelag,"14,849","1,547.78",,,Neutral,Pål Sverre Fikse,Sp
+5041,SnåsaSnåase,Snåsa,Trøndelag,"2,159","2,342.66",,,NeutralSouthern Sami,Arnt Einar Bardal,Sp
+5042,Lierne,Sandvika,Trøndelag,"1,389","2,961.70",,,Neutral,Bente Estil,Ap
+5043,RøyrvikRaarvihke,Røyrvik,Trøndelag,469,"1,584.76",,,NeutralSouthern Sami,Hans Oskar Devik,LL
+5044,Namsskogan,Namsskogan,Trøndelag,872,"1,417.16",,,Neutral,Stian Brekkvassmo,Ap
+5045,Grong,Medjå,Trøndelag,"2,467","1,136.17",,,Neutral,Borgny Grande,Sp
+5046,Høylandet,Høylandet,Trøndelag,"1,264",754.68,,,Neutral,Hege Nordheim-Viken,Sp
+5047,Overhalla,Ranemsletta,Trøndelag,"3,840",729.79,,,Neutral,Per Olav Tyldum,Sp
+5049,Flatanger,Lauvsnes,Trøndelag,"1,090",458.71,,,Neutral,Olav Jørgen Bjørkås,Sp
+5052,Leka,Leknes,Trøndelag,584,110.02,,,Neutral,Elisabeth Helmersen,Ap
+5053,Inderøy,Straumen,Trøndelag,"6,800",365.67,,,Neutral,Ida Stuberg,Sp
+5054,Indre Fosen,Årnset,Trøndelag,"10,108","1,095.98",,,Neutral,Bjørnar Buhaug,Sp
+5055,Heim,Årnset,Trøndelag,"5,963","1,024.58",,,Neutral,Odd Jarle Svanem,Sp
+5056,Hitra,Fillan,Trøndelag,"4,659",755.89,,,Neutral,Ole Haugen,Ap
+5057,Ørland,Bjugn and Brekstad,Trøndelag,"5,291",457.07,,,Bokmål,Tom Myrvold,H
+5058,Åfjord,Årnes,Trøndelag,"3,263","1,329.42",,,Neutral,Vibeke Stjern,Ap
+5059,Orkland,Orkanger,Trøndelag,"11,891","1,906.26",,,Neutral,Oddbjørn Bang,Sp
+5060,Nærøysund,Kolvereid and Rørvik,Trøndelag,"9,623","1,346.16",,,Neutral,Amund Hellesø,Ap
+5061,Rindal,Rindal,Trøndelag,"2,026",631.95,,,Neutral,Vibeke Langli,Sp
+5401,Tromsø,Tromsø,Troms og Finnmark,"74,541","2,521.28",,,Neutral,Gunnar Wilhelmsen,Ap
+5402,Harstad,Harstad,Troms og Finnmark,"24,845",445.17,,,Neutral,Kari-Anne Opsal,Ap
+5403,Alta,Alta,Troms og Finnmark,"20,446","3,849.47",,,Bokmål,Monica Nielsen,Ap
+5404,Vardø,Vardø,Troms og Finnmark,"2,104",600.61,,,Neutral,Ørjan Jensen,Mdg
+5405,Vadsø,Vadsø,Troms og Finnmark,"6,154","1,257.84",,,Bokmål,Wenche Pedersen,Ap
+5406,Hammerfest,Hammerfest,Troms og Finnmark,"10,527","2,692.57",,,Bokmål,Marianne Sivertsen Næss,Ap
+5411,Kvæfjord,Borkenes,Troms og Finnmark,"2,986",512.58,,,Neutral,Torbjørn Larsen,Ap
+5412,Tjeldsund,Evenskjer,Troms og Finnmark,"4,243",319.26,,,Bokmål,Helene Berg Nilsen,Ap
+5413,Ibestad,Hamnvik,Troms og Finnmark,"1,394",241.06,,,Bokmål,Dag Brustind,H
+5414,Gratangen,Årstein,Troms og Finnmark,"1,121",312.74,,,Neutral,Anita Karlsen,Sp
+5415,LavangenLoabák,Tennevoll,Troms og Finnmark,"1,076",301.64,,,NeutralNorthern Sami,Hege Beate Rollmoen,Ap
+5416,Bardu,Setermoen,Troms og Finnmark,"3,994","2,703.88",,,Neutral,Toralf Heimdal,Sp
+5417,Salangen,Sjøvegan,Troms og Finnmark,"2,220",457.88,,,Neutral,Sigrun W. Prestbakmo,Sp
+5418,Målselv,Moen,Troms og Finnmark,"6,781","3,326.21",,,Neutral,Bengt-Magne Luneng,Sp
+5419,Sørreisa,Sørreisa,Troms og Finnmark,"3,496",361.17,,,Neutral,Jan-Eirik Nordahl,Ap
+5420,Dyrøy,Brøstadbotn,Troms og Finnmark,"1,138",288.54,,,Bokmål,Marit Alvig Espenes,Ap
+5421,Senja,Finnsnes,Troms og Finnmark,"14,930","1,953.81",,,Neutral,Tom Rune Eliseussen,Sp
+5422,Balsfjord,Storsteinnes,Troms og Finnmark,"5,685","1,496.91",,,Bokmål,Gunda Johansen,Ap
+5423,Karlsøy,Hansnes,Troms og Finnmark,"2,273","1,091.59",,,Neutral,Mona Pedersen,LL
+5424,Lyngen,Lyngseidet,Troms og Finnmark,"2,876",812.56,,,Neutral,Dan Håvard Johnsen,LL
+5425,StorfjordOmasvuotnaOmasvuono,Hatteng,Troms og Finnmark,"1,890","1,542.83",,,NeutralNorthern SamiKven,Geir Varvik,H
+5426,KåfjordGáivuotnaKaivuono,Olderdalen,Troms og Finnmark,"2,132",991.18,,,BokmålNorthern SamiKven,Bernt E. Isaksen Lyngstad,Ap
+5427,Skjervøy,Skjervøy,Troms og Finnmark,"2,912",473.70,,,Bokmål,Ørjan Albrigtsen,KrF
+5428,Nordreisa,Storslett,Troms og Finnmark,"4,919","3,437.46",,,Bokmål,Hilde Anita Nyvoll,Ap
+5429,Kvænangen,Burfjord,Troms og Finnmark,"1,233","2,109.48",,,Neutral,Eirik Losnegaard Mevik,Ap
+5430,KautokeinoGuovdageaidnu,Kautokeino,Troms og Finnmark,"2,938","9,707.33",,,BokmålNorthern Sami,Hans Isak Olsen,LL
+5432,Loppa,Øksfjord,Troms og Finnmark,968,688.87,,,Bokmål,Stein Thomassen,Ap
+5433,Hasvik,Breivikbotn,Troms og Finnmark,"1,037",555.56,,,Bokmål,Eva D. Husby,Ap
+5434,Måsøy,Havøysund,Troms og Finnmark,"1,204","1,135.82",,,Bokmål,Bernth R. Sjursen,Ap
+5435,Nordkapp,Honningsvåg,Troms og Finnmark,"3,276",925.70,,,Neutral,Jan Olsen,SV
+5436,PorsangerPorsáŋguPorsanki,Lakselv,Troms og Finnmark,"3,971","4,872.58",,,BokmålNorthern SamiKven,Aina Borch,Ap
+5437,KarasjokKárášjohka,Karasjok,Troms og Finnmark,"2,696","5,452.95",,,BokmålNorthern Sami,Svein Atle Somby,Ap
+5438,Lebesby,Kjøllefjord,Troms og Finnmark,"1,330","3,459.41",,,Bokmål,Sigurd Kvammen Rafaelsen,Ap
+5439,Gamvik,Mehamn,Troms og Finnmark,"1,137",1416.34,,,Neutral,Alf N. Hansen,SV
+5440,Berlevåg,Berlevåg,Troms og Finnmark,991,1121.78,,,Bokmål,Rolf Laupstad,Ap
+5441,TanaDeatnu,Tana bru,Troms og Finnmark,"2,911","4,051.35",,,BokmålNorthern Sami,Helga Pedersen,Ap
+5442,NessebyUnjárga,Varangerbotn,Troms og Finnmark,951,"1,434.72",,,BokmålNorthern Sami,Knut Inge Store,Ap
+5443,Båtsfjord,Båtsfjord,Troms og Finnmark,"2,267","1,434.72",,,Neutral,Ronald Wærnes,Sp
+5444,Sør-Varanger,Kirkenes,Troms og Finnmark,"10,199","3,971.58",,,Bokmål,Rune Rafaelsen,Ap

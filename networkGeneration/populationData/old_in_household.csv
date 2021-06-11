@@ -1,0 +1,1437 @@
+,region,age,contents,year,value
+0,Halden,67-79 years,Living alone,2019,1138
+1,Halden,67-79 years,Living with others,2019,2836
+2,Halden,80 years or older,Living alone,2019,758
+3,Halden,80 years or older,Living with others,2019,669
+4,Moss,67-79 years,Living alone,2019,1858
+5,Moss,67-79 years,Living with others,2019,4306
+6,Moss,80 years or older,Living alone,2019,1162
+7,Moss,80 years or older,Living with others,2019,1035
+8,Sarpsborg,67-79 years,Living alone,2019,1926
+9,Sarpsborg,67-79 years,Living with others,2019,4655
+10,Sarpsborg,80 years or older,Living alone,2019,1288
+11,Sarpsborg,80 years or older,Living with others,2019,1114
+12,Fredrikstad,67-79 years,Living alone,2019,2622
+13,Fredrikstad,67-79 years,Living with others,2019,6937
+14,Fredrikstad,80 years or older,Living alone,2019,1810
+15,Fredrikstad,80 years or older,Living with others,2019,1678
+16,Drammen,67-79 years,Living alone,2019,3352
+17,Drammen,67-79 years,Living with others,2019,7744
+18,Drammen,80 years or older,Living alone,2019,2059
+19,Drammen,80 years or older,Living with others,2019,1897
+20,Kongsberg,67-79 years,Living alone,2019,868
+21,Kongsberg,67-79 years,Living with others,2019,2426
+22,Kongsberg,80 years or older,Living alone,2019,589
+23,Kongsberg,80 years or older,Living with others,2019,577
+24,Ringerike,67-79 years,Living alone,2019,1165
+25,Ringerike,67-79 years,Living with others,2019,2728
+26,Ringerike,80 years or older,Living alone,2019,770
+27,Ringerike,80 years or older,Living with others,2019,664
+28,Hvaler,67-79 years,Living alone,2019,197
+29,Hvaler,67-79 years,Living with others,2019,653
+30,Hvaler,80 years or older,Living alone,2019,85
+31,Hvaler,80 years or older,Living with others,2019,118
+32,Aremark,67-79 years,Living alone,2019,51
+33,Aremark,67-79 years,Living with others,2019,136
+34,Aremark,80 years or older,Living alone,2019,37
+35,Aremark,80 years or older,Living with others,2019,31
+36,Marker,67-79 years,Living alone,2019,146
+37,Marker,67-79 years,Living with others,2019,422
+38,Marker,80 years or older,Living alone,2019,111
+39,Marker,80 years or older,Living with others,2019,106
+40,Indre Østfold,67-79 years,Living alone,2019,1571
+41,Indre Østfold,67-79 years,Living with others,2019,3872
+42,Indre Østfold,80 years or older,Living alone,2019,895
+43,Indre Østfold,80 years or older,Living with others,2019,796
+44,Skiptvet,67-79 years,Living alone,2019,109
+45,Skiptvet,67-79 years,Living with others,2019,308
+46,Skiptvet,80 years or older,Living alone,2019,86
+47,Skiptvet,80 years or older,Living with others,2019,47
+48,Rakkestad,67-79 years,Living alone,2019,279
+49,Rakkestad,67-79 years,Living with others,2019,735
+50,Rakkestad,80 years or older,Living alone,2019,202
+51,Rakkestad,80 years or older,Living with others,2019,166
+52,Råde,67-79 years,Living alone,2019,208
+53,Råde,67-79 years,Living with others,2019,750
+54,Råde,80 years or older,Living alone,2019,175
+55,Råde,80 years or older,Living with others,2019,214
+56,Våler (Østfold),67-79 years,Living alone,2019,125
+57,Våler (Østfold),67-79 years,Living with others,2019,431
+58,Våler (Østfold),80 years or older,Living alone,2019,63
+59,Våler (Østfold),80 years or older,Living with others,2019,73
+60,Vestby,67-79 years,Living alone,2019,459
+61,Vestby,67-79 years,Living with others,2019,1639
+62,Vestby,80 years or older,Living alone,2019,231
+63,Vestby,80 years or older,Living with others,2019,242
+64,Nordre Follo,67-79 years,Living alone,2019,1517
+65,Nordre Follo,67-79 years,Living with others,2019,4738
+66,Nordre Follo,80 years or older,Living alone,2019,1113
+67,Nordre Follo,80 years or older,Living with others,2019,1111
+68,Ås,67-79 years,Living alone,2019,418
+69,Ås,67-79 years,Living with others,2019,1336
+70,Ås,80 years or older,Living alone,2019,299
+71,Ås,80 years or older,Living with others,2019,403
+72,Frogn,67-79 years,Living alone,2019,556
+73,Frogn,67-79 years,Living with others,2019,1552
+74,Frogn,80 years or older,Living alone,2019,341
+75,Frogn,80 years or older,Living with others,2019,277
+76,Nesodden,67-79 years,Living alone,2019,534
+77,Nesodden,67-79 years,Living with others,2019,1464
+78,Nesodden,80 years or older,Living alone,2019,297
+79,Nesodden,80 years or older,Living with others,2019,310
+80,Bærum,67-79 years,Living alone,2019,3383
+81,Bærum,67-79 years,Living with others,2019,8891
+82,Bærum,80 years or older,Living alone,2019,3003
+83,Bærum,80 years or older,Living with others,2019,2621
+84,Asker,67-79 years,Living alone,2019,2297
+85,Asker,67-79 years,Living with others,2019,7420
+86,Asker,80 years or older,Living alone,2019,1710
+87,Asker,80 years or older,Living with others,2019,1845
+88,Aurskog-Høland,67-79 years,Living alone,2019,593
+89,Aurskog-Høland,67-79 years,Living with others,2019,1520
+90,Aurskog-Høland,80 years or older,Living alone,2019,403
+91,Aurskog-Høland,80 years or older,Living with others,2019,338
+92,Rælingen,67-79 years,Living alone,2019,460
+93,Rælingen,67-79 years,Living with others,2019,1191
+94,Rælingen,80 years or older,Living alone,2019,244
+95,Rælingen,80 years or older,Living with others,2019,241
+96,Enebakk,67-79 years,Living alone,2019,272
+97,Enebakk,67-79 years,Living with others,2019,893
+98,Enebakk,80 years or older,Living alone,2019,138
+99,Enebakk,80 years or older,Living with others,2019,130
+100,Lørenskog,67-79 years,Living alone,2019,1091
+101,Lørenskog,67-79 years,Living with others,2019,2989
+102,Lørenskog,80 years or older,Living alone,2019,588
+103,Lørenskog,80 years or older,Living with others,2019,619
+104,Lillestrøm,67-79 years,Living alone,2019,2219
+105,Lillestrøm,67-79 years,Living with others,2019,6001
+106,Lillestrøm,80 years or older,Living alone,2019,1474
+107,Lillestrøm,80 years or older,Living with others,2019,1491
+108,Nittedal,67-79 years,Living alone,2019,575
+109,Nittedal,67-79 years,Living with others,2019,1728
+110,Nittedal,80 years or older,Living alone,2019,342
+111,Nittedal,80 years or older,Living with others,2019,343
+112,Gjerdrum,67-79 years,Living alone,2019,164
+113,Gjerdrum,67-79 years,Living with others,2019,510
+114,Gjerdrum,80 years or older,Living alone,2019,108
+115,Gjerdrum,80 years or older,Living with others,2019,123
+116,Ullensaker,67-79 years,Living alone,2019,949
+117,Ullensaker,67-79 years,Living with others,2019,2385
+118,Ullensaker,80 years or older,Living alone,2019,513
+119,Ullensaker,80 years or older,Living with others,2019,545
+120,Nes,67-79 years,Living alone,2019,572
+121,Nes,67-79 years,Living with others,2019,1763
+122,Nes,80 years or older,Living alone,2019,379
+123,Nes,80 years or older,Living with others,2019,379
+124,Eidsvoll,67-79 years,Living alone,2019,724
+125,Eidsvoll,67-79 years,Living with others,2019,1920
+126,Eidsvoll,80 years or older,Living alone,2019,392
+127,Eidsvoll,80 years or older,Living with others,2019,350
+128,Nannestad,67-79 years,Living alone,2019,314
+129,Nannestad,67-79 years,Living with others,2019,886
+130,Nannestad,80 years or older,Living alone,2019,168
+131,Nannestad,80 years or older,Living with others,2019,165
+132,Hurdal,67-79 years,Living alone,2019,110
+133,Hurdal,67-79 years,Living with others,2019,264
+134,Hurdal,80 years or older,Living alone,2019,75
+135,Hurdal,80 years or older,Living with others,2019,87
+136,Hole,67-79 years,Living alone,2019,180
+137,Hole,67-79 years,Living with others,2019,559
+138,Hole,80 years or older,Living alone,2019,150
+139,Hole,80 years or older,Living with others,2019,121
+140,Flå,67-79 years,Living alone,2019,49
+141,Flå,67-79 years,Living with others,2019,101
+142,Flå,80 years or older,Living alone,2019,41
+143,Flå,80 years or older,Living with others,2019,38
+144,Nesbyen,67-79 years,Living alone,2019,128
+145,Nesbyen,67-79 years,Living with others,2019,378
+146,Nesbyen,80 years or older,Living alone,2019,108
+147,Nesbyen,80 years or older,Living with others,2019,100
+148,Gol,67-79 years,Living alone,2019,192
+149,Gol,67-79 years,Living with others,2019,423
+150,Gol,80 years or older,Living alone,2019,150
+151,Gol,80 years or older,Living with others,2019,123
+152,Hemsedal,67-79 years,Living alone,2019,61
+153,Hemsedal,67-79 years,Living with others,2019,168
+154,Hemsedal,80 years or older,Living alone,2019,58
+155,Hemsedal,80 years or older,Living with others,2019,54
+156,Ål,67-79 years,Living alone,2019,179
+157,Ål,67-79 years,Living with others,2019,426
+158,Ål,80 years or older,Living alone,2019,160
+159,Ål,80 years or older,Living with others,2019,122
+160,Hol,67-79 years,Living alone,2019,190
+161,Hol,67-79 years,Living with others,2019,438
+162,Hol,80 years or older,Living alone,2019,125
+163,Hol,80 years or older,Living with others,2019,110
+164,Sigdal,67-79 years,Living alone,2019,170
+165,Sigdal,67-79 years,Living with others,2019,333
+166,Sigdal,80 years or older,Living alone,2019,137
+167,Sigdal,80 years or older,Living with others,2019,73
+168,Krødsherad,67-79 years,Living alone,2019,94
+169,Krødsherad,67-79 years,Living with others,2019,199
+170,Krødsherad,80 years or older,Living alone,2019,54
+171,Krødsherad,80 years or older,Living with others,2019,47
+172,Modum,67-79 years,Living alone,2019,503
+173,Modum,67-79 years,Living with others,2019,1286
+174,Modum,80 years or older,Living alone,2019,347
+175,Modum,80 years or older,Living with others,2019,297
+176,Øvre Eiker,67-79 years,Living alone,2019,563
+177,Øvre Eiker,67-79 years,Living with others,2019,1548
+178,Øvre Eiker,80 years or older,Living alone,2019,397
+179,Øvre Eiker,80 years or older,Living with others,2019,395
+180,Lier,67-79 years,Living alone,2019,695
+181,Lier,67-79 years,Living with others,2019,2127
+182,Lier,80 years or older,Living alone,2019,428
+183,Lier,80 years or older,Living with others,2019,434
+184,Flesberg,67-79 years,Living alone,2019,96
+185,Flesberg,67-79 years,Living with others,2019,269
+186,Flesberg,80 years or older,Living alone,2019,60
+187,Flesberg,80 years or older,Living with others,2019,72
+188,Rollag,67-79 years,Living alone,2019,60
+189,Rollag,67-79 years,Living with others,2019,145
+190,Rollag,80 years or older,Living alone,2019,48
+191,Rollag,80 years or older,Living with others,2019,55
+192,Nore og Uvdal,67-79 years,Living alone,2019,97
+193,Nore og Uvdal,67-79 years,Living with others,2019,254
+194,Nore og Uvdal,80 years or older,Living alone,2019,100
+195,Nore og Uvdal,80 years or older,Living with others,2019,65
+196,Jevnaker,67-79 years,Living alone,2019,246
+197,Jevnaker,67-79 years,Living with others,2019,596
+198,Jevnaker,80 years or older,Living alone,2019,178
+199,Jevnaker,80 years or older,Living with others,2019,133
+200,Lunner,67-79 years,Living alone,2019,286
+201,Lunner,67-79 years,Living with others,2019,780
+202,Lunner,80 years or older,Living alone,2019,162
+203,Lunner,80 years or older,Living with others,2019,141
+204,Oslo,67-79 years,Living alone,2019,19504
+205,Oslo,67-79 years,Living with others,2019,33330
+206,Oslo,80 years or older,Living alone,2019,10956
+207,Oslo,80 years or older,Living with others,2019,7798
+208,Kongsvinger,67-79 years,Living alone,2019,918
+209,Kongsvinger,67-79 years,Living with others,2019,1778
+210,Kongsvinger,80 years or older,Living alone,2019,494
+211,Kongsvinger,80 years or older,Living with others,2019,386
+212,Hamar,67-79 years,Living alone,2019,1269
+213,Hamar,67-79 years,Living with others,2019,2876
+214,Hamar,80 years or older,Living alone,2019,853
+215,Hamar,80 years or older,Living with others,2019,681
+216,Lillehammer,67-79 years,Living alone,2019,1021
+217,Lillehammer,67-79 years,Living with others,2019,2420
+218,Lillehammer,80 years or older,Living alone,2019,745
+219,Lillehammer,80 years or older,Living with others,2019,624
+220,Gjøvik,67-79 years,Living alone,2019,1101
+221,Gjøvik,67-79 years,Living with others,2019,2723
+222,Gjøvik,80 years or older,Living alone,2019,786
+223,Gjøvik,80 years or older,Living with others,2019,562
+224,Ringsaker,67-79 years,Living alone,2019,1126
+225,Ringsaker,67-79 years,Living with others,2019,3193
+226,Ringsaker,80 years or older,Living alone,2019,778
+227,Ringsaker,80 years or older,Living with others,2019,749
+228,Løten,67-79 years,Living alone,2019,284
+229,Løten,67-79 years,Living with others,2019,731
+230,Løten,80 years or older,Living alone,2019,168
+231,Løten,80 years or older,Living with others,2019,135
+232,Stange,67-79 years,Living alone,2019,680
+233,Stange,67-79 years,Living with others,2019,1903
+234,Stange,80 years or older,Living alone,2019,480
+235,Stange,80 years or older,Living with others,2019,448
+236,Nord-Odal,67-79 years,Living alone,2019,224
+237,Nord-Odal,67-79 years,Living with others,2019,556
+238,Nord-Odal,80 years or older,Living alone,2019,161
+239,Nord-Odal,80 years or older,Living with others,2019,128
+240,Sør-Odal,67-79 years,Living alone,2019,270
+241,Sør-Odal,67-79 years,Living with others,2019,783
+242,Sør-Odal,80 years or older,Living alone,2019,225
+243,Sør-Odal,80 years or older,Living with others,2019,144
+244,Eidskog,67-79 years,Living alone,2019,291
+245,Eidskog,67-79 years,Living with others,2019,653
+246,Eidskog,80 years or older,Living alone,2019,223
+247,Eidskog,80 years or older,Living with others,2019,130
+248,Grue,67-79 years,Living alone,2019,271
+249,Grue,67-79 years,Living with others,2019,565
+250,Grue,80 years or older,Living alone,2019,195
+251,Grue,80 years or older,Living with others,2019,137
+252,Åsnes,67-79 years,Living alone,2019,356
+253,Åsnes,67-79 years,Living with others,2019,849
+254,Åsnes,80 years or older,Living alone,2019,229
+255,Åsnes,80 years or older,Living with others,2019,213
+256,Våler (Hedmark),67-79 years,Living alone,2019,176
+257,Våler (Hedmark),67-79 years,Living with others,2019,425
+258,Våler (Hedmark),80 years or older,Living alone,2019,111
+259,Våler (Hedmark),80 years or older,Living with others,2019,106
+260,Elverum,67-79 years,Living alone,2019,814
+261,Elverum,67-79 years,Living with others,2019,1852
+262,Elverum,80 years or older,Living alone,2019,513
+263,Elverum,80 years or older,Living with others,2019,399
+264,Trysil,67-79 years,Living alone,2019,311
+265,Trysil,67-79 years,Living with others,2019,757
+266,Trysil,80 years or older,Living alone,2019,208
+267,Trysil,80 years or older,Living with others,2019,189
+268,Åmot,67-79 years,Living alone,2019,182
+269,Åmot,67-79 years,Living with others,2019,388
+270,Åmot,80 years or older,Living alone,2019,135
+271,Åmot,80 years or older,Living with others,2019,92
+272,Stor-Elvdal,67-79 years,Living alone,2019,134
+273,Stor-Elvdal,67-79 years,Living with others,2019,274
+274,Stor-Elvdal,80 years or older,Living alone,2019,83
+275,Stor-Elvdal,80 years or older,Living with others,2019,91
+276,Rendalen,67-79 years,Living alone,2019,123
+277,Rendalen,67-79 years,Living with others,2019,230
+278,Rendalen,80 years or older,Living alone,2019,71
+279,Rendalen,80 years or older,Living with others,2019,52
+280,Engerdal,67-79 years,Living alone,2019,79
+281,Engerdal,67-79 years,Living with others,2019,166
+282,Engerdal,80 years or older,Living alone,2019,42
+283,Engerdal,80 years or older,Living with others,2019,37
+284,Tolga,67-79 years,Living alone,2019,56
+285,Tolga,67-79 years,Living with others,2019,142
+286,Tolga,80 years or older,Living alone,2019,50
+287,Tolga,80 years or older,Living with others,2019,41
+288,Tynset,67-79 years,Living alone,2019,203
+289,Tynset,67-79 years,Living with others,2019,479
+290,Tynset,80 years or older,Living alone,2019,142
+291,Tynset,80 years or older,Living with others,2019,133
+292,Alvdal,67-79 years,Living alone,2019,91
+293,Alvdal,67-79 years,Living with others,2019,196
+294,Alvdal,80 years or older,Living alone,2019,74
+295,Alvdal,80 years or older,Living with others,2019,59
+296,Folldal,67-79 years,Living alone,2019,82
+297,Folldal,67-79 years,Living with others,2019,197
+298,Folldal,80 years or older,Living alone,2019,64
+299,Folldal,80 years or older,Living with others,2019,43
+300,Os,67-79 years,Living alone,2019,70
+301,Os,67-79 years,Living with others,2019,213
+302,Os,80 years or older,Living alone,2019,55
+303,Os,80 years or older,Living with others,2019,62
+304,Dovre,67-79 years,Living alone,2019,139
+305,Dovre,67-79 years,Living with others,2019,287
+306,Dovre,80 years or older,Living alone,2019,81
+307,Dovre,80 years or older,Living with others,2019,83
+308,Lesja,67-79 years,Living alone,2019,94
+309,Lesja,67-79 years,Living with others,2019,195
+310,Lesja,80 years or older,Living alone,2019,75
+311,Lesja,80 years or older,Living with others,2019,56
+312,Skjåk,67-79 years,Living alone,2019,98
+313,Skjåk,67-79 years,Living with others,2019,274
+314,Skjåk,80 years or older,Living alone,2019,69
+315,Skjåk,80 years or older,Living with others,2019,67
+316,Lom,67-79 years,Living alone,2019,79
+317,Lom,67-79 years,Living with others,2019,238
+318,Lom,80 years or older,Living alone,2019,74
+319,Lom,80 years or older,Living with others,2019,65
+320,Vågå,67-79 years,Living alone,2019,155
+321,Vågå,67-79 years,Living with others,2019,382
+322,Vågå,80 years or older,Living alone,2019,107
+323,Vågå,80 years or older,Living with others,2019,94
+324,Nord-Fron,67-79 years,Living alone,2019,286
+325,Nord-Fron,67-79 years,Living with others,2019,607
+326,Nord-Fron,80 years or older,Living alone,2019,180
+327,Nord-Fron,80 years or older,Living with others,2019,140
+328,Sel,67-79 years,Living alone,2019,230
+329,Sel,67-79 years,Living with others,2019,626
+330,Sel,80 years or older,Living alone,2019,197
+331,Sel,80 years or older,Living with others,2019,156
+332,Sør-Fron,67-79 years,Living alone,2019,105
+333,Sør-Fron,67-79 years,Living with others,2019,330
+334,Sør-Fron,80 years or older,Living alone,2019,96
+335,Sør-Fron,80 years or older,Living with others,2019,78
+336,Ringebu,67-79 years,Living alone,2019,200
+337,Ringebu,67-79 years,Living with others,2019,492
+338,Ringebu,80 years or older,Living alone,2019,145
+339,Ringebu,80 years or older,Living with others,2019,132
+340,Øyer,67-79 years,Living alone,2019,178
+341,Øyer,67-79 years,Living with others,2019,473
+342,Øyer,80 years or older,Living alone,2019,135
+343,Øyer,80 years or older,Living with others,2019,127
+344,Gausdal,67-79 years,Living alone,2019,211
+345,Gausdal,67-79 years,Living with others,2019,634
+346,Gausdal,80 years or older,Living alone,2019,171
+347,Gausdal,80 years or older,Living with others,2019,167
+348,Østre Toten,67-79 years,Living alone,2019,545
+349,Østre Toten,67-79 years,Living with others,2019,1492
+350,Østre Toten,80 years or older,Living alone,2019,404
+351,Østre Toten,80 years or older,Living with others,2019,367
+352,Vestre Toten,67-79 years,Living alone,2019,498
+353,Vestre Toten,67-79 years,Living with others,2019,1274
+354,Vestre Toten,80 years or older,Living alone,2019,332
+355,Vestre Toten,80 years or older,Living with others,2019,324
+356,Gran,67-79 years,Living alone,2019,520
+357,Gran,67-79 years,Living with others,2019,1296
+358,Gran,80 years or older,Living alone,2019,339
+359,Gran,80 years or older,Living with others,2019,322
+360,Søndre Land,67-79 years,Living alone,2019,274
+361,Søndre Land,67-79 years,Living with others,2019,523
+362,Søndre Land,80 years or older,Living alone,2019,177
+363,Søndre Land,80 years or older,Living with others,2019,116
+364,Nordre Land,67-79 years,Living alone,2019,313
+365,Nordre Land,67-79 years,Living with others,2019,635
+366,Nordre Land,80 years or older,Living alone,2019,187
+367,Nordre Land,80 years or older,Living with others,2019,143
+368,Sør-Aurdal,67-79 years,Living alone,2019,148
+369,Sør-Aurdal,67-79 years,Living with others,2019,340
+370,Sør-Aurdal,80 years or older,Living alone,2019,105
+371,Sør-Aurdal,80 years or older,Living with others,2019,96
+372,Etnedal,67-79 years,Living alone,2019,78
+373,Etnedal,67-79 years,Living with others,2019,126
+374,Etnedal,80 years or older,Living alone,2019,52
+375,Etnedal,80 years or older,Living with others,2019,44
+376,Nord-Aurdal,67-79 years,Living alone,2019,308
+377,Nord-Aurdal,67-79 years,Living with others,2019,638
+378,Nord-Aurdal,80 years or older,Living alone,2019,188
+379,Nord-Aurdal,80 years or older,Living with others,2019,162
+380,Vestre Slidre,67-79 years,Living alone,2019,105
+381,Vestre Slidre,67-79 years,Living with others,2019,199
+382,Vestre Slidre,80 years or older,Living alone,2019,55
+383,Vestre Slidre,80 years or older,Living with others,2019,63
+384,Øystre Slidre,67-79 years,Living alone,2019,132
+385,Øystre Slidre,67-79 years,Living with others,2019,347
+386,Øystre Slidre,80 years or older,Living alone,2019,82
+387,Øystre Slidre,80 years or older,Living with others,2019,46
+388,Vang,67-79 years,Living alone,2019,65
+389,Vang,67-79 years,Living with others,2019,172
+390,Vang,80 years or older,Living alone,2019,37
+391,Vang,80 years or older,Living with others,2019,38
+392,Horten,67-79 years,Living alone,2019,1003
+393,Horten,67-79 years,Living with others,2019,2426
+394,Horten,80 years or older,Living alone,2019,627
+395,Horten,80 years or older,Living with others,2019,634
+396,Holmestrand,67-79 years,Living alone,2019,796
+397,Holmestrand,67-79 years,Living with others,2019,2194
+398,Holmestrand,80 years or older,Living alone,2019,497
+399,Holmestrand,80 years or older,Living with others,2019,465
+400,Tønsberg,67-79 years,Living alone,2019,1792
+401,Tønsberg,67-79 years,Living with others,2019,4289
+402,Tønsberg,80 years or older,Living alone,2019,1221
+403,Tønsberg,80 years or older,Living with others,2019,1162
+404,Sandefjord,67-79 years,Living alone,2019,2107
+405,Sandefjord,67-79 years,Living with others,2019,5278
+406,Sandefjord,80 years or older,Living alone,2019,1444
+407,Sandefjord,80 years or older,Living with others,2019,1303
+408,Larvik,67-79 years,Living alone,2019,1666
+409,Larvik,67-79 years,Living with others,2019,4365
+410,Larvik,80 years or older,Living alone,2019,1258
+411,Larvik,80 years or older,Living with others,2019,1098
+412,Porsgrunn,67-79 years,Living alone,2019,1242
+413,Porsgrunn,67-79 years,Living with others,2019,3174
+414,Porsgrunn,80 years or older,Living alone,2019,884
+415,Porsgrunn,80 years or older,Living with others,2019,702
+416,Skien,67-79 years,Living alone,2019,1895
+417,Skien,67-79 years,Living with others,2019,4773
+418,Skien,80 years or older,Living alone,2019,1272
+419,Skien,80 years or older,Living with others,2019,1115
+420,Notodden,67-79 years,Living alone,2019,483
+421,Notodden,67-79 years,Living with others,2019,1120
+422,Notodden,80 years or older,Living alone,2019,353
+423,Notodden,80 years or older,Living with others,2019,290
+424,Færder,67-79 years,Living alone,2019,896
+425,Færder,67-79 years,Living with others,2019,2584
+426,Færder,80 years or older,Living alone,2019,730
+427,Færder,80 years or older,Living with others,2019,609
+428,Siljan,67-79 years,Living alone,2019,47
+429,Siljan,67-79 years,Living with others,2019,221
+430,Siljan,80 years or older,Living alone,2019,70
+431,Siljan,80 years or older,Living with others,2019,52
+432,Bamble,67-79 years,Living alone,2019,436
+433,Bamble,67-79 years,Living with others,2019,1541
+434,Bamble,80 years or older,Living alone,2019,274
+435,Bamble,80 years or older,Living with others,2019,261
+436,Kragerø,67-79 years,Living alone,2019,502
+437,Kragerø,67-79 years,Living with others,2019,1150
+438,Kragerø,80 years or older,Living alone,2019,294
+439,Kragerø,80 years or older,Living with others,2019,264
+440,Drangedal,67-79 years,Living alone,2019,168
+441,Drangedal,67-79 years,Living with others,2019,387
+442,Drangedal,80 years or older,Living alone,2019,137
+443,Drangedal,80 years or older,Living with others,2019,68
+444,Nome,67-79 years,Living alone,2019,255
+445,Nome,67-79 years,Living with others,2019,624
+446,Nome,80 years or older,Living alone,2019,177
+447,Nome,80 years or older,Living with others,2019,146
+448,Midt-Telemark,67-79 years,Living alone,2019,332
+449,Midt-Telemark,67-79 years,Living with others,2019,969
+450,Midt-Telemark,80 years or older,Living alone,2019,266
+451,Midt-Telemark,80 years or older,Living with others,2019,208
+452,Tinn,67-79 years,Living alone,2019,293
+453,Tinn,67-79 years,Living with others,2019,570
+454,Tinn,80 years or older,Living alone,2019,175
+455,Tinn,80 years or older,Living with others,2019,139
+456,Hjartdal,67-79 years,Living alone,2019,61
+457,Hjartdal,67-79 years,Living with others,2019,172
+458,Hjartdal,80 years or older,Living alone,2019,58
+459,Hjartdal,80 years or older,Living with others,2019,44
+460,Seljord,67-79 years,Living alone,2019,123
+461,Seljord,67-79 years,Living with others,2019,308
+462,Seljord,80 years or older,Living alone,2019,82
+463,Seljord,80 years or older,Living with others,2019,69
+464,Kviteseid,67-79 years,Living alone,2019,88
+465,Kviteseid,67-79 years,Living with others,2019,239
+466,Kviteseid,80 years or older,Living alone,2019,73
+467,Kviteseid,80 years or older,Living with others,2019,66
+468,Nissedal,67-79 years,Living alone,2019,59
+469,Nissedal,67-79 years,Living with others,2019,145
+470,Nissedal,80 years or older,Living alone,2019,46
+471,Nissedal,80 years or older,Living with others,2019,34
+472,Fyresdal,67-79 years,Living alone,2019,65
+473,Fyresdal,67-79 years,Living with others,2019,117
+474,Fyresdal,80 years or older,Living alone,2019,41
+475,Fyresdal,80 years or older,Living with others,2019,26
+476,Tokke,67-79 years,Living alone,2019,83
+477,Tokke,67-79 years,Living with others,2019,204
+478,Tokke,80 years or older,Living alone,2019,70
+479,Tokke,80 years or older,Living with others,2019,60
+480,Vinje,67-79 years,Living alone,2019,151
+481,Vinje,67-79 years,Living with others,2019,351
+482,Vinje,80 years or older,Living alone,2019,107
+483,Vinje,80 years or older,Living with others,2019,81
+484,Risør,67-79 years,Living alone,2019,339
+485,Risør,67-79 years,Living with others,2019,746
+486,Risør,80 years or older,Living alone,2019,177
+487,Risør,80 years or older,Living with others,2019,151
+488,Grimstad,67-79 years,Living alone,2019,601
+489,Grimstad,67-79 years,Living with others,2019,1806
+490,Grimstad,80 years or older,Living alone,2019,412
+491,Grimstad,80 years or older,Living with others,2019,424
+492,Arendal,67-79 years,Living alone,2019,1537
+493,Arendal,67-79 years,Living with others,2019,3787
+494,Arendal,80 years or older,Living alone,2019,965
+495,Arendal,80 years or older,Living with others,2019,865
+496,Kristiansand,67-79 years,Living alone,2019,2948
+497,Kristiansand,67-79 years,Living with others,2019,7580
+498,Kristiansand,80 years or older,Living alone,2019,2070
+499,Kristiansand,80 years or older,Living with others,2019,1889
+500,Lindesnes,67-79 years,Living alone,2019,723
+501,Lindesnes,67-79 years,Living with others,2019,1997
+502,Lindesnes,80 years or older,Living alone,2019,511
+503,Lindesnes,80 years or older,Living with others,2019,431
+504,Farsund,67-79 years,Living alone,2019,364
+505,Farsund,67-79 years,Living with others,2019,926
+506,Farsund,80 years or older,Living alone,2019,235
+507,Farsund,80 years or older,Living with others,2019,189
+508,Flekkefjord,67-79 years,Living alone,2019,298
+509,Flekkefjord,67-79 years,Living with others,2019,827
+510,Flekkefjord,80 years or older,Living alone,2019,225
+511,Flekkefjord,80 years or older,Living with others,2019,228
+512,Gjerstad,67-79 years,Living alone,2019,116
+513,Gjerstad,67-79 years,Living with others,2019,230
+514,Gjerstad,80 years or older,Living alone,2019,60
+515,Gjerstad,80 years or older,Living with others,2019,57
+516,Vegårshei,67-79 years,Living alone,2019,60
+517,Vegårshei,67-79 years,Living with others,2019,146
+518,Vegårshei,80 years or older,Living alone,2019,58
+519,Vegårshei,80 years or older,Living with others,2019,39
+520,Tvedestrand,67-79 years,Living alone,2019,223
+521,Tvedestrand,67-79 years,Living with others,2019,617
+522,Tvedestrand,80 years or older,Living alone,2019,151
+523,Tvedestrand,80 years or older,Living with others,2019,111
+524,Froland,67-79 years,Living alone,2019,148
+525,Froland,67-79 years,Living with others,2019,434
+526,Froland,80 years or older,Living alone,2019,92
+527,Froland,80 years or older,Living with others,2019,72
+528,Lillesand,67-79 years,Living alone,2019,301
+529,Lillesand,67-79 years,Living with others,2019,964
+530,Lillesand,80 years or older,Living alone,2019,196
+531,Lillesand,80 years or older,Living with others,2019,189
+532,Birkenes,67-79 years,Living alone,2019,135
+533,Birkenes,67-79 years,Living with others,2019,428
+534,Birkenes,80 years or older,Living alone,2019,90
+535,Birkenes,80 years or older,Living with others,2019,70
+536,Åmli,67-79 years,Living alone,2019,88
+537,Åmli,67-79 years,Living with others,2019,156
+538,Åmli,80 years or older,Living alone,2019,53
+539,Åmli,80 years or older,Living with others,2019,38
+540,Iveland,67-79 years,Living alone,2019,26
+541,Iveland,67-79 years,Living with others,2019,96
+542,Iveland,80 years or older,Living alone,2019,17
+543,Iveland,80 years or older,Living with others,2019,13
+544,Evje og Hornnes,67-79 years,Living alone,2019,121
+545,Evje og Hornnes,67-79 years,Living with others,2019,341
+546,Evje og Hornnes,80 years or older,Living alone,2019,83
+547,Evje og Hornnes,80 years or older,Living with others,2019,69
+548,Bygland,67-79 years,Living alone,2019,50
+549,Bygland,67-79 years,Living with others,2019,124
+550,Bygland,80 years or older,Living alone,2019,27
+551,Bygland,80 years or older,Living with others,2019,34
+552,Valle,67-79 years,Living alone,2019,41
+553,Valle,67-79 years,Living with others,2019,125
+554,Valle,80 years or older,Living alone,2019,30
+555,Valle,80 years or older,Living with others,2019,18
+556,Bykle,67-79 years,Living alone,2019,25
+557,Bykle,67-79 years,Living with others,2019,66
+558,Bykle,80 years or older,Living alone,2019,16
+559,Bykle,80 years or older,Living with others,2019,6
+560,Vennesla,67-79 years,Living alone,2019,340
+561,Vennesla,67-79 years,Living with others,2019,1054
+562,Vennesla,80 years or older,Living alone,2019,257
+563,Vennesla,80 years or older,Living with others,2019,227
+564,Åseral,67-79 years,Living alone,2019,32
+565,Åseral,67-79 years,Living with others,2019,50
+566,Åseral,80 years or older,Living alone,2019,30
+567,Åseral,80 years or older,Living with others,2019,22
+568,Lyngdal,67-79 years,Living alone,2019,267
+569,Lyngdal,67-79 years,Living with others,2019,832
+570,Lyngdal,80 years or older,Living alone,2019,241
+571,Lyngdal,80 years or older,Living with others,2019,164
+572,Hægebostad,67-79 years,Living alone,2019,47
+573,Hægebostad,67-79 years,Living with others,2019,143
+574,Hægebostad,80 years or older,Living alone,2019,39
+575,Hægebostad,80 years or older,Living with others,2019,31
+576,Kvinesdal,67-79 years,Living alone,2019,210
+577,Kvinesdal,67-79 years,Living with others,2019,443
+578,Kvinesdal,80 years or older,Living alone,2019,154
+579,Kvinesdal,80 years or older,Living with others,2019,124
+580,Sirdal,67-79 years,Living alone,2019,59
+581,Sirdal,67-79 years,Living with others,2019,155
+582,Sirdal,80 years or older,Living alone,2019,43
+583,Sirdal,80 years or older,Living with others,2019,46
+584,Eigersund,67-79 years,Living alone,2019,448
+585,Eigersund,67-79 years,Living with others,2019,1215
+586,Eigersund,80 years or older,Living alone,2019,360
+587,Eigersund,80 years or older,Living with others,2019,258
+588,Stavanger,67-79 years,Living alone,2019,3302
+589,Stavanger,67-79 years,Living with others,2019,9083
+590,Stavanger,80 years or older,Living alone,2019,2405
+591,Stavanger,80 years or older,Living with others,2019,1991
+592,Haugesund,67-79 years,Living alone,2019,1176
+593,Haugesund,67-79 years,Living with others,2019,2634
+594,Haugesund,80 years or older,Living alone,2019,827
+595,Haugesund,80 years or older,Living with others,2019,542
+596,Sandnes,67-79 years,Living alone,2019,1537
+597,Sandnes,67-79 years,Living with others,2019,4693
+598,Sandnes,80 years or older,Living alone,2019,1087
+599,Sandnes,80 years or older,Living with others,2019,1050
+600,Sokndal,67-79 years,Living alone,2019,116
+601,Sokndal,67-79 years,Living with others,2019,259
+602,Sokndal,80 years or older,Living alone,2019,98
+603,Sokndal,80 years or older,Living with others,2019,75
+604,Lund,67-79 years,Living alone,2019,79
+605,Lund,67-79 years,Living with others,2019,264
+606,Lund,80 years or older,Living alone,2019,78
+607,Lund,80 years or older,Living with others,2019,71
+608,Bjerkreim,67-79 years,Living alone,2019,54
+609,Bjerkreim,67-79 years,Living with others,2019,206
+610,Bjerkreim,80 years or older,Living alone,2019,34
+611,Bjerkreim,80 years or older,Living with others,2019,44
+612,Hå,67-79 years,Living alone,2019,376
+613,Hå,67-79 years,Living with others,2019,1251
+614,Hå,80 years or older,Living alone,2019,278
+615,Hå,80 years or older,Living with others,2019,298
+616,Klepp,67-79 years,Living alone,2019,392
+617,Klepp,67-79 years,Living with others,2019,1307
+618,Klepp,80 years or older,Living alone,2019,237
+619,Klepp,80 years or older,Living with others,2019,277
+620,Time,67-79 years,Living alone,2019,371
+621,Time,67-79 years,Living with others,2019,1232
+622,Time,80 years or older,Living alone,2019,285
+623,Time,80 years or older,Living with others,2019,315
+624,Gjesdal,67-79 years,Living alone,2019,203
+625,Gjesdal,67-79 years,Living with others,2019,678
+626,Gjesdal,80 years or older,Living alone,2019,138
+627,Gjesdal,80 years or older,Living with others,2019,118
+628,Sola,67-79 years,Living alone,2019,477
+629,Sola,67-79 years,Living with others,2019,1640
+630,Sola,80 years or older,Living alone,2019,350
+631,Sola,80 years or older,Living with others,2019,412
+632,Randaberg,67-79 years,Living alone,2019,192
+633,Randaberg,67-79 years,Living with others,2019,785
+634,Randaberg,80 years or older,Living alone,2019,181
+635,Randaberg,80 years or older,Living with others,2019,208
+636,Strand,67-79 years,Living alone,2019,275
+637,Strand,67-79 years,Living with others,2019,964
+638,Strand,80 years or older,Living alone,2019,245
+639,Strand,80 years or older,Living with others,2019,252
+640,Hjelmeland,67-79 years,Living alone,2019,93
+641,Hjelmeland,67-79 years,Living with others,2019,258
+642,Hjelmeland,80 years or older,Living alone,2019,66
+643,Hjelmeland,80 years or older,Living with others,2019,63
+644,Suldal,67-79 years,Living alone,2019,115
+645,Suldal,67-79 years,Living with others,2019,369
+646,Suldal,80 years or older,Living alone,2019,90
+647,Suldal,80 years or older,Living with others,2019,91
+648,Sauda,67-79 years,Living alone,2019,166
+649,Sauda,67-79 years,Living with others,2019,376
+650,Sauda,80 years or older,Living alone,2019,161
+651,Sauda,80 years or older,Living with others,2019,137
+652,Kvitsøy,67-79 years,Living alone,2019,17
+653,Kvitsøy,67-79 years,Living with others,2019,53
+654,Kvitsøy,80 years or older,Living alone,2019,12
+655,Kvitsøy,80 years or older,Living with others,2019,24
+656,Bokn,67-79 years,Living alone,2019,25
+657,Bokn,67-79 years,Living with others,2019,80
+658,Bokn,80 years or older,Living alone,2019,19
+659,Bokn,80 years or older,Living with others,2019,33
+660,Tysvær,67-79 years,Living alone,2019,246
+661,Tysvær,67-79 years,Living with others,2019,921
+662,Tysvær,80 years or older,Living alone,2019,167
+663,Tysvær,80 years or older,Living with others,2019,200
+664,Karmøy,67-79 years,Living alone,2019,1049
+665,Karmøy,67-79 years,Living with others,2019,3488
+666,Karmøy,80 years or older,Living alone,2019,843
+667,Karmøy,80 years or older,Living with others,2019,802
+668,Utsira,67-79 years,Living alone,2019,8
+669,Utsira,67-79 years,Living with others,2019,17
+670,Utsira,80 years or older,Living alone,2019,3
+671,Utsira,80 years or older,Living with others,2019,5
+672,Vindafjord,67-79 years,Living alone,2019,236
+673,Vindafjord,67-79 years,Living with others,2019,671
+674,Vindafjord,80 years or older,Living alone,2019,234
+675,Vindafjord,80 years or older,Living with others,2019,203
+676,Bergen,67-79 years,Living alone,2019,7945
+677,Bergen,67-79 years,Living with others,2019,18248
+678,Bergen,80 years or older,Living alone,2019,5618
+679,Bergen,80 years or older,Living with others,2019,5144
+680,Kinn,67-79 years,Living alone,2019,530
+681,Kinn,67-79 years,Living with others,2019,1403
+682,Kinn,80 years or older,Living alone,2019,477
+683,Kinn,80 years or older,Living with others,2019,385
+684,Etne,67-79 years,Living alone,2019,147
+685,Etne,67-79 years,Living with others,2019,340
+686,Etne,80 years or older,Living alone,2019,117
+687,Etne,80 years or older,Living with others,2019,116
+688,Sveio,67-79 years,Living alone,2019,134
+689,Sveio,67-79 years,Living with others,2019,480
+690,Sveio,80 years or older,Living alone,2019,85
+691,Sveio,80 years or older,Living with others,2019,97
+692,Bømlo,67-79 years,Living alone,2019,291
+693,Bømlo,67-79 years,Living with others,2019,989
+694,Bømlo,80 years or older,Living alone,2019,272
+695,Bømlo,80 years or older,Living with others,2019,215
+696,Stord,67-79 years,Living alone,2019,421
+697,Stord,67-79 years,Living with others,2019,1525
+698,Stord,80 years or older,Living alone,2019,344
+699,Stord,80 years or older,Living with others,2019,366
+700,Fitjar,67-79 years,Living alone,2019,66
+701,Fitjar,67-79 years,Living with others,2019,278
+702,Fitjar,80 years or older,Living alone,2019,52
+703,Fitjar,80 years or older,Living with others,2019,60
+704,Tysnes,67-79 years,Living alone,2019,123
+705,Tysnes,67-79 years,Living with others,2019,325
+706,Tysnes,80 years or older,Living alone,2019,101
+707,Tysnes,80 years or older,Living with others,2019,81
+708,Kvinnherad,67-79 years,Living alone,2019,455
+709,Kvinnherad,67-79 years,Living with others,2019,1284
+710,Kvinnherad,80 years or older,Living alone,2019,360
+711,Kvinnherad,80 years or older,Living with others,2019,392
+712,Ullensvang,67-79 years,Living alone,2019,418
+713,Ullensvang,67-79 years,Living with others,2019,1122
+714,Ullensvang,80 years or older,Living alone,2019,420
+715,Ullensvang,80 years or older,Living with others,2019,337
+716,Eidfjord,67-79 years,Living alone,2019,51
+717,Eidfjord,67-79 years,Living with others,2019,60
+718,Eidfjord,80 years or older,Living alone,2019,26
+719,Eidfjord,80 years or older,Living with others,2019,30
+720,Ulvik,67-79 years,Living alone,2019,45
+721,Ulvik,67-79 years,Living with others,2019,127
+722,Ulvik,80 years or older,Living alone,2019,31
+723,Ulvik,80 years or older,Living with others,2019,25
+724,Voss,67-79 years,Living alone,2019,526
+725,Voss,67-79 years,Living with others,2019,1370
+726,Voss,80 years or older,Living alone,2019,478
+727,Voss,80 years or older,Living with others,2019,460
+728,Kvam,67-79 years,Living alone,2019,272
+729,Kvam,67-79 years,Living with others,2019,810
+730,Kvam,80 years or older,Living alone,2019,243
+731,Kvam,80 years or older,Living with others,2019,228
+732,Samnanger,67-79 years,Living alone,2019,69
+733,Samnanger,67-79 years,Living with others,2019,278
+734,Samnanger,80 years or older,Living alone,2019,60
+735,Samnanger,80 years or older,Living with others,2019,57
+736,Bjørnafjorden,67-79 years,Living alone,2019,556
+737,Bjørnafjorden,67-79 years,Living with others,2019,2022
+738,Bjørnafjorden,80 years or older,Living alone,2019,380
+739,Bjørnafjorden,80 years or older,Living with others,2019,442
+740,Austevoll,67-79 years,Living alone,2019,125
+741,Austevoll,67-79 years,Living with others,2019,422
+742,Austevoll,80 years or older,Living alone,2019,114
+743,Austevoll,80 years or older,Living with others,2019,103
+744,Øygarden,67-79 years,Living alone,2019,803
+745,Øygarden,67-79 years,Living with others,2019,2822
+746,Øygarden,80 years or older,Living alone,2019,451
+747,Øygarden,80 years or older,Living with others,2019,550
+748,Askøy,67-79 years,Living alone,2019,569
+749,Askøy,67-79 years,Living with others,2019,2144
+750,Askøy,80 years or older,Living alone,2019,366
+751,Askøy,80 years or older,Living with others,2019,436
+752,Vaksdal,67-79 years,Living alone,2019,129
+753,Vaksdal,67-79 years,Living with others,2019,342
+754,Vaksdal,80 years or older,Living alone,2019,156
+755,Vaksdal,80 years or older,Living with others,2019,123
+756,Modalen,67-79 years,Living alone,2019,13
+757,Modalen,67-79 years,Living with others,2019,21
+758,Modalen,80 years or older,Living alone,2019,9
+759,Modalen,80 years or older,Living with others,2019,14
+760,Osterøy,67-79 years,Living alone,2019,205
+761,Osterøy,67-79 years,Living with others,2019,701
+762,Osterøy,80 years or older,Living alone,2019,170
+763,Osterøy,80 years or older,Living with others,2019,198
+764,Alver,67-79 years,Living alone,2019,710
+765,Alver,67-79 years,Living with others,2019,2521
+766,Alver,80 years or older,Living alone,2019,510
+767,Alver,80 years or older,Living with others,2019,560
+768,Austrheim,67-79 years,Living alone,2019,102
+769,Austrheim,67-79 years,Living with others,2019,322
+770,Austrheim,80 years or older,Living alone,2019,65
+771,Austrheim,80 years or older,Living with others,2019,61
+772,Fedje,67-79 years,Living alone,2019,21
+773,Fedje,67-79 years,Living with others,2019,57
+774,Fedje,80 years or older,Living alone,2019,22
+775,Fedje,80 years or older,Living with others,2019,21
+776,Masfjorden,67-79 years,Living alone,2019,52
+777,Masfjorden,67-79 years,Living with others,2019,181
+778,Masfjorden,80 years or older,Living alone,2019,76
+779,Masfjorden,80 years or older,Living with others,2019,40
+780,Gulen,67-79 years,Living alone,2019,87
+781,Gulen,67-79 years,Living with others,2019,230
+782,Gulen,80 years or older,Living alone,2019,91
+783,Gulen,80 years or older,Living with others,2019,56
+784,Solund,67-79 years,Living alone,2019,32
+785,Solund,67-79 years,Living with others,2019,95
+786,Solund,80 years or older,Living alone,2019,33
+787,Solund,80 years or older,Living with others,2019,24
+788,Hyllestad,67-79 years,Living alone,2019,66
+789,Hyllestad,67-79 years,Living with others,2019,169
+790,Hyllestad,80 years or older,Living alone,2019,53
+791,Hyllestad,80 years or older,Living with others,2019,36
+792,Høyanger,67-79 years,Living alone,2019,163
+793,Høyanger,67-79 years,Living with others,2019,369
+794,Høyanger,80 years or older,Living alone,2019,131
+795,Høyanger,80 years or older,Living with others,2019,115
+796,Vik,67-79 years,Living alone,2019,97
+797,Vik,67-79 years,Living with others,2019,294
+798,Vik,80 years or older,Living alone,2019,116
+799,Vik,80 years or older,Living with others,2019,94
+800,Sogndal,67-79 years,Living alone,2019,320
+801,Sogndal,67-79 years,Living with others,2019,991
+802,Sogndal,80 years or older,Living alone,2019,264
+803,Sogndal,80 years or older,Living with others,2019,242
+804,Aurland,67-79 years,Living alone,2019,61
+805,Aurland,67-79 years,Living with others,2019,160
+806,Aurland,80 years or older,Living alone,2019,45
+807,Aurland,80 years or older,Living with others,2019,52
+808,Lærdal,67-79 years,Living alone,2019,72
+809,Lærdal,67-79 years,Living with others,2019,242
+810,Lærdal,80 years or older,Living alone,2019,63
+811,Lærdal,80 years or older,Living with others,2019,50
+812,Årdal,67-79 years,Living alone,2019,182
+813,Årdal,67-79 years,Living with others,2019,519
+814,Årdal,80 years or older,Living alone,2019,203
+815,Årdal,80 years or older,Living with others,2019,146
+816,Luster,67-79 years,Living alone,2019,158
+817,Luster,67-79 years,Living with others,2019,477
+818,Luster,80 years or older,Living alone,2019,169
+819,Luster,80 years or older,Living with others,2019,147
+820,Askvoll,67-79 years,Living alone,2019,118
+821,Askvoll,67-79 years,Living with others,2019,339
+822,Askvoll,80 years or older,Living alone,2019,115
+823,Askvoll,80 years or older,Living with others,2019,114
+824,Fjaler,67-79 years,Living alone,2019,121
+825,Fjaler,67-79 years,Living with others,2019,276
+826,Fjaler,80 years or older,Living alone,2019,88
+827,Fjaler,80 years or older,Living with others,2019,66
+828,Sunnfjord,67-79 years,Living alone,2019,527
+829,Sunnfjord,67-79 years,Living with others,2019,1601
+830,Sunnfjord,80 years or older,Living alone,2019,405
+831,Sunnfjord,80 years or older,Living with others,2019,449
+832,Bremanger,67-79 years,Living alone,2019,141
+833,Bremanger,67-79 years,Living with others,2019,397
+834,Bremanger,80 years or older,Living alone,2019,161
+835,Bremanger,80 years or older,Living with others,2019,148
+836,Stad,67-79 years,Living alone,2019,268
+837,Stad,67-79 years,Living with others,2019,808
+838,Stad,80 years or older,Living alone,2019,224
+839,Stad,80 years or older,Living with others,2019,222
+840,Gloppen,67-79 years,Living alone,2019,189
+841,Gloppen,67-79 years,Living with others,2019,591
+842,Gloppen,80 years or older,Living alone,2019,194
+843,Gloppen,80 years or older,Living with others,2019,161
+844,Stryn,67-79 years,Living alone,2019,218
+845,Stryn,67-79 years,Living with others,2019,628
+846,Stryn,80 years or older,Living alone,2019,172
+847,Stryn,80 years or older,Living with others,2019,181
+848,Kristiansund,67-79 years,Living alone,2019,918
+849,Kristiansund,67-79 years,Living with others,2019,2198
+850,Kristiansund,80 years or older,Living alone,2019,574
+851,Kristiansund,80 years or older,Living with others,2019,424
+852,Molde,67-79 years,Living alone,2019,1067
+853,Molde,67-79 years,Living with others,2019,2868
+854,Molde,80 years or older,Living alone,2019,745
+855,Molde,80 years or older,Living with others,2019,728
+856,Ålesund,67-79 years,Living alone,2019,1829
+857,Ålesund,67-79 years,Living with others,2019,5029
+858,Ålesund,80 years or older,Living alone,2019,1466
+859,Ålesund,80 years or older,Living with others,2019,1257
+860,Vanylven,67-79 years,Living alone,2019,143
+861,Vanylven,67-79 years,Living with others,2019,398
+862,Vanylven,80 years or older,Living alone,2019,112
+863,Vanylven,80 years or older,Living with others,2019,89
+864,Sande,67-79 years,Living alone,2019,85
+865,Sande,67-79 years,Living with others,2019,241
+866,Sande,80 years or older,Living alone,2019,99
+867,Sande,80 years or older,Living with others,2019,81
+868,Herøy (Møre og Romsdal),67-79 years,Living alone,2019,221
+869,Herøy (Møre og Romsdal),67-79 years,Living with others,2019,845
+870,Herøy (Møre og Romsdal),80 years or older,Living alone,2019,237
+871,Herøy (Møre og Romsdal),80 years or older,Living with others,2019,201
+872,Ulstein,67-79 years,Living alone,2019,216
+873,Ulstein,67-79 years,Living with others,2019,633
+874,Ulstein,80 years or older,Living alone,2019,165
+875,Ulstein,80 years or older,Living with others,2019,156
+876,Hareid,67-79 years,Living alone,2019,154
+877,Hareid,67-79 years,Living with others,2019,393
+878,Hareid,80 years or older,Living alone,2019,141
+879,Hareid,80 years or older,Living with others,2019,114
+880,Ørsta,67-79 years,Living alone,2019,332
+881,Ørsta,67-79 years,Living with others,2019,932
+882,Ørsta,80 years or older,Living alone,2019,243
+883,Ørsta,80 years or older,Living with others,2019,280
+884,Stranda,67-79 years,Living alone,2019,137
+885,Stranda,67-79 years,Living with others,2019,452
+886,Stranda,80 years or older,Living alone,2019,151
+887,Stranda,80 years or older,Living with others,2019,145
+888,Sykkylven,67-79 years,Living alone,2019,216
+889,Sykkylven,67-79 years,Living with others,2019,707
+890,Sykkylven,80 years or older,Living alone,2019,166
+891,Sykkylven,80 years or older,Living with others,2019,165
+892,Sula,67-79 years,Living alone,2019,220
+893,Sula,67-79 years,Living with others,2019,639
+894,Sula,80 years or older,Living alone,2019,184
+895,Sula,80 years or older,Living with others,2019,196
+896,Giske,67-79 years,Living alone,2019,171
+897,Giske,67-79 years,Living with others,2019,638
+898,Giske,80 years or older,Living alone,2019,148
+899,Giske,80 years or older,Living with others,2019,163
+900,Vestnes,67-79 years,Living alone,2019,238
+901,Vestnes,67-79 years,Living with others,2019,589
+902,Vestnes,80 years or older,Living alone,2019,179
+903,Vestnes,80 years or older,Living with others,2019,156
+904,Rauma,67-79 years,Living alone,2019,288
+905,Rauma,67-79 years,Living with others,2019,752
+906,Rauma,80 years or older,Living alone,2019,235
+907,Rauma,80 years or older,Living with others,2019,203
+908,Aukra,67-79 years,Living alone,2019,102
+909,Aukra,67-79 years,Living with others,2019,339
+910,Aukra,80 years or older,Living alone,2019,74
+911,Aukra,80 years or older,Living with others,2019,103
+912,Averøy,67-79 years,Living alone,2019,191
+913,Averøy,67-79 years,Living with others,2019,589
+914,Averøy,80 years or older,Living alone,2019,134
+915,Averøy,80 years or older,Living with others,2019,99
+916,Gjemnes,67-79 years,Living alone,2019,94
+917,Gjemnes,67-79 years,Living with others,2019,291
+918,Gjemnes,80 years or older,Living alone,2019,76
+919,Gjemnes,80 years or older,Living with others,2019,57
+920,Tingvoll,67-79 years,Living alone,2019,120
+921,Tingvoll,67-79 years,Living with others,2019,346
+922,Tingvoll,80 years or older,Living alone,2019,111
+923,Tingvoll,80 years or older,Living with others,2019,77
+924,Sunndal,67-79 years,Living alone,2019,256
+925,Sunndal,67-79 years,Living with others,2019,600
+926,Sunndal,80 years or older,Living alone,2019,203
+927,Sunndal,80 years or older,Living with others,2019,162
+928,Surnadal,67-79 years,Living alone,2019,204
+929,Surnadal,67-79 years,Living with others,2019,673
+930,Surnadal,80 years or older,Living alone,2019,146
+931,Surnadal,80 years or older,Living with others,2019,148
+932,Smøla,67-79 years,Living alone,2019,76
+933,Smøla,67-79 years,Living with others,2019,230
+934,Smøla,80 years or older,Living alone,2019,73
+935,Smøla,80 years or older,Living with others,2019,71
+936,Aure,67-79 years,Living alone,2019,135
+937,Aure,67-79 years,Living with others,2019,399
+938,Aure,80 years or older,Living alone,2019,129
+939,Aure,80 years or older,Living with others,2019,100
+940,Volda,67-79 years,Living alone,2019,269
+941,Volda,67-79 years,Living with others,2019,920
+942,Volda,80 years or older,Living alone,2019,251
+943,Volda,80 years or older,Living with others,2019,267
+944,Fjord,67-79 years,Living alone,2019,81
+945,Fjord,67-79 years,Living with others,2019,276
+946,Fjord,80 years or older,Living alone,2019,88
+947,Fjord,80 years or older,Living with others,2019,83
+948,Hustadvika,67-79 years,Living alone,2019,399
+949,Hustadvika,67-79 years,Living with others,2019,1181
+950,Hustadvika,80 years or older,Living alone,2019,282
+951,Hustadvika,80 years or older,Living with others,2019,238
+952,Trondheim,67-79 years,Living alone,2019,5483
+953,Trondheim,67-79 years,Living with others,2019,12959
+954,Trondheim,80 years or older,Living alone,2019,3276
+955,Trondheim,80 years or older,Living with others,2019,2887
+956,teinkj,67-79 years,Living alone,2019,883
+957,teinkj,67-79 years,Living with others,2019,2326
+958,teinkj,80 years or older,Living alone,2019,686
+959,teinkj,80 years or older,Living with others,2019,595
+960,Namsos,67-79 years,Living alone,2019,527
+961,Namsos,67-79 years,Living with others,2019,1378
+962,Namsos,80 years or older,Living alone,2019,394
+963,Namsos,80 years or older,Living with others,2019,337
+964,Frøya,67-79 years,Living alone,2019,145
+965,Frøya,67-79 years,Living with others,2019,363
+966,Frøya,80 years or older,Living alone,2019,122
+967,Frøya,80 years or older,Living with others,2019,108
+968,Osen,67-79 years,Living alone,2019,53
+969,Osen,67-79 years,Living with others,2019,118
+970,Osen,80 years or older,Living alone,2019,39
+971,Osen,80 years or older,Living with others,2019,38
+972,Oppdal,67-79 years,Living alone,2019,246
+973,Oppdal,67-79 years,Living with others,2019,696
+974,Oppdal,80 years or older,Living alone,2019,192
+975,Oppdal,80 years or older,Living with others,2019,173
+976,Rennebu,67-79 years,Living alone,2019,114
+977,Rennebu,67-79 years,Living with others,2019,312
+978,Rennebu,80 years or older,Living alone,2019,80
+979,Rennebu,80 years or older,Living with others,2019,68
+980,Røros,67-79 years,Living alone,2019,273
+981,Røros,67-79 years,Living with others,2019,595
+982,Røros,80 years or older,Living alone,2019,159
+983,Røros,80 years or older,Living with others,2019,147
+984,Holtålen,67-79 years,Living alone,2019,92
+985,Holtålen,67-79 years,Living with others,2019,249
+986,Holtålen,80 years or older,Living alone,2019,47
+987,Holtålen,80 years or older,Living with others,2019,58
+988,Midtre Gauldal,67-79 years,Living alone,2019,225
+989,Midtre Gauldal,67-79 years,Living with others,2019,541
+990,Midtre Gauldal,80 years or older,Living alone,2019,167
+991,Midtre Gauldal,80 years or older,Living with others,2019,159
+992,Melhus,67-79 years,Living alone,2019,442
+993,Melhus,67-79 years,Living with others,2019,1344
+994,Melhus,80 years or older,Living alone,2019,329
+995,Melhus,80 years or older,Living with others,2019,310
+996,Skaun,67-79 years,Living alone,2019,178
+997,Skaun,67-79 years,Living with others,2019,589
+998,Skaun,80 years or older,Living alone,2019,132
+999,Skaun,80 years or older,Living with others,2019,146
+1000,Malvik,67-79 years,Living alone,2019,276
+1001,Malvik,67-79 years,Living with others,2019,1000
+1002,Malvik,80 years or older,Living alone,2019,193
+1003,Malvik,80 years or older,Living with others,2019,223
+1004,Selbu,67-79 years,Living alone,2019,141
+1005,Selbu,67-79 years,Living with others,2019,418
+1006,Selbu,80 years or older,Living alone,2019,132
+1007,Selbu,80 years or older,Living with others,2019,115
+1008,Tydal,67-79 years,Living alone,2019,25
+1009,Tydal,67-79 years,Living with others,2019,87
+1010,Tydal,80 years or older,Living alone,2019,36
+1011,Tydal,80 years or older,Living with others,2019,35
+1012,Meråker,67-79 years,Living alone,2019,113
+1013,Meråker,67-79 years,Living with others,2019,261
+1014,Meråker,80 years or older,Living alone,2019,92
+1015,Meråker,80 years or older,Living with others,2019,53
+1016,Stjørdal,67-79 years,Living alone,2019,719
+1017,Stjørdal,67-79 years,Living with others,2019,2086
+1018,Stjørdal,80 years or older,Living alone,2019,488
+1019,Stjørdal,80 years or older,Living with others,2019,462
+1020,Frosta,67-79 years,Living alone,2019,92
+1021,Frosta,67-79 years,Living with others,2019,274
+1022,Frosta,80 years or older,Living alone,2019,84
+1023,Frosta,80 years or older,Living with others,2019,74
+1024,Levanger,67-79 years,Living alone,2019,578
+1025,Levanger,67-79 years,Living with others,2019,1717
+1026,Levanger,80 years or older,Living alone,2019,408
+1027,Levanger,80 years or older,Living with others,2019,434
+1028,Verdal,67-79 years,Living alone,2019,515
+1029,Verdal,67-79 years,Living with others,2019,1423
+1030,Verdal,80 years or older,Living alone,2019,326
+1031,Verdal,80 years or older,Living with others,2019,257
+1032,Snåase - Snåsa,67-79 years,Living alone,2019,85
+1033,Snåase - Snåsa,67-79 years,Living with others,2019,227
+1034,Snåase - Snåsa,80 years or older,Living alone,2019,66
+1035,Snåase - Snåsa,80 years or older,Living with others,2019,67
+1036,Lierne,67-79 years,Living alone,2019,76
+1037,Lierne,67-79 years,Living with others,2019,141
+1038,Lierne,80 years or older,Living alone,2019,49
+1039,Lierne,80 years or older,Living with others,2019,34
+1040,Raarvihke - Røyrvik,67-79 years,Living alone,2019,24
+1041,Raarvihke - Røyrvik,67-79 years,Living with others,2019,61
+1042,Raarvihke - Røyrvik,80 years or older,Living alone,2019,18
+1043,Raarvihke - Røyrvik,80 years or older,Living with others,2019,9
+1044,Namsskogan,67-79 years,Living alone,2019,37
+1045,Namsskogan,67-79 years,Living with others,2019,97
+1046,Namsskogan,80 years or older,Living alone,2019,34
+1047,Namsskogan,80 years or older,Living with others,2019,32
+1048,Grong,67-79 years,Living alone,2019,85
+1049,Grong,67-79 years,Living with others,2019,245
+1050,Grong,80 years or older,Living alone,2019,100
+1051,Grong,80 years or older,Living with others,2019,91
+1052,Høylandet,67-79 years,Living alone,2019,43
+1053,Høylandet,67-79 years,Living with others,2019,153
+1054,Høylandet,80 years or older,Living alone,2019,39
+1055,Høylandet,80 years or older,Living with others,2019,52
+1056,Overhalla,67-79 years,Living alone,2019,105
+1057,Overhalla,67-79 years,Living with others,2019,326
+1058,Overhalla,80 years or older,Living alone,2019,80
+1059,Overhalla,80 years or older,Living with others,2019,97
+1060,Flatanger,67-79 years,Living alone,2019,37
+1061,Flatanger,67-79 years,Living with others,2019,140
+1062,Flatanger,80 years or older,Living alone,2019,34
+1063,Flatanger,80 years or older,Living with others,2019,24
+1064,Leka,67-79 years,Living alone,2019,21
+1065,Leka,67-79 years,Living with others,2019,90
+1066,Leka,80 years or older,Living alone,2019,24
+1067,Leka,80 years or older,Living with others,2019,17
+1068,Inderøy,67-79 years,Living alone,2019,211
+1069,Inderøy,67-79 years,Living with others,2019,710
+1070,Inderøy,80 years or older,Living alone,2019,166
+1071,Inderøy,80 years or older,Living with others,2019,135
+1072,Indre Fosen,67-79 years,Living alone,2019,378
+1073,Indre Fosen,67-79 years,Living with others,2019,1053
+1074,Indre Fosen,80 years or older,Living alone,2019,312
+1075,Indre Fosen,80 years or older,Living with others,2019,229
+1076,Heim,67-79 years,Living alone,2019,0
+1077,Heim,67-79 years,Living with others,2019,0
+1078,Heim,80 years or older,Living alone,2019,0
+1079,Heim,80 years or older,Living with others,2019,0
+1080,Hitra,67-79 years,Living alone,2019,0
+1081,Hitra,67-79 years,Living with others,2019,0
+1082,Hitra,80 years or older,Living alone,2019,0
+1083,Hitra,80 years or older,Living with others,2019,0
+1084,Ørland,67-79 years,Living alone,2019,415
+1085,Ørland,67-79 years,Living with others,2019,900
+1086,Ørland,80 years or older,Living alone,2019,296
+1087,Ørland,80 years or older,Living with others,2019,228
+1088,Åfjord,67-79 years,Living alone,2019,213
+1089,Åfjord,67-79 years,Living with others,2019,421
+1090,Åfjord,80 years or older,Living alone,2019,156
+1091,Åfjord,80 years or older,Living with others,2019,113
+1092,Orkland,67-79 years,Living alone,2019,0
+1093,Orkland,67-79 years,Living with others,2019,0
+1094,Orkland,80 years or older,Living alone,2019,0
+1095,Orkland,80 years or older,Living with others,2019,0
+1096,Nærøysund,67-79 years,Living alone,2019,337
+1097,Nærøysund,67-79 years,Living with others,2019,814
+1098,Nærøysund,80 years or older,Living alone,2019,215
+1099,Nærøysund,80 years or older,Living with others,2019,226
+1100,Rindal,67-79 years,Living alone,2019,66
+1101,Rindal,67-79 years,Living with others,2019,232
+1102,Rindal,80 years or older,Living alone,2019,67
+1103,Rindal,80 years or older,Living with others,2019,59
+1104,Bodø,67-79 years,Living alone,2019,1394
+1105,Bodø,67-79 years,Living with others,2019,3795
+1106,Bodø,80 years or older,Living alone,2019,911
+1107,Bodø,80 years or older,Living with others,2019,851
+1108,Narvik,67-79 years,Living alone,2019,0
+1109,Narvik,67-79 years,Living with others,2019,0
+1110,Narvik,80 years or older,Living alone,2019,0
+1111,Narvik,80 years or older,Living with others,2019,0
+1112,Bindal,67-79 years,Living alone,2019,79
+1113,Bindal,67-79 years,Living with others,2019,183
+1114,Bindal,80 years or older,Living alone,2019,45
+1115,Bindal,80 years or older,Living with others,2019,40
+1116,Sømna,67-79 years,Living alone,2019,97
+1117,Sømna,67-79 years,Living with others,2019,176
+1118,Sømna,80 years or older,Living alone,2019,58
+1119,Sømna,80 years or older,Living with others,2019,48
+1120,Brønnøy,67-79 years,Living alone,2019,269
+1121,Brønnøy,67-79 years,Living with others,2019,630
+1122,Brønnøy,80 years or older,Living alone,2019,195
+1123,Brønnøy,80 years or older,Living with others,2019,146
+1124,Vega,67-79 years,Living alone,2019,70
+1125,Vega,67-79 years,Living with others,2019,136
+1126,Vega,80 years or older,Living alone,2019,51
+1127,Vega,80 years or older,Living with others,2019,20
+1128,Vevelstad,67-79 years,Living alone,2019,32
+1129,Vevelstad,67-79 years,Living with others,2019,58
+1130,Vevelstad,80 years or older,Living alone,2019,12
+1131,Vevelstad,80 years or older,Living with others,2019,8
+1132,Herøy (Nordland),67-79 years,Living alone,2019,82
+1133,Herøy (Nordland),67-79 years,Living with others,2019,169
+1134,Herøy (Nordland),80 years or older,Living alone,2019,47
+1135,Herøy (Nordland),80 years or older,Living with others,2019,24
+1136,Alstahaug,67-79 years,Living alone,2019,288
+1137,Alstahaug,67-79 years,Living with others,2019,712
+1138,Alstahaug,80 years or older,Living alone,2019,157
+1139,Alstahaug,80 years or older,Living with others,2019,150
+1140,Leirfjord,67-79 years,Living alone,2019,93
+1141,Leirfjord,67-79 years,Living with others,2019,175
+1142,Leirfjord,80 years or older,Living alone,2019,70
+1143,Leirfjord,80 years or older,Living with others,2019,36
+1144,Vefsn,67-79 years,Living alone,2019,492
+1145,Vefsn,67-79 years,Living with others,2019,1253
+1146,Vefsn,80 years or older,Living alone,2019,380
+1147,Vefsn,80 years or older,Living with others,2019,338
+1148,Grane,67-79 years,Living alone,2019,65
+1149,Grane,67-79 years,Living with others,2019,159
+1150,Grane,80 years or older,Living alone,2019,50
+1151,Grane,80 years or older,Living with others,2019,53
+1152,Hattfjelldal,67-79 years,Living alone,2019,51
+1153,Hattfjelldal,67-79 years,Living with others,2019,177
+1154,Hattfjelldal,80 years or older,Living alone,2019,50
+1155,Hattfjelldal,80 years or older,Living with others,2019,52
+1156,Dønna,67-79 years,Living alone,2019,70
+1157,Dønna,67-79 years,Living with others,2019,160
+1158,Dønna,80 years or older,Living alone,2019,33
+1159,Dønna,80 years or older,Living with others,2019,29
+1160,Nesna,67-79 years,Living alone,2019,72
+1161,Nesna,67-79 years,Living with others,2019,142
+1162,Nesna,80 years or older,Living alone,2019,50
+1163,Nesna,80 years or older,Living with others,2019,38
+1164,Hemnes,67-79 years,Living alone,2019,195
+1165,Hemnes,67-79 years,Living with others,2019,451
+1166,Hemnes,80 years or older,Living alone,2019,133
+1167,Hemnes,80 years or older,Living with others,2019,132
+1168,Rana,67-79 years,Living alone,2019,803
+1169,Rana,67-79 years,Living with others,2019,2304
+1170,Rana,80 years or older,Living alone,2019,665
+1171,Rana,80 years or older,Living with others,2019,532
+1172,Lurøy,67-79 years,Living alone,2019,87
+1173,Lurøy,67-79 years,Living with others,2019,190
+1174,Lurøy,80 years or older,Living alone,2019,70
+1175,Lurøy,80 years or older,Living with others,2019,48
+1176,Træna,67-79 years,Living alone,2019,21
+1177,Træna,67-79 years,Living with others,2019,33
+1178,Træna,80 years or older,Living alone,2019,13
+1179,Træna,80 years or older,Living with others,2019,8
+1180,Rødøy,67-79 years,Living alone,2019,60
+1181,Rødøy,67-79 years,Living with others,2019,115
+1182,Rødøy,80 years or older,Living alone,2019,36
+1183,Rødøy,80 years or older,Living with others,2019,29
+1184,Meløy,67-79 years,Living alone,2019,242
+1185,Meløy,67-79 years,Living with others,2019,571
+1186,Meløy,80 years or older,Living alone,2019,188
+1187,Meløy,80 years or older,Living with others,2019,187
+1188,Gildeskål,67-79 years,Living alone,2019,101
+1189,Gildeskål,67-79 years,Living with others,2019,204
+1190,Gildeskål,80 years or older,Living alone,2019,70
+1191,Gildeskål,80 years or older,Living with others,2019,61
+1192,Beiarn,67-79 years,Living alone,2019,47
+1193,Beiarn,67-79 years,Living with others,2019,139
+1194,Beiarn,80 years or older,Living alone,2019,30
+1195,Beiarn,80 years or older,Living with others,2019,54
+1196,Saltdal,67-79 years,Living alone,2019,175
+1197,Saltdal,67-79 years,Living with others,2019,528
+1198,Saltdal,80 years or older,Living alone,2019,117
+1199,Saltdal,80 years or older,Living with others,2019,116
+1200,Fauske - Fuosko,67-79 years,Living alone,2019,377
+1201,Fauske - Fuosko,67-79 years,Living with others,2019,968
+1202,Fauske - Fuosko,80 years or older,Living alone,2019,248
+1203,Fauske - Fuosko,80 years or older,Living with others,2019,195
+1204,Sørfold,67-79 years,Living alone,2019,91
+1205,Sørfold,67-79 years,Living with others,2019,253
+1206,Sørfold,80 years or older,Living alone,2019,65
+1207,Sørfold,80 years or older,Living with others,2019,44
+1208,Steigen,67-79 years,Living alone,2019,137
+1209,Steigen,67-79 years,Living with others,2019,300
+1210,Steigen,80 years or older,Living alone,2019,84
+1211,Steigen,80 years or older,Living with others,2019,64
+1212,Lødingen,67-79 years,Living alone,2019,101
+1213,Lødingen,67-79 years,Living with others,2019,245
+1214,Lødingen,80 years or older,Living alone,2019,76
+1215,Lødingen,80 years or older,Living with others,2019,67
+1216,Evenes,67-79 years,Living alone,2019,68
+1217,Evenes,67-79 years,Living with others,2019,177
+1218,Evenes,80 years or older,Living alone,2019,46
+1219,Evenes,80 years or older,Living with others,2019,31
+1220,Røst,67-79 years,Living alone,2019,24
+1221,Røst,67-79 years,Living with others,2019,40
+1222,Røst,80 years or older,Living alone,2019,22
+1223,Røst,80 years or older,Living with others,2019,15
+1224,Værøy,67-79 years,Living alone,2019,30
+1225,Værøy,67-79 years,Living with others,2019,75
+1226,Værøy,80 years or older,Living alone,2019,23
+1227,Værøy,80 years or older,Living with others,2019,21
+1228,Flakstad,67-79 years,Living alone,2019,49
+1229,Flakstad,67-79 years,Living with others,2019,131
+1230,Flakstad,80 years or older,Living alone,2019,60
+1231,Flakstad,80 years or older,Living with others,2019,49
+1232,Vestvågøy,67-79 years,Living alone,2019,403
+1233,Vestvågøy,67-79 years,Living with others,2019,930
+1234,Vestvågøy,80 years or older,Living alone,2019,291
+1235,Vestvågøy,80 years or older,Living with others,2019,245
+1236,Vågan,67-79 years,Living alone,2019,351
+1237,Vågan,67-79 years,Living with others,2019,832
+1238,Vågan,80 years or older,Living alone,2019,194
+1239,Vågan,80 years or older,Living with others,2019,185
+1240,Hadsel,67-79 years,Living alone,2019,334
+1241,Hadsel,67-79 years,Living with others,2019,798
+1242,Hadsel,80 years or older,Living alone,2019,208
+1243,Hadsel,80 years or older,Living with others,2019,187
+1244,Bø,67-79 years,Living alone,2019,140
+1245,Bø,67-79 years,Living with others,2019,294
+1246,Bø,80 years or older,Living alone,2019,125
+1247,Bø,80 years or older,Living with others,2019,92
+1248,Øksnes,67-79 years,Living alone,2019,164
+1249,Øksnes,67-79 years,Living with others,2019,385
+1250,Øksnes,80 years or older,Living alone,2019,135
+1251,Øksnes,80 years or older,Living with others,2019,101
+1252,Sortland - Suortá,67-79 years,Living alone,2019,360
+1253,Sortland - Suortá,67-79 years,Living with others,2019,833
+1254,Sortland - Suortá,80 years or older,Living alone,2019,255
+1255,Sortland - Suortá,80 years or older,Living with others,2019,161
+1256,Andøy,67-79 years,Living alone,2019,199
+1257,Andøy,67-79 years,Living with others,2019,552
+1258,Andøy,80 years or older,Living alone,2019,165
+1259,Andøy,80 years or older,Living with others,2019,128
+1260,Moskenes,67-79 years,Living alone,2019,51
+1261,Moskenes,67-79 years,Living with others,2019,99
+1262,Moskenes,80 years or older,Living alone,2019,45
+1263,Moskenes,80 years or older,Living with others,2019,48
+1264,Hamarøy,67-79 years,Living alone,2019,0
+1265,Hamarøy,67-79 years,Living with others,2019,0
+1266,Hamarøy,80 years or older,Living alone,2019,0
+1267,Hamarøy,80 years or older,Living with others,2019,0
+1268,Tromsø,67-79 years,Living alone,2019,1959
+1269,Tromsø,67-79 years,Living with others,2019,4766
+1270,Tromsø,80 years or older,Living alone,2019,980
+1271,Tromsø,80 years or older,Living with others,2019,997
+1272,Harstad,67-79 years,Living alone,2019,868
+1273,Harstad,67-79 years,Living with others,2019,2213
+1274,Harstad,80 years or older,Living alone,2019,566
+1275,Harstad,80 years or older,Living with others,2019,502
+1276,Alta,67-79 years,Living alone,2019,491
+1277,Alta,67-79 years,Living with others,2019,1364
+1278,Alta,80 years or older,Living alone,2019,277
+1279,Alta,80 years or older,Living with others,2019,313
+1280,Vardø,67-79 years,Living alone,2019,120
+1281,Vardø,67-79 years,Living with others,2019,178
+1282,Vardø,80 years or older,Living alone,2019,68
+1283,Vardø,80 years or older,Living with others,2019,31
+1284,Vadsø,67-79 years,Living alone,2019,220
+1285,Vadsø,67-79 years,Living with others,2019,517
+1286,Vadsø,80 years or older,Living alone,2019,126
+1287,Vadsø,80 years or older,Living with others,2019,120
+1288,Hammerfest,67-79 years,Living alone,2019,391
+1289,Hammerfest,67-79 years,Living with others,2019,866
+1290,Hammerfest,80 years or older,Living alone,2019,216
+1291,Hammerfest,80 years or older,Living with others,2019,174
+1292,Kvæfjord,67-79 years,Living alone,2019,101
+1293,Kvæfjord,67-79 years,Living with others,2019,303
+1294,Kvæfjord,80 years or older,Living alone,2019,71
+1295,Kvæfjord,80 years or older,Living with others,2019,71
+1296,Tjeldsund,67-79 years,Living alone,2019,180
+1297,Tjeldsund,67-79 years,Living with others,2019,546
+1298,Tjeldsund,80 years or older,Living alone,2019,119
+1299,Tjeldsund,80 years or older,Living with others,2019,130
+1300,Ibestad,67-79 years,Living alone,2019,79
+1301,Ibestad,67-79 years,Living with others,2019,182
+1302,Ibestad,80 years or older,Living alone,2019,73
+1303,Ibestad,80 years or older,Living with others,2019,42
+1304,Gratangen,67-79 years,Living alone,2019,49
+1305,Gratangen,67-79 years,Living with others,2019,115
+1306,Gratangen,80 years or older,Living alone,2019,41
+1307,Gratangen,80 years or older,Living with others,2019,44
+1308,Loabák - Lavangen,67-79 years,Living alone,2019,28
+1309,Loabák - Lavangen,67-79 years,Living with others,2019,133
+1310,Loabák - Lavangen,80 years or older,Living alone,2019,39
+1311,Loabák - Lavangen,80 years or older,Living with others,2019,37
+1312,Bardu,67-79 years,Living alone,2019,138
+1313,Bardu,67-79 years,Living with others,2019,377
+1314,Bardu,80 years or older,Living alone,2019,89
+1315,Bardu,80 years or older,Living with others,2019,79
+1316,Salangen,67-79 years,Living alone,2019,100
+1317,Salangen,67-79 years,Living with others,2019,232
+1318,Salangen,80 years or older,Living alone,2019,68
+1319,Salangen,80 years or older,Living with others,2019,33
+1320,Målselv,67-79 years,Living alone,2019,215
+1321,Målselv,67-79 years,Living with others,2019,581
+1322,Målselv,80 years or older,Living alone,2019,158
+1323,Målselv,80 years or older,Living with others,2019,172
+1324,Sørreisa,67-79 years,Living alone,2019,107
+1325,Sørreisa,67-79 years,Living with others,2019,322
+1326,Sørreisa,80 years or older,Living alone,2019,76
+1327,Sørreisa,80 years or older,Living with others,2019,72
+1328,Dyrøy,67-79 years,Living alone,2019,78
+1329,Dyrøy,67-79 years,Living with others,2019,124
+1330,Dyrøy,80 years or older,Living alone,2019,47
+1331,Dyrøy,80 years or older,Living with others,2019,20
+1332,Senja,67-79 years,Living alone,2019,557
+1333,Senja,67-79 years,Living with others,2019,1348
+1334,Senja,80 years or older,Living alone,2019,354
+1335,Senja,80 years or older,Living with others,2019,315
+1336,Balsfjord,67-79 years,Living alone,2019,236
+1337,Balsfjord,67-79 years,Living with others,2019,609
+1338,Balsfjord,80 years or older,Living alone,2019,204
+1339,Balsfjord,80 years or older,Living with others,2019,149
+1340,Karlsøy,67-79 years,Living alone,2019,108
+1341,Karlsøy,67-79 years,Living with others,2019,287
+1342,Karlsøy,80 years or older,Living alone,2019,81
+1343,Karlsøy,80 years or older,Living with others,2019,76
+1344,Lyngen,67-79 years,Living alone,2019,131
+1345,Lyngen,67-79 years,Living with others,2019,369
+1346,Lyngen,80 years or older,Living alone,2019,96
+1347,Lyngen,80 years or older,Living with others,2019,81
+1348,Storfjord - Omasvuotna - Omasvuono,67-79 years,Living alone,2019,95
+1349,Storfjord - Omasvuotna - Omasvuono,67-79 years,Living with others,2019,208
+1350,Storfjord - Omasvuotna - Omasvuono,80 years or older,Living alone,2019,46
+1351,Storfjord - Omasvuotna - Omasvuono,80 years or older,Living with others,2019,40
+1352,Gáivuotna - Kåfjord - Kaivuono,67-79 years,Living alone,2019,101
+1353,Gáivuotna - Kåfjord - Kaivuono,67-79 years,Living with others,2019,255
+1354,Gáivuotna - Kåfjord - Kaivuono,80 years or older,Living alone,2019,72
+1355,Gáivuotna - Kåfjord - Kaivuono,80 years or older,Living with others,2019,72
+1356,Skjervøy,67-79 years,Living alone,2019,113
+1357,Skjervøy,67-79 years,Living with others,2019,292
+1358,Skjervøy,80 years or older,Living alone,2019,67
+1359,Skjervøy,80 years or older,Living with others,2019,61
+1360,Nordreisa,67-79 years,Living alone,2019,213
+1361,Nordreisa,67-79 years,Living with others,2019,447
+1362,Nordreisa,80 years or older,Living alone,2019,120
+1363,Nordreisa,80 years or older,Living with others,2019,93
+1364,Kvænangen,67-79 years,Living alone,2019,61
+1365,Kvænangen,67-79 years,Living with others,2019,147
+1366,Kvænangen,80 years or older,Living alone,2019,47
+1367,Kvænangen,80 years or older,Living with others,2019,36
+1368,Guovdageaidnu - Kautokeino,67-79 years,Living alone,2019,83
+1369,Guovdageaidnu - Kautokeino,67-79 years,Living with others,2019,249
+1370,Guovdageaidnu - Kautokeino,80 years or older,Living alone,2019,34
+1371,Guovdageaidnu - Kautokeino,80 years or older,Living with others,2019,76
+1372,Loppa,67-79 years,Living alone,2019,78
+1373,Loppa,67-79 years,Living with others,2019,96
+1374,Loppa,80 years or older,Living alone,2019,29
+1375,Loppa,80 years or older,Living with others,2019,35
+1376,Hasvik,67-79 years,Living alone,2019,55
+1377,Hasvik,67-79 years,Living with others,2019,73
+1378,Hasvik,80 years or older,Living alone,2019,27
+1379,Hasvik,80 years or older,Living with others,2019,25
+1380,Måsøy,67-79 years,Living alone,2019,80
+1381,Måsøy,67-79 years,Living with others,2019,127
+1382,Måsøy,80 years or older,Living alone,2019,46
+1383,Måsøy,80 years or older,Living with others,2019,34
+1384,Nordkapp,67-79 years,Living alone,2019,164
+1385,Nordkapp,67-79 years,Living with others,2019,269
+1386,Nordkapp,80 years or older,Living alone,2019,75
+1387,Nordkapp,80 years or older,Living with others,2019,54
+1388,Porsanger - Porsángu - Porsanki ,67-79 years,Living alone,2019,195
+1389,Porsanger - Porsángu - Porsanki ,67-79 years,Living with others,2019,360
+1390,Porsanger - Porsángu - Porsanki ,80 years or older,Living alone,2019,75
+1391,Porsanger - Porsángu - Porsanki ,80 years or older,Living with others,2019,92
+1392,Kárásjohka - Karasjok,67-79 years,Living alone,2019,91
+1393,Kárásjohka - Karasjok,67-79 years,Living with others,2019,200
+1394,Kárásjohka - Karasjok,80 years or older,Living alone,2019,42
+1395,Kárásjohka - Karasjok,80 years or older,Living with others,2019,68
+1396,Lebesby,67-79 years,Living alone,2019,68
+1397,Lebesby,67-79 years,Living with others,2019,103
+1398,Lebesby,80 years or older,Living alone,2019,46
+1399,Lebesby,80 years or older,Living with others,2019,28
+1400,Gamvik,67-79 years,Living alone,2019,64
+1401,Gamvik,67-79 years,Living with others,2019,96
+1402,Gamvik,80 years or older,Living alone,2019,25
+1403,Gamvik,80 years or older,Living with others,2019,22
+1404,Berlevåg,67-79 years,Living alone,2019,61
+1405,Berlevåg,67-79 years,Living with others,2019,94
+1406,Berlevåg,80 years or older,Living alone,2019,34
+1407,Berlevåg,80 years or older,Living with others,2019,24
+1408,Deatnu - Tana,67-79 years,Living alone,2019,141
+1409,Deatnu - Tana,67-79 years,Living with others,2019,292
+1410,Deatnu - Tana,80 years or older,Living alone,2019,78
+1411,Deatnu - Tana,80 years or older,Living with others,2019,58
+1412,Unjárga - Nesseby,67-79 years,Living alone,2019,63
+1413,Unjárga - Nesseby,67-79 years,Living with others,2019,105
+1414,Unjárga - Nesseby,80 years or older,Living alone,2019,33
+1415,Unjárga - Nesseby,80 years or older,Living with others,2019,23
+1416,Båtsfjord,67-79 years,Living alone,2019,81
+1417,Båtsfjord,67-79 years,Living with others,2019,180
+1418,Båtsfjord,80 years or older,Living alone,2019,42
+1419,Båtsfjord,80 years or older,Living with others,2019,26
+1420,Sør-Varanger,67-79 years,Living alone,2019,375
+1421,Sør-Varanger,67-79 years,Living with others,2019,753
+1422,Sør-Varanger,80 years or older,Living alone,2019,226
+1423,Sør-Varanger,80 years or older,Living with others,2019,172
+1424,Svalbard and Jan Mayen,67-79 years,Living alone,2019,0
+1425,Svalbard and Jan Mayen,67-79 years,Living with others,2019,0
+1426,Svalbard and Jan Mayen,80 years or older,Living alone,2019,0
+1427,Svalbard and Jan Mayen,80 years or older,Living with others,2019,0
+1428,Continental shelf,67-79 years,Living alone,2019,0
+1429,Continental shelf,67-79 years,Living with others,2019,0
+1430,Continental shelf,80 years or older,Living alone,2019,0
+1431,Continental shelf,80 years or older,Living with others,2019,0
+1432,Divided municalities and unknown,67-79 years,Living alone,2019,2000
+1433,Divided municalities and unknown,67-79 years,Living with others,2019,5122
+1434,Divided municalities and unknown,80 years or older,Living alone,2019,1514
+1435,Divided municalities and unknown,80 years or older,Living with others,2019,1250

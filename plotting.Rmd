@@ -1,0 +1,1757 @@
+---
+title: "Plotting notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+source('set_up.R')
+```
+
+## Load in the data
+
+```{r trondelag_states_standard, eval=TRUE}
+filename_states <- 'results/summaries/States100Prev0.005trondelag.txt'
+filename_states <- 'results/summaries/States_default.txt'
+
+states <- read_state_file(filename_states) 
+
+states_mean <- states %>%
+  # drop_na() %>% 
+  group_by(municipality, commuter_fraction, mutation_chance, state) %>% 
+  summarise(count = mean(count), .groups = 'drop_last') %>% 
+  ungroup()
+
+states_mean
+states
+```
+
+```{r trondelag_r, eval=TRUE}
+filename_r <- 'results/summaries/R100Prev0.005trondelag.txt'
+filename_r <- 'results/summaries/R_default.txt'
+
+r <- read_r_file(filename_r)
+
+r_mean <- calculate_r_mean(r)
+
+unique(r$commuter_fraction)
+unique(r$mutation_chance)
+
+r_mean
+r
+```
+
+
+## Plotting mean R
+
+```{r daily_R_ribbon_trondelag_facet, eval = FALSE}
+r %>%
+  filter(municipality != 'trondelag') %>%
+  group_by(municipality, day, color) %>%
+  summarise(mean = mean(r, na.rm = TRUE),
+            std = sd(r, na.rm = TRUE),
+            .groups = 'keep') %>%
+	mutate(ymin = mean - std, ymax = mean + std) %>% 
+	mutate(ymin = ifelse(ymin < 0,0,ymin), ymax = ifelse(ymax > 2,2,ymax)) %>% 
+  ggplot(aes(day)) +
+  geom_line(y = 1, linetype = 2, color = 'black') +
+  geom_ribbon(aes(ymin = ymin, ymax = ymax), fill = 'grey',
+              alpha = 0.6) +
+  geom_line(aes(y = mean, color = I(color)), size = 1) +
+  facet_wrap( ~ municipality) +
+  ylim(0, 2) +
+  labs(
+    x = 'Day',
+    y = "Mean reproduction number"
+    ) +
+  theme(
+    axis.text.x = element_text(size = 14),
+    axis.text.y = element_text(size = 14)
+  )
+
+ggsave('daily_R_ribbon_trondelag_facet.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r daily_R_ribbon_trondelag.png, eval=FALSE}
+r %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>%
+  filter(municipality == 'trondelag') %>%
+  group_by(municipality, day) %>%
+  summarise(mean = mean(r),
+            std = sd(r),
+            .groups = 'drop') %>%
+  ggplot(aes(day)) +
+  geom_ribbon(aes(ymin = mean - std, ymax = mean + std),
+              alpha = 0.6,
+              fill = 'grey') +
+  geom_line(y = 1, linetype = 'dashed') +
+  geom_line(aes(y = mean)) +
+  # facet_wrap(~municipality) +
+  ylim(0, 2) +
+  labs(
+    x = 'Day',
+    y = "Mean reproduction number"
+    )
+
+ggsave('daily_R_ribbon_trondelag.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r dailyR5, eval=FALSE}
+r %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(municipality == 'trondelag') %>%
+  filter(run <= 5) %>%
+  ggplot(aes(day, r)) +
+  geom_line(y = 1, linetype = 2, color = 'black') +
+  geom_path(alpha = 0.4, size = 1, aes(group = run)) +
+  ylim(0.5,2) +
+  labs(x = 'Day',
+       y = "Reproduction number")
+
+ggsave('daily_R_trondelag_5runs.png', width = width, height = height*0.75, dpi = dpi, path = path)
+
+r %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(municipality != 'trondelag') %>%
+  filter(run <= 5) %>%
+  ggplot(aes(day, r)) +
+  geom_line(y = 1, linetype = 2, color = 'black') +
+  geom_path(aes(group = run, color = I(color)), alpha = 0.5) +
+  facet_wrap(~municipality) +
+  ylim(0.5,2) +
+  labs(x = 'Day',
+       y = "Reproduction number")
+
+ggsave('daily_R_trondelag_5runs_facet.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r daily_states, eval=FALSE}
+states %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(run <= 5) %>%
+  filter(state %in% c('E','I','D','H')) %>% 
+  group_by(run, day, state) %>% 
+  summarise(count = sum(count)) %>% 
+  ungroup() %>% 
+  mutate(state = fct_recode(state, Infected = 'I',Exposed = 'E',
+                            Dead = 'D',Hospitalised = 'H')) %>% 
+  mutate(state = fct_relevel(state, 'Infected','Exposed','Hospitalised')) %>%
+  ggplot(aes(day, count, color = state, group = interaction(state, run))) +
+  geom_path(alpha = 0.4, size = 2) +
+	guides(color = guide_legend(override.aes = list(alpha = 1))) +
+	scale_fill_brewer(palette = 'Set1', aesthetics = c('fill','color')) +
+  labs(x = 'Day',
+       y = "Individuals in each state",
+       color = 'Disease state')
+
+ggsave('daily_states_trondelag_5runs.png', width = width, height = height*0.75, dpi = dpi, path = path)
+
+states %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(run <= 5) %>%
+  filter(state %in% c('E','I','D','H')) %>% 
+  mutate(state = fct_recode(state, Infected = 'I',Exposed = 'E',
+                            Dead = 'D',Hospitalised = 'H')) %>% 
+  mutate(state = fct_relevel(state, 'Infected','Exposed','Hospitalised')) %>%
+  ggplot(aes(day, count, color = state, group = interaction(state, run))) +
+  geom_path(alpha = 0.4) +
+  facet_wrap(~municipality) +
+	guides(color = guide_legend(override.aes = list(alpha = 1, size = 2))) +
+	scale_fill_brewer(palette = 'Set1', aesthetics = c('fill','color')) +
+  labs(x = 'Day',
+       y = "Individuals in each state",
+       color = 'Disease state')
+
+ggsave('daily_states_trondelag_5runs_facet.png', width = width, height = height, dpi = dpi, path = path)
+
+states %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(run <= 5) %>%
+  filter(state %in% c('E','I','D','H')) %>% 
+  mutate(state = fct_recode(state, Infected = 'I',Exposed = 'E',
+                            Dead = 'D',Hospitalised = 'H')) %>% 
+  mutate(state = fct_relevel(state, 'Infected','Exposed','Hospitalised')) %>%
+  ggplot(aes(day, count, color = state, group = interaction(state, run))) +
+  geom_path(alpha = 0.4) +
+  facet_wrap(~municipality, scales = 'free_y') +
+	guides(color = guide_legend(override.aes = list(alpha = 1, size = 2))) +
+	scale_fill_brewer(palette = 'Set1', aesthetics = c('fill','color')) +
+  labs(x = 'Day',
+       y = "Individuals in each state",
+       color = 'Disease state') +
+	theme(
+		axis.text.x = element_text(size = 10),
+		axis.text.y = element_text(size = 10)
+	)
+
+ggsave('daily_states_trondelag_5runs_facet_freey.png', width = width, height = height, dpi = dpi, path = path)
+
+states %>%
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(state %in% c('E','I','D','H')) %>% 
+  mutate(state = fct_recode(state, Infected = 'I',Exposed = 'E',
+                            Dead = 'D',Hospitalised = 'H')) %>% 
+  mutate(state = fct_relevel(state, 'Infected','Exposed','Hospitalised')) %>%
+	group_by(day, state, municipality) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+	mutate(ymin = (mean - sd), ymax = mean + sd) %>% 
+	mutate(ymin = ifelse(ymin < 0, 0, ymin)) %>% 
+  ggplot(aes(day, mean, color = state, fill = state)) +
+  geom_ribbon(aes(ymin = ymin, ymax = ymax),
+              alpha = 0.4) +
+  geom_path() +
+  facet_wrap(~municipality, scales = 'free_y') +
+	guides(fill = guide_legend(override.aes = list(alpha = 1)),
+				 color = guide_none()) +
+	scale_fill_brewer(palette = 'Set1', aesthetics = c('fill','color')) +
+  labs(x = 'Day',
+       y = "Individuals in each state",
+       fill = 'Disease state') +
+	theme(
+		axis.text.x = element_text(size = 10),
+		axis.text.y = element_text(size = 10)
+	)
+
+ggsave('daily_states_trondelag_mean_facet_freey.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r daily_states2, eval=FALSE}
+states_pop <- states %>% 
+  filter(commuter_fraction == 1 & mutation_chance == 0) %>% 
+  filter(run <= 5) %>%
+  filter(state %in% c('E','I','D','H')) %>% 
+  mutate(state = fct_recode(state, Infected = 'I',Exposed = 'E',
+                            Dead = 'D',Hospitalised = 'H')) %>% 
+  mutate(state = fct_relevel(state, 'Infected','Exposed','Hospitalised')) %>% 
+	mutate(count_per_pop = count/population)
+
+states_pop %>% 
+  ggplot(aes(day, count_per_pop, color = state, group = interaction(state, run))) +
+  geom_path(alpha = 0.4) +
+	guides(color = guide_legend(override.aes = list(alpha = 1))) +
+  facet_wrap(~municipality) +
+  labs(x = 'Day',
+       y = "Fraction of population in each state",
+       color = 'Disease state')
+
+ggsave('daily_states_trondelag_5runs_facet_perpop.png', width = width, height = height, dpi = dpi, path = path)
+
+```
+
+
+```{r ridges_trondelag, eval=FALSE}
+r %>% 
+  filter(municipality != 'trondelag') %>% 
+  filter(mutation_chance == 0 & commuter_fraction == 1) %>% 
+  filter(day > 15 & day < 45) %>%
+  group_by(municipality, run, commuter_fraction, color) %>% 
+  summarise(r = mean(r), .groups = 'keep') %>% 
+  ungroup() %>% 
+  ggplot(aes(r, municipality, fill = I(color))) +
+  geom_density_ridges(alpha = 0.8, rel_min_height = 0.01, bandwidth = 0.03) +
+  geom_vline(xintercept = 1, linetype = 2) +
+  scale_y_discrete(limits = rev) +
+  xlim(0.5, 2) +
+  labs(
+    y = 'Municipality',
+    x = 'Mean reproduction number'
+  ) +
+  theme(legend.key.size = unit(0.5,'in'),
+  			axis.text.y = element_text(size = 12))
+
+ggsave('ridges_trondelag.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r population_R_trondelag, eval=FALSE}
+r_mean %>% 
+	ggplot(aes(population, r)) +
+  geom_hline(yintercept = 1, linetype = 2) +
+  geom_smooth(method = 'lm', color = 'black', alpha = 0.4, formula = y ~ x, linetype = 2) +
+  geom_jitter(aes(color = I(color), size = log(population)), height = 0, alpha = 0.8) +
+  geom_text_repel(aes(
+    label = ifelse(municipality %in% highlights, as.character(municipality), ''), 
+    color = I(color)), 
+    size = 5) +
+  scale_x_continuous(trans = 'log10', labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+	coord_trans(x = 'log10') +
+  labs(
+    x = 'Population size',
+    y = 'Reproduction number'
+  ) + 
+  theme(
+    legend.position = 'none'
+  )
+	
+ggsave('population_R_trondelag.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r population_R_trondelag_lm, eval=FALSE}
+r.lm <- r_mean %>% 
+  filter(municipality != 'trondelag') %>% 
+	lm(r ~ population, data = .)
+
+summary(r.lm)
+
+r.lm.anova <- anova(r.lm)
+
+r.lm.anova
+
+```
+
+
+```{r r_commuter}
+r_commuters <- read_r_file('results/summaries/R_commuters.txt')
+
+r_commuters_mean <- calculate_r_mean(r_commuters)
+
+state_commuters <- read_state_file('results/summaries/States_commuters.txt')
+```
+
+```{r commuter_r_line, eval = FALSE}
+r_commuters %>% 
+  filter(municipality != 'trondelag') %>% 
+	group_by(commuter_fraction, municipality, day) %>% 
+	summarise(r = mean(r, na.rm = TRUE)) %>% 
+	ungroup() %>% 
+	mutate(commuter_fraction = fct_rev(as_factor(commuter_fraction))) %>% 
+  ggplot(aes(day, r, color = commuter_fraction)) +
+	geom_hline(yintercept = 1, linetype = 2) +
+  geom_line() +
+  facet_wrap(~municipality) +
+  scale_color_viridis_d(option = 'viridis', end = 0.8) +
+  labs(
+    x = 'Day',
+    y = 'Reproduction number',
+    color = 'Commuters'
+    ) +
+  theme(
+  	legend.position = 'right'
+  )
+
+ggsave('commuter_r_line.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r commuter_vs_r, eval=FALSE}
+r_commuters_mean %>% 
+  left_join(municipalities) %>% 
+  ggplot(aes(commuter_fraction, r, size = population, fill = I(color))) +
+  geom_jitter(height = 0, width = 0.02, pch = 21, color = 'white') + 
+  geom_text_repel(aes(label = ifelse(municipality %in% highlights, municipality, ''), color = I(color)), size = 5) +
+  scale_size_continuous(trans = 'log10', 
+                        guide = guide_legend(override.aes = list(fill = "black")),
+                        labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+  # geom_smooth(aes(group = color, color = I(color)), size = 1, alpha = 0.2) +
+  scale_fill_identity(guide = 'none', aesthetics = c('color','fill')) +
+	ylim(0.9,1.4) +
+  labs(
+    x = 'Commuter fraction',
+    y = 'Reproduction number',
+    size = 'Population size',
+    fill = 'Municipality'
+  )
+
+ggsave('commuter_vs_r.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r commuter_states, eval=FALSE}
+state_commuters %>%
+  filter(state %in% c('I')) %>% 
+	group_by(day, state, municipality, commuter_fraction) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+	mutate(commuter_fraction = fct_rev(as_factor(commuter_fraction))) %>% 
+  ggplot(aes(day, mean, color = commuter_fraction)) +
+  geom_path() +
+  facet_wrap(~municipality, scales = 'free_y') +
+	scale_color_viridis_d(option = 'viridis', end = 0.8) +
+  labs(x = 'Day',
+       y = "Number of infected",
+       color = 'Commuters') +
+	theme(
+		axis.text.x = element_text(size = 10),
+		axis.text.y = element_text(size = 10),
+		legend.position = 'right',
+		strip.text.x = element_text(size = 16)
+	)
+
+ggsave('daily_states_commuters.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r r_mutation}
+r_mutations <- read_r_file('results/summaries/R_mutations.txt') %>% 
+	mutate(mutation_chance = mutation_chance + 1)
+
+r_mutations_mean <- calculate_r_mean(r_mutations)
+
+state_mutations <- read_state_file('results/summaries/States_mutations.txt') %>% 
+	mutate(mutation_chance = mutation_chance + 1)
+```
+
+```{r mutation_r_line, eval = FALSE}
+r_mutations %>% 
+  filter(municipality != 'trondelag') %>% 
+	group_by(mutation_chance, municipality, day) %>% 
+	summarise(r = mean(r, na.rm = TRUE)) %>% 
+	ungroup() %>% 
+	mutate(mutation_chance = fct_rev(as_factor(mutation_chance))) %>% 
+  ggplot(aes(day, r, color = mutation_chance)) +
+	geom_hline(yintercept = 1, linetype = 2) +
+  geom_line() +
+  facet_wrap(~municipality) +
+  scale_color_viridis_d(option = 'rocket', end = 0.8) +
+  labs(
+    x = 'Day',
+    y = 'Reproduction number',
+    color = str_wrap('Mutation infectivity', width = 12)
+    ) +
+  theme(
+  	# axis.text.x = element_text(size = 10),
+		# axis.text.y = element_text(size = 10),
+  	legend.position = 'right'
+  )
+
+ggsave('mutation_r_line.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r mutation_vs_r, eval=FALSE}
+r_mutations_mean %>% 
+  ggplot(aes(mutation_chance, r, size = population, fill = I(color))) +
+  geom_jitter(height = 0, width = 0.02, pch = 21, color = 'white') + 
+  geom_text_repel(aes(label = ifelse(municipality %in% highlights, as.character(municipality), ''), color = I(color)), size = 5) +
+  scale_size_continuous(trans = 'log10', 
+                        guide = guide_legend(override.aes = list(fill = "black")),
+                        labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+  scale_fill_identity(guide = 'none', aesthetics = c('color','fill')) +
+	scale_x_continuous(breaks = c(1,1.25,1.5,1.75,2), labels = label_number()) +
+  ylim(0.9,1.4) +
+	labs(
+    x = 'Mutation infectivity',
+    y = 'Reproduction number',
+    size = 'Population size'
+  )
+
+ggsave('mutation_vs_r.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+
+```{r mutation_states, eval=FALSE}
+state_mutations %>%
+  filter(state %in% c('I')) %>% 
+	group_by(day, state, municipality, mutation_chance) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+	mutate(mutation_chance = fct_rev(as_factor(mutation_chance))) %>% 
+  ggplot(aes(day, mean, color = mutation_chance)) +
+  geom_path() +
+  facet_wrap(~municipality, scales = 'free_y') +
+	scale_color_viridis_d(option = 'rocket', end = 0.8) +
+  labs(x = 'Day',
+       y = "Number of infected",
+       color = str_wrap('Mutation infectivity', width = 12)) +
+	theme(
+		axis.text.x = element_text(size = 10),
+		axis.text.y = element_text(size = 10),
+		legend.position = 'right',
+		strip.text.x = element_text(size = 16)
+	)
+
+ggsave('daily_states_mutations.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+# Seeds
+
+```{r wranglers_OLD, eval=FALSE}
+combine_state_files <- function(filename, name) {
+  states <- read_state_file(filename) %>% 
+    mutate(seed = name)
+  return(states)
+}
+
+combine_r_files <- function(filename, name) {
+  r <- read_r_file(filename) %>% 
+    mutate(seed = name)
+  return(r)
+}
+
+names <- c('Trondheim','Frøya','Malvik','Stjørdal','Røyrvik', 'Leka','Namsos','')
+
+filenames <- paste(folder, filename_state, names, '.txt', sep = '')
+filenames[8] <- "results/summaries/States100Prev0.005trondelagSeed.txt"
+
+combined_states <- map2_dfr(filenames, names, combine_state_files) %>% 
+  select(!c(commuter_fraction, mutation_chance))
+
+combined_states
+
+combined_r <- map2_dfr(str_replace(filenames,'States','R'), 
+                             names, combine_r_files) %>% 
+  filter(mutation_chance == 0 & commuter_fraction == 1 & run < 41) %>% 
+  select(!c(commuter_fraction, mutation_chance)) %>% 
+  mutate(seed = ifelse(seed == '','Default',seed))
+```
+
+
+```{r r_seeds}
+filename_seeds_state <- 'results/summaries/States_seeds.txt'
+filename_seeds <- 'results/summaries/R_seeds.txt'
+
+r_seeds <- read_r_file(filename_seeds) %>% 
+	left_join(colors %>% rename(seed = municipality, color_seed = color), by = 'seed') %>% 
+	mutate(color_seed = replace_na(color_seed,'black')) %>% 
+	mutate(seed = fct_relevel(seed, 'Default','Trondheim','Stjørdal','Namsos','Oppdal','Frøya')) 
+
+r_seeds_mean <- calculate_r_mean(r_seeds) 
+
+states_seeds <- read_state_file(filename_seeds_state)
+
+r_seeds_mean
+r_seeds
+```
+
+
+```{r boxplot_seed, eval=FALSE}
+r_seeds %>%
+	group_by(run, municipality, seed, color_seed) %>% 
+	summarise(r = mean(r, na.rm = TRUE)) %>% 
+  filter(municipality == 'trondelag') %>%
+	# mutate(seed = fct_reorder(seed, r, mean)) %>% 
+  ggplot(aes(seed, r, fill = I(color_seed))) + 
+  geom_hline(yintercept = 1, linetype = 2) +
+  geom_boxplot(alpha = 0.8) +
+  geom_jitter(height = 0, alpha = 0.8, pch = 21, size = 2) +
+	labs(
+    x = 'Seed municipality',
+    y = 'Reproduction number'
+  ) +
+  ylim(0, 2.5) +
+  theme(legend.position = "none")
+
+ggsave('boxplot_seeds.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+
+```{r seeds_ridge, eval=FALSE}
+r_seeds %>%
+	group_by(run, municipality, seed, color_seed) %>% 
+	summarise(r = mean(r, na.rm = TRUE)) %>% 
+  filter(municipality == 'trondelag') %>%
+  mutate(seed = fct_reorder(seed, r, .fun = sd, .desc = FALSE)) %>%
+  ggplot(aes(r, seed, fill = I(color_seed))) + 
+  geom_density_ridges(rel_min_height = 0.01, bandwidth = 0.05, alpha = 0.8) + 
+  geom_vline(xintercept = 1, linetype = 2) +
+  labs(
+    x = 'Reproduction number',
+    y = 'Seed municipality',
+    fill = 'Reproduction number'
+  ) +
+  xlim(0, 2.5) +
+	scale_y_discrete(limits = rev) +
+  theme(legend.position = 'none')
+
+ggsave('seeds_ridge_trondelag.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r seeds_state}
+states_seeds %>%
+  filter(state %in% c('I')) %>% 
+	group_by(day, state, municipality, seed) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+	left_join(colors, by = c('seed' = 'municipality')) %>% 
+  ggplot(aes(day, mean, color = I(color))) +
+  geom_path() +
+  facet_wrap(~municipality, scales = 'free_y') +
+	scale_color_identity(guide = guide_legend(override.aes = list(size = 2)), breaks = colors$color, labels = colors$municipality) +
+  labs(
+  	x = 'Day',
+    y = "Number of infected",
+    color = str_wrap('Seed municipality', width = 12)
+  ) +
+	theme(
+		axis.text.x = element_text(size = 10),
+		axis.text.y = element_text(size = 10),
+		legend.position = 'right',
+		strip.text.x = element_text(size = 14)
+	)
+
+ggsave('daily_states_seed.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r, eval=FALSE}
+labels <- colors$municipality
+breaks <- colors$color
+
+r_seeds %>%
+  filter(municipality != 'trondelag') %>%
+	filter(seed != 'Default') %>% 
+  group_by(day, municipality, seed, color_seed) %>%
+  summarise(r = mean(r, na.rm = TRUE), .groups = 'keep') %>%
+  ungroup() %>%
+  ggplot(aes(day, r, color = I(color_seed))) +
+  geom_line(y = 1, linetype = 2, color = 'black') +
+  geom_path(alpha = 0.8) +
+  facet_wrap( ~ municipality) +
+  ylim(0, 2) +
+	scale_color_identity(name = str_wrap('Seed municipality', width = 10), breaks = breaks, labels = labels, guide = guide_legend(override.aes = list(size = 2))) +
+	labs(
+    x = 'Day',
+    y = "Mean reproduction number"
+    ) +
+	theme(
+		legend.position = 'right',
+		axis.text.x = element_text(size = 12),
+		axis.text.y = element_text(size = 12)
+		)
+
+ggsave('seeds_path.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r R_density_seed, eval=FALSE}
+r_seeds %>%
+  filter(day > 15 & day < 45) %>%
+  # drop_na() %>%
+  filter(municipality != 'trondelag') %>%
+  ggplot(aes(r, municipality, fill = stat(x))) +
+  geom_density_ridges_gradient(rel_min_height = 0.1, bandwidth = 0.1) + 
+  geom_vline(xintercept = 1, linetype = 2) +
+  scale_fill_viridis_c(option = 'mako', begin = 0.2) +
+  facet_wrap(~seed) +
+  labs(
+    y = 'Municipality',
+    x = 'Reproduction number',
+    fill = 'Seed municipality'
+  ) +
+  xlim(0, 2) +
+  scale_y_discrete(limits = rev) +
+  theme(axis.text.y = element_text(size = 8),
+        legend.position = 'none')
+
+ggsave('R_density_seed.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+## Ridges
+
+```{r ridge_states, eval = FALSE}
+states_seeds %>%
+  filter(state %in% c('D','ICU','I')) %>%
+  filter(count > 0) %>%
+  group_by(state, municipality, run, seed) %>%
+  slice_max(n = 1, order_by = count, with_ties = FALSE) %>%
+  ungroup() %>%
+  mutate(municipality = fct_reorder(municipality, day, .fun = median)) %>%
+  ggplot(aes(day, municipality, fill = seed)) +
+  geom_density_ridges(alpha = 0.4, rel_min_height = 0.05) +
+  facet_wrap( ~ state) +
+  labs(
+    x = 'Day of peak state',
+    y = 'Municipality',
+    fill = 'Seed municipality'
+  ) +
+  theme(legend.position = "bottom",
+        axis.text.y = element_text(size = 10))
+
+ggsave('peak_states.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r ridge_seeds, eval = FALSE}
+states_seed %>%
+  filter(seed %in% c('Namsos','Malvik','Stjørdal')) %>%
+  filter(state %in% c('D','ICU','I')) %>%
+  filter(count > 0) %>%
+  group_by(state, municipality, run, seed) %>%
+  slice_max(n = 1, order_by = count, with_ties = FALSE) %>%
+  ungroup() %>%
+  # mutate(municipality = fct_reorder(municipality, day, .fun = median)) %>%
+  ggplot(aes(day, municipality, fill = state)) +
+  geom_density_ridges(alpha = 0.4, rel_min_height = 0.05) +
+  facet_wrap( ~ seed) +
+  labs(
+    x = 'day of peak state',
+    y = 'Municipality',
+    title = 'day of peak ICU value',
+    subtitle = 'After 20 runs, with different seed municipalitites',
+    fill = 'Seed municipality'
+  ) +
+  theme(legend.position = "bottom",
+        axis.text.y = element_text(size = 10))
+
+ggsave('peak_seeds.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+## Prevalence
+
+```{r prevalence}
+filename_prevalence <- 'results/summaries/R_prevalence.txt'
+
+r_prevalence <- read_r_file(filename_prevalence)
+
+unique(r_prevalence$prevalence)
+
+r_prevalence
+
+filename_prevalence_states <- 'results/summaries/States_prevalence.txt'
+states_prevalence <- read_state_file(filename_prevalence_states)
+states_prevalence
+```
+
+```{r prevalence_R, eval=FALSE}
+cols <- rev(c('#c994c7','#df65b0','#dd1c77','#980043'))
+
+r_prevalence %>%
+  filter(municipality != 'trondelag') %>%
+	mutate(prevalence = as.character(prevalence)) %>%
+  group_by(municipality, day, prevalence) %>%
+  summarise(r = mean(r, na.rm = TRUE), .groups = 'keep') %>%
+  ungroup() %>%
+  ggplot(aes(day, r, color = prevalence)) +
+  geom_line(y = 1, linetype = 'dashed', color = 'black') +
+  geom_path() +
+  facet_wrap( ~ municipality) +
+	scale_colour_manual(values = cols, labels = c('0.05', '0.005', '0.0005', '0.00005')) +
+	guides(color = guide_legend(override.aes = list(size = 2))) +
+  ylim(0.5, 2) +
+  labs(
+    x = 'Day',
+    y = "Reproduction number",
+    color = 'Prevalence'
+  ) +
+  theme(legend.position = 'right',
+  			strip.text.x = element_text(size = 16)
+  )
+
+ggsave('daily_R_prevalence_trondelag.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r states_prevalence, eval=FALSE}
+cols <- rev(c('#c994c7','#df65b0','#dd1c77','#980043'))
+states_prevalence %>%
+  filter(state %in% c('I')) %>% 
+	group_by(day, state, municipality, prevalence) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+  ggplot(aes(day, mean, color = factor(prevalence))) +
+  geom_path() +
+  facet_wrap(~municipality, scales = 'free_y') +
+	scale_colour_manual(values = cols, labels = c('0.05', '0.005', '0.0005', '0.00005'), guide = guide_legend(override.aes = list(size = 2))) +
+  labs(
+  	x = 'Day',
+    y = "Number of infected",
+    color = 'Prevalence'
+  ) +
+	theme(
+		axis.text.x = element_text(size = 10),
+		axis.text.y = element_text(size = 10),
+		legend.position = 'right',
+		strip.text.x = element_text(size = 14)
+	)
+
+ggsave('daily_states_prevalence.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+## Strategy
+
+```{r strategy, eval=TRUE}
+filename_strategy <- 'results/summaries/R_strategies.txt'
+
+r_strategy <- read_r_file(filename_strategy)
+
+r_strategy
+
+filename_strategy_states <- 'results/summaries/States_strategies.txt'
+states_strategy <- read_state_file(filename_strategy_states)
+
+filename_strategy_norway <- 'results/summaries/R20norgeStrategy.txt'
+# r_norway_strategy <- read_csv(filename_strategy_norway, col_types = cols()) %>% 
+#     pivot_longer(cols = !c(commuter_fraction, strategy, run, day), 
+#                  names_to = "municipality", 
+#                  values_to = "r") %>% 
+#   left_join(municipalities %>% select(municipality, county, population), by = 'municipality') %>% 
+#   mutate(county = ifelse(municipality == 'norge','Norge',county)) %>% 
+#   mutate(county = fct_reorder(county, population, sum, .desc = TRUE)) 
+
+# r_norway_strategy
+```
+
+
+```{r strategy_trondelag, eval=FALSE}
+cols <- rev(c('#d0d1e6','#a6bddb','#74a9cf','#2b8cbe','#045a8d'))
+
+r_strategy %>%
+  filter(municipality != 'trondelag') %>%
+  drop_na() %>%
+  group_by(municipality, day, strategy) %>%
+  summarise(r = mean(r), .groups = 'keep') %>%
+  ungroup() %>%
+  mutate(strategy = fct_rev(factor(strategy))) %>% 
+  ggplot(aes(day, r, color = strategy)) +
+  geom_line(y = 1, linetype = 'dashed', color = 'black') +
+  geom_path() +
+  facet_wrap( ~ municipality) +
+	scale_color_manual(values = cols) +
+	guides(color = guide_legend(override.aes = list(size = 2))) +
+  ylim(0, 2) +
+  labs(
+    x = 'Day',
+    y = "Reproduction number",
+    color = 'Strategy'
+  ) +
+  theme(
+  	legend.position = 'right',
+  	axis.text = element_text(size = 10),
+  	strip.text.x = element_text(size = 16)
+  )
+
+ggsave('daily_R_strategy_trondelag.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r states_strategy}
+cols <- rev(c('#d0d1e6','#a6bddb','#74a9cf','#2b8cbe','#045a8d'))
+
+states_strategy %>%
+  filter(state %in% c('I')) %>% 
+	group_by(day, state, municipality, strategy) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+	mutate(strategy = fct_rev(factor(strategy))) %>% 
+  ggplot(aes(day, mean, color = strategy)) +
+  geom_path() +
+  facet_wrap(~municipality, scales = 'free_y') +
+	scale_colour_manual(values = cols, guide = guide_legend(override.aes = list(size = 2))) +
+  labs(
+  	x = 'Day',
+    y = "Number of infected",
+    color = 'Strategy'
+  ) +
+	theme(
+		axis.text = element_text(size = 10),
+		legend.position = 'right',
+		strip.text.x = element_text(size = 14)
+	)
+
+ggsave('daily_states_strategy.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r strategy_norway, eval=FALSE}
+r_norway_strategy %>%
+  filter(!is.na(county)) %>%
+  # drop_na() %>% 
+  group_by(county, day, strategy) %>%
+  summarise(mean = mean(r, na.rm = TRUE),
+            sd = sd(r),
+            .groups = 'keep') %>%
+  ungroup() %>%
+  mutate(strategy = fct_rev(factor(strategy))) %>% 
+  ggplot(aes(day, mean, color = strategy)) +
+  geom_line(y = 1, linetype = 'dashed', color = 'black') +
+  geom_path() +
+  facet_wrap( ~ county) +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  ylim(0, 1.5) +
+  labs(
+    x = 'Day',
+    y = "Reproduction number",
+    color = 'Strategy'
+  ) +
+  theme(
+    legend.position = 'right'
+  )
+
+ggsave('strategy_dailyR_norway.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r strategy_norway_tile, eval=FALSE}
+r_norway_strategy %>%
+  filter(municipality != 'norge') %>%
+  drop_na() %>% 
+  mutate(strategy = as_factor(strategy)) %>% 
+  group_by(county, day, strategy) %>%
+  summarise(r = mean(r), .groups = 'keep') %>%
+  ungroup() %>%
+  ggplot(aes(day, strategy, fill = r)) +
+  geom_tile() +
+  scale_fill_viridis_c(option = 'inferno') +
+  facet_wrap( ~ county) +
+  labs(
+    x = 'Day',
+    y = "Reproduction number"
+  )
+
+ggsave('strategy_dailyR_tile_norway.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r strategy_norway_tile2, eval=FALSE}
+r_norway_strategy %>%
+  filter(municipality != 'norge') %>%
+  filter(day > 15 & day < 30) %>% 
+  drop_na() %>% 
+  mutate(strategy = as_factor(strategy)) %>% 
+  group_by(county, strategy, population) %>%
+  summarise(r = mean(r), .groups = 'keep') %>%
+  ungroup() %>%
+  mutate(county = fct_reorder(county, population, sum)) %>% 
+  ggplot(aes(strategy, county, fill = r)) +
+  geom_tile() +
+  scale_fill_viridis_c(option = 'mako') +
+  labs(
+    x = 'Strategy',
+    y = "",
+    fill = 'Reproduction number'
+    )
+
+ggsave('strategy_tile_norway.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+# Norway data
+
+```{r norway}
+r_norway <- read_csv('results/summaries/R40Prev0.005norge.txt', col_types = cols(), guess_max = 10000) %>%
+		pivot_longer(
+			cols = !c(commuter_fraction, mutation_chance, run, day),
+			names_to = "municipality",
+			values_to = "r"
+		) %>%
+  select(!c(commuter_fraction, mutation_chance)) %>% 
+  left_join(municipalities, by = 'municipality') %>% 
+	mutate(county = fct_reorder(county, population, sum, .desc = TRUE)) %>% 
+  select(!c(number, color)) 
+
+r_norway %>% 
+  mutate(county = ifelse(municipality == 'norge', 'Norge', county),
+         population = ifelse(municipality == 'norge',5042372, population),
+         area = ifelse(municipality == 'norge', 318585, area)
+  ) %>% 
+  rename(age = age_mean) %>% 
+  mutate(county = fct_reorder(county, population, sum, .desc = TRUE)) %>% 
+	mutate(county = fct_relevel(county, 'Norge', after = Inf))
+
+r_norway_mean <- r_norway %>% 
+	filter(municipality != 'norge') %>%
+  filter(day > 15 & day < 45) %>% 
+  group_by(across(!c(run, r, day))) %>% 
+  summarise(r = mean(r, na.rm = TRUE), .groups = 'drop') %>% 
+  ungroup() %>% 
+	drop_na()
+
+r_norway_copy <- r_norway_mean %>% 
+	mutate(county = 'Norge') #%>% 
+	# mutate(population = 5042372, area = 318585, pop_density = population/area) 
+
+r_norway_mean_total <- r_norway_mean %>% bind_rows(r_norway_copy) %>% 
+	mutate(county = fct_reorder(county, population, sum, .desc = TRUE)) %>% 
+	mutate(county = fct_relevel(county, 'Norge', after = Inf))
+```
+
+```{r norway_combined_demographics, eval=FALSE}
+age <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	ggplot(aes(age_mean, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+		labs(x = 'Mean age',
+				 y = 'Reproduction number') +
+	  theme(
+	  	axis.text.x = element_text(size = rel(0.8)),
+	  	axis.title.y = element_blank(),
+	  	axis.text.y = element_blank(),
+	  	axis.ticks.y = element_blank()
+	  ) +
+		expand_limits(y = c(0.75, 1.75))
+
+age_std <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	ggplot(aes(age_std, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+		labs(x = 'Age standard deviation',
+				 y = 'Reproduction number') +
+	  theme(
+	  	axis.text.x = element_text(size = rel(0.8)),
+	  	axis.title.y = element_blank(),
+	  	axis.text.y = element_blank(),
+	  	axis.ticks.y = element_blank()
+	  ) +
+		expand_limits(y = c(0.75, 1.75))
+
+pop <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	ggplot(aes(population, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	  scale_x_continuous(trans = 'log1p', breaks = c(1e3,1e4,1e5), labels = label_number()) +
+		coord_trans(x = 'log1p') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+	theme(axis.text.x = element_text(size = rel(0.8))) +
+		labs(x = 'Population size',
+				 y = 'Reproduction number') +
+		expand_limits(y = c(0.75, 1.75))
+
+pop_density <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	# filter(pop_density > 1) %>% 
+	ggplot(aes(pop_density, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	  scale_x_continuous(trans = 'log1p', breaks = log_breaks(5), labels = label_number(accuracy = 1)) +
+		coord_trans(x = 'log1p') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+	theme(
+	  axis.text.x = element_text(size = rel(0.8)),
+		axis.title.y = element_blank(),
+	  	axis.text.y = element_blank(),
+	  	axis.ticks.y = element_blank()
+	  ) +
+		labs(x = 'Population density',
+				 y = 'Reproduction number') +
+		expand_limits(y = c(0.75, 1.75))
+
+pop + pop_density + age
+ggsave('norway_combined_demographics.png', path = path, width = width, height = height*0.75, dpi = dpi)
+```
+
+```{r norway_commuters_combined, eval=FALSE}
+com_in <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	filter(commuters_in < 0.6) %>% 
+	ggplot(aes(commuters_in, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	#   scale_x_continuous(trans = 'log1p', breaks = log_breaks(5), labels = label_number(accuracy = 1)) +
+	# 	coord_trans(x = 'log1p') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+	theme(
+	  axis.text.x = element_text(size = rel(0.8))
+	  ) +
+		labs(x = 'Incoming commuters',
+				 y = 'Reproduction number') +
+		expand_limits(y = c(0.75, 1.75))
+
+com_out <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	ggplot(aes(commuters_out, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	#   scale_x_continuous(trans = 'log1p', breaks = log_breaks(5), labels = label_number(accuracy = 1)) +
+	# 	coord_trans(x = 'log1p') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+	theme(
+	  axis.text.x = element_text(size = rel(0.8)),
+		axis.title.y = element_blank(),
+	  	axis.text.y = element_blank(),
+	  	axis.ticks.y = element_blank()
+	  ) +
+		labs(x = 'Outgoing commuters',
+				 y = 'Reproduction number') +
+		expand_limits(y = c(0.75, 1.75))
+
+com_in + com_out
+ggsave('norway_combined_commuters.png', path = path, width = width, height = height*0.75, dpi = dpi)
+```
+
+
+```{r norway_commuters_combined2, eval=FALSE}
+com_in2 <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	mutate(commuters_in = as.integer(commuters_in * population)) %>% 
+	filter(commuters_in > 10) %>% 
+	ggplot(aes(commuters_in, r, color = county)) +
+	geom_point(alpha = 0.6, size = 2) +
+	geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	scale_x_continuous(trans = 'log10', breaks = log_breaks(4), labels = label_number(accuracy = 1)) +
+		coord_trans(x = 'log10') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+	theme(
+	  axis.text.x = element_text(size = rel(0.8))
+	  ) +
+		labs(x = 'Incoming commuters',
+				 y = 'Reproduction number') +
+		expand_limits(y = c(0.75, 1.75), x = c(10,2e5))
+
+com_out2 <- r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	mutate(commuters_out = as.integer(commuters_out * population)) %>% 
+	filter(commuters_out > 10) %>% 
+	ggplot(aes(commuters_out, r, color = county)) +
+		geom_point(alpha = 0.6, size = 2) +
+		geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	  scale_x_continuous(trans = 'log10', breaks = log_breaks(4), labels = label_number(accuracy = 1)) +
+		coord_trans(x = 'log10') +
+		scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none'
+		) +
+	theme(
+	  axis.text.x = element_text(size = rel(0.8)),
+		axis.title.y = element_blank(),
+	  	axis.text.y = element_blank(),
+	  	axis.ticks.y = element_blank()
+	  ) +
+		labs(x = 'Outgoing commuters',
+				 y = 'Reproduction number') +
+		expand_limits(y = c(0.75, 1.75), x = c(10,2e5))
+
+com_in2 + com_out2
+ggsave('norway_combined_commuters2.png', path = path, width = width, height = height*0.75, dpi = dpi)
+```
+
+
+```{r r_norway_mean_total_pivot, eval=FALSE}
+r_norway_mean_total %>% 
+	filter(county != 'Norge') %>% 
+	select(municipality, county, population, pop_density, age_mean, 
+				 # commuters_in, commuters_out, 
+				 r) %>% 
+	pivot_longer(cols = !c(municipality, county, r)) %>% 
+	filter(value > 1) %>% 
+	ggplot(aes(value, r, color = county)) +
+	geom_point(alpha = 0.6) +
+	geom_smooth(method = 'lm', formula = 'y~x', aes(group = 1), color = 'black') +
+	facet_wrap(~name, scales = 'free_x') +
+	scale_x_continuous(trans = 'log10', breaks = log_breaks(4), labels = label_number()) +
+	coord_trans(x = 'log10') +
+ 	scale_color_viridis_d(option = 'inferno', begin = 0.1, end = 0.8, guide = 'none')
+```
+
+
+```{r norway_states}
+states_norway <- read_csv('results/summaries/States40Prev0.005norge.txt', col_types = cols(), guess_max = 10000) %>% 
+	mutate(I = Ia + Ip + Is) %>% 
+	select(!c(Ia,Ip,Is)) %>% 
+	pivot_longer(cols = c(S,E,I,R,H,ICU,D), 
+								 names_to = "state", 
+								 values_to = "count") %>% 
+	left_join(municipalities %>% 
+								select(municipality, population, county), 
+							by = 'municipality') %>% 
+	mutate(municipality = fct_reorder(municipality, population, .desc = TRUE)) %>% 
+	mutate(county = fct_reorder(county, population, sum, .desc = TRUE))
+
+```
+
+```{r norway_r, eval=FALSE}
+r_norway %>% 
+  group_by(county, day) %>% 
+  summarise(mean = mean(r, na.rm = TRUE), 
+  					sd = sd(r, na.rm = TRUE), 
+  					.groups = 'drop') %>% 
+  ungroup() %>% 
+	drop_na() %>% 
+  ggplot(aes(day, mean, color = county, fill = county)) +
+	geom_ribbon(aes(ymin = mean - sd, ymax = mean + sd), alpha = 0.4) +
+  geom_path(size = 1.2) +
+	geom_hline(yintercept = 1, linetype = 2, color = 'black') +
+  facet_wrap(~county) + 
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, aesthetics = c('colour','fill'), direction = -1) +
+	# ylim(0.5, 2.5) +
+  labs(
+    x = 'Day',
+    y = 'Reproduction number'
+    ) +
+  theme(
+    legend.position = 'none',
+    strip.text = element_text(size = 16)
+  )
+
+ggsave('daily_R_norway.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_municipalities, eval=FALSE}
+r_norway %>% 
+  group_by(county, day, municipality) %>% 
+  summarise(mean = mean(r, na.rm = TRUE), 
+  					sd = sd(r, na.rm = TRUE), 
+  					.groups = 'drop') %>% 
+  ungroup() %>% 
+	drop_na() %>% 
+  ggplot(aes(day, mean, color = county, fill = county)) +
+  geom_path(aes(group = municipality), alpha = 0.8) +
+	geom_hline(yintercept = 1, linetype = 2, color = 'black') +
+  facet_wrap(~county) + 
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, aesthetics = c('colour','fill'), direction = -1) +
+	ylim(0.5, 2) +
+  labs(
+    x = 'Day',
+    y = 'Reproduction number'
+    ) +
+  theme(
+    legend.position = 'none',
+    strip.text = element_text(size = 16)
+  )
+
+ggsave('daily_R_norway_path.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r states_norway, eval=FALSE}
+states_norway %>%
+	filter(!is.na(county)) %>% 
+  filter(state %in% c('I')) %>% 
+	group_by(day, state, municipality, county) %>% 
+	summarise(mean = mean(count, na.rm = TRUE),
+						sd = sd(count, na.rm = TRUE),
+						.groups = 'keep') %>% 
+	ungroup() %>% 
+  ggplot(aes(day, mean, color = county)) +
+  geom_path(aes(group = municipality)) +
+  facet_wrap(~county, scales = 'free_y') +
+	scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, aesthetics = c('colour','fill'), direction = -1) +
+  labs(
+  	x = 'Day',
+    y = "Number of infected"
+  ) +
+	theme(
+		axis.text = element_text(size = 12),
+		legend.position = 'none',
+		strip.text.x = element_text(size = 16)
+	)
+
+ggsave('daily_states_norway.png', width = width, height = height, dpi = dpi, path = path)
+
+```
+
+```{r norway_r_pop, eval=FALSE}
+r_norway_mean_total %>% 
+  ggplot(aes(population, r, color = county, size = pop_density)) +
+  geom_smooth(method = 'lm', formula = y~x, size = 1) +
+  geom_point(alpha = 0.8) +
+  facet_wrap(~county) + 
+  scale_x_continuous(trans = 'log10', breaks = c(1e3, 1e4, 1e5), labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, guide = 'none') +
+	coord_trans(x = 'log10', xlim = c(400,1e6)) +
+  labs(
+    x = 'Population size',
+    y = 'Reproduction number',
+    size = 'Population density'
+    ) +
+  theme(
+  	axis.text.x = element_text(angle = -30, vjust = 0.9, hjust = 0),
+    legend.position = 'bottom'
+  )
+
+ggsave('norway_r_pop.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_popdensity, eval=FALSE}
+r_norway_mean_total %>% 
+  ggplot(aes(pop_density, r, color = county, size = population)) +
+  geom_smooth(method = 'lm', formula = y~x, size = 1) +
+  geom_point(alpha = 0.8) +
+  facet_wrap(~county) +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, guide = 'none') +
+  scale_x_log10() +
+	scale_size_continuous(breaks = c(1e3,1e5,5e5), labels = c('1000','100 000','500 000')) +
+	# coord_trans(x = 'log10') +
+  labs(
+    x = 'Population density',
+    y = 'Reproduction number',
+    size = 'Population size'
+    ) +
+  theme(
+  	axis.text.x = element_text(angle = -30, vjust = 0.9, hjust = 0),
+    legend.position = 'bottom'
+  )
+
+ggsave('norway_r_popdensity.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_age, eval=FALSE}
+r_norway_mean_total %>% 
+	rename(age = age_mean) %>% 
+  ggplot(aes(age, r, color = county, size = population)) +
+  geom_smooth(method = 'lm', formula = y~x, size = 1) +
+  geom_point(alpha = 0.8) +
+  facet_wrap(~county) +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, guide = 'none') +
+  scale_x_log10() +
+	scale_size_continuous(breaks = c(1e3,1e5,5e5), labels = c('1000','100 000','500 000')) +
+	coord_trans(x = 'log10') +
+  labs(
+    x = 'Mean age',
+    y = 'Reproduction number',
+    size = 'Population size'
+    ) +
+  theme(
+    legend.position = 'bottom'
+  )
+
+ggsave('norway_r_age.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_commuters_in, eval=FALSE}
+r_norway %>% 
+  filter(municipality != 'norge') %>% 
+  filter(day > 14) %>% 
+  group_by(municipality, county, population, commuters_in, commuters_out) %>% 
+  summarise(r = mean(r), .groups = 'drop') %>% 
+  ungroup() %>% 
+  drop_na() %>% 
+  ggplot(aes(commuters_in, r, color = county, size = commuters_out)) +
+  geom_smooth(method = 'lm', formula = y~x) +
+  geom_point(alpha = 0.8) +
+  facet_wrap(~county) + 
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  scale_x_log10() +
+  labs(
+    x = 'Incoming commuters',
+    y = 'Reproduction number'
+    ) +
+  theme(
+    legend.position = 'none'
+  )
+
+ggsave('norway_r_commuters_in.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_commuters_out, eval=FALSE}
+r_norway %>% 
+  filter(municipality != 'norge') %>% 
+  group_by(municipality, county, population, commuters_in, commuters_out) %>% 
+  summarise(r = mean(r), .groups = 'drop') %>% 
+  ungroup() %>% 
+  drop_na() %>% 
+  ggplot(aes(commuters_out, r, color = county, size = commuters_in)) +
+  geom_smooth(method = 'lm', formula = y~x) +
+  geom_point() +
+  facet_wrap(~county) + 
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  scale_x_log10() +
+  labs(
+    x = 'Outgoing commuters',
+    y = 'Reproduction number'
+    ) +
+  theme(
+    legend.position = 'none'
+  )
+
+ggsave('norway_r_commuters_out.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_commuters, eval=FALSE}
+r_norway %>% 
+  mutate(commuter_fraction = commuters_out/commuters_in) %>% 
+  filter(municipality != 'norge') %>% 
+  group_by(municipality, county, commuter_fraction, commuters_out) %>% 
+  summarise(r = mean(r), .groups = 'drop') %>% 
+  ungroup() %>% 
+  drop_na() %>% 
+  ggplot(aes(commuter_fraction, r, color = county, size = commuters_out)) +
+  geom_smooth(method = 'lm', formula = y~x) +
+  geom_point() +
+  # scale_x_continuous(trans = 'log1p') +
+  facet_wrap(~county) + 
+  labs(
+    x = 'Commuter fraction',
+    y = 'Reproduction number'
+    ) +
+  theme(
+    legend.position = 'none'
+  )
+
+ggsave('norway_r_commuter_fraction.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r norway_r_pop_box, eval=FALSE}
+r_norway %>% 
+  filter(county != 'norge') %>% 
+  group_by(municipality, county, population, run) %>% 
+  summarise(r = mean(r), .groups = 'drop') %>% 
+  ungroup() %>% 
+  drop_na() %>% 
+  ggplot(aes(population, r, color = county)) +
+  geom_boxplot(aes(group = municipality), alpha = 0.8, outlier.shape = NA) +
+  # geom_smooth(method = 'lm', formula = y~x) +
+  facet_wrap(~county) +
+  scale_x_log10() +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  theme_minimal() +
+  ylim(0.5,2) +
+  labs(
+    y = 'Reproduction number',
+    x = 'Population'
+    ) +
+  theme(
+    legend.position = 'none'
+  )
+
+```
+
+```{r boxplot_norway, eval = FALSE}
+r_norway %>% 
+  drop_na() %>% 
+  filter(day > 15) %>% 
+  mutate(county = fct_reorder(county, population, sum)) %>%
+  group_by(municipality, county) %>% 
+  summarise(r = mean(r), .groups = 'drop_last') %>% 
+  ungroup() %>% 
+  ggplot(aes(r, county, fill = county)) +
+  geom_point(aes(color = county), alpha = 0.6) +
+  geom_boxplot(alpha = 1, outlier.shape = NA) +
+  geom_text_repel(aes(label = ifelse(r < 0.9 | r > 1.4, municipality,''), color = county)) +
+  scale_fill_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  theme(legend.position = "none") +
+  labs(
+    x = 'Reproduction number',
+    y = ''
+  )
+
+ggsave('boxplot_norway.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r, ridge_norway, eval = FALSE}
+r_norway %>% 
+  drop_na() %>% 
+  mutate(county = fct_reorder(county, population, .fun = sum)) %>%
+	filter(day > 15 & day < 45) %>% 
+  group_by(municipality, county) %>% 
+  summarise(r = mean(r), .groups = 'drop_last') %>% 
+  ggplot(aes(r, county, fill = county)) +
+  geom_vline(xintercept = 1, linetype = 2) +
+  geom_point(aes(color = county), alpha = 0.6, size = 2) +
+  geom_density_ridges(alpha = 0.8, rel_min_height = 0.01) +
+  scale_fill_viridis_d(option = 'inferno', begin = 0.2, end = 0.8, aesthetics = c('color','fill')) +
+	xlim(0.7,1.8) +
+  theme(legend.position = "none") +
+  labs(x = 'Mean reproduction number', y = '')
+
+ggsave('ridgeplot_norway.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r pop_norway, eval = FALSE}
+pop_norway <- r_norway %>% 
+  drop_na() %>% 
+  group_by(municipality, population, pop_density, county) %>% 
+  summarise(r = mean(r), .groups = 'drop_last') %>% 
+  ggplot(aes(population, r, color = county)) +
+  geom_smooth(aes(group = 1), method = 'loess', formula = y~x, alpha = 0.4, 
+              color = 'black', size = 0.5, linetype = 2) +
+  geom_point(alpha = 0.6, size = 3) +
+  scale_x_log10(labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+  scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+  theme(legend.position = 'none') +
+  labs(
+    x = 'Population size',
+    y = 'Reproduction number'
+  )
+
+pop_norway
+
+ggsave('pop_norway.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r, eval = FALSE}
+pop_norway +
+  geom_hline(yintercept = 1, color = 'black', size = 0.5, linetype = 2) +
+  facet_wrap(~county)
+
+ggsave('pop_norway_fw.png', width = 12, height = 8, dpi = 300, path = 'results/plots')
+```
+
+```{r pop_norway_SIR_scaled, eval = FALSE}
+states_norway %>% 
+  drop_na() %>% 
+  filter(state %in% c('S','I','R')) %>% 
+  group_by(county, day, state) %>% 
+  summarise(count = mean(count), .groups = 'drop_last') %>% 
+  mutate(state = fct_relevel(state, 'S','I','R')) %>% 
+  ggplot(aes(day, count, color = state)) +
+  geom_path(alpha = 0.8, size = 2) +
+  scale_colour_manual(values = c('darkgreen','red','blue')) +
+  facet_wrap(~county, scales = 'free_y') +
+  theme_minimal() +
+  theme(legend.position = 'bottom')
+
+ggsave('pop_norway_SIR_scaled.png', width = 12, height = 8, dpi = 300, path = 'results/plots')
+```
+
+
+## Seed v. prevalence
+
+```{r seed_v_prev}
+states_seed_v_prev_filename <- 'results/summaries/States_seed_v_prevalence.txt'
+r_seed_v_prev_filename <- 'results/summaries/R_seed_v_prevalence.txt'
+
+states_seed_v_prev <- read_state_file(states_seed_v_prev_filename)
+
+states_seed_v_prev
+
+r_seed_v_prev <- read_r_file(r_seed_v_prev_filename) %>% 
+	mutate(seed = fct_reorder(seed, population, .desc = FALSE))
+
+r_seed_v_prev
+
+r_seed_v_prev_mean <- calculate_r_mean(r_seed_v_prev)
+```
+
+```{r r_seed_v_prev}
+r_seed_v_prev_mean %>% 
+	ggplot(aes(prevalence, seed, fill = r)) +
+	geom_tile() +
+	scale_x_continuous(trans = 'log10') +
+	scale_fill_viridis_c(na.value = 'white')
+```
+
+```{r r_seed_v_prev2}
+r_seed_v_prev %>% 
+	filter(municipality == 'trondelag') %>% 
+	group_by(prevalence, seed, color, day) %>% 
+	summarise(r = mean(r, na.rm = TRUE), .groups = 'keep') %>% 
+	ungroup() %>% 
+	ggplot(aes(day, r, color = seed)) +
+	geom_path() +
+	facet_wrap(~prevalence) +
+	# scale_color_identity(guide = guide_legend('Seed'), breaks = colors$color, labels = colors$municipality) +
+	ylim(0, 2) +
+	scale_color_brewer() +
+	theme(legend.position = 'right')
+
+cols <- rev(c('#c994c7','#df65b0','#dd1c77','#980043'))
+
+r_seed_v_prev %>% 
+	filter(municipality == 'trondelag' & seed != 'Default') %>% 
+	group_by(prevalence, seed, color, day) %>% 
+	summarise(r = mean(r, na.rm = TRUE), .groups = 'keep') %>% 
+	ungroup() %>% 
+	mutate(seed = fct_relevel(seed, 'Trondheim','Stjørdal','Namsos','Oppdal')) %>% 
+	ggplot(aes(day, r, color = factor(prevalence))) +
+	geom_hline(yintercept = 1, linetype = 2) +
+	geom_path() +
+	facet_wrap(~seed) +
+	ylim(0.5, 2) +
+	scale_color_manual(values = cols, breaks = c(5e-02, 5e-03, 5e-04, 5e-05), labels = c('0.05', '0.005', '0.0005', '0.0005'), guide = guide_legend(override.aes = list(size = 2))) +
+	labs(
+		x = 'Day',
+		y = 'Reproduction number',
+		color = 'Prevalence'
+		) +
+	theme(legend.position = 'right')
+
+ggsave('seed_v_prev_r.png', width = 12, height = 8, dpi = 300, path = 'results/plots')
+```
+
+```{r r_seed_v_prev3}
+states_seed_v_prev %>% 
+	filter(state == 'I') %>% 
+	group_by(prevalence, seed, day) %>% 
+	summarise(count = sum(count), .groups = 'drop') %>% 
+	ungroup() %>% 
+	left_join(colors, by = c('seed' = 'municipality')) %>% 
+	mutate(seed = ifelse(is.na(seed),'Default',seed),
+				 color = ifelse(seed == 'Default','black',color)) %>% 
+	ggplot(aes(day, count, color = I(color))) +
+	geom_line() +
+	facet_wrap(~prevalence, scales = 'free_y') +
+	scale_color_identity(guide = guide_legend('Seed'), breaks = colors$color, labels = colors$municipality)
+
+```
+
+```{r r_trondheim_lm, eval=FALSE}
+r_trondheim <-
+	rbind(r, r_commuters, r_mutations, r_prevalence, r_seeds %>% select(!color_seed), r_strategy) %>%
+	filter(day > 15 & day < 45) %>%
+	filter(municipality == 'trondelag') %>% 
+	group_by(across(!c(day, r, color))) %>%
+	summarise(r = mean(r, na.rm = TRUE), .groups = 'keep') %>%
+	ungroup() %>% 
+	select(!c(population, municipality)) %>% 
+	drop_na()
+
+r_trondheim_mean <- r_trondheim %>% 
+	group_by(across(!c(run, r))) %>%
+	summarise(r = mean(r), .groups = 'keep') %>% 
+	ungroup()
+
+lm <- lm(r ~ commuter_fraction + mutation_chance + strategy + prevalence, data = r_trondheim)
+
+summary(lm)
+anova(lm)
+```
+
+```{r r_trondheim_all_plots, eval=FALSE}
+r_all <- r_trondheim_mean %>% 
+	mutate(mutation_chance = ifelse(mutation_chance == 0,1,mutation_chance)) %>% 
+	group_by(across(!r)) %>% 
+	summarise(r = mean(r))
+	
+plot_value <- function(value, name) {
+	value <- enquo(value)
+	breaks <- c(0.75, 1.00, 1.25, 1.50)
+	
+	plot <- r_all %>%
+		group_by(!!value) %>%
+		summarise(r = mean(r), .groups = 'drop') %>%
+		ggplot(aes(!!value, r)) +
+		geom_hline(yintercept = 1, linetype = 2) +
+		geom_smooth(method = 'lm', color = viridis::viridis(3)[1]) +
+		geom_point(aes(size = r, color = r), alpha = 0.8) +
+		scale_y_continuous(breaks = c(0.5, 1.0, 1.5, 2.0)) +
+		scale_color_viridis_c(breaks = breaks, guide = guide_legend()) +
+		scale_size_continuous(breaks = breaks, guide = guide_legend()) +
+		labs(
+			x = name,
+			y = 'Reproduction number',
+			color = 'R',
+			size = 'R'
+		) +
+		expand_limits(y = c(0.5, 2.0))
+	return(plot)
+}
+
+com <- plot_value(commuter_fraction, 'Commuters')
+mut <- plot_value(mutation_chance, 'Mutation infectivity')
+seed <- plot_value(seed, 'Seed municipality')
+prev <- plot_value(prevalence, 'Prevalence')
+strat <- plot_value(strategy, 'Strategy')
+
+com + mut + seed + prev + strat +
+	plot_layout(guides = 'collect') +
+	theme(legend.position = 'bottom')
+
+ggsave('all_things.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r r_trondheim_mean_all_plots, eval=FALSE}
+r_trondheim_mean %>% 
+	mutate(seed = as.numeric(factor(seed))) %>%
+	pivot_longer(cols = !r) %>% 
+	mutate(value = ifelse(name == 'mutation_chance' & value == 0,1,value)) %>% 
+	group_by(name, value) %>% 
+	summarise(r = mean(r)) %>% 
+	ggplot(aes(value, r)) +
+	geom_hline(yintercept = 1, linetype = 2) +
+	geom_smooth(method = 'lm', color = viridis::viridis(1)) +
+	geom_point(aes(size = r, color = r), alpha = 0.8) +
+	facet_wrap(~ name, scales = 'free_x') +
+	scale_color_viridis_c(guide = guide_legend()) +
+	scale_size_continuous(guide = guide_legend()) +
+	labs(
+		y = 'Reproduction number',
+		color = 'R',
+		size = 'R'
+	)
+
+ggsave('mean_all_things.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r pca_trondheim, eval=FALSE}
+library(pls)
+r_trondheim_pca <- r_trondheim %>% 
+  select(r, commuter_fraction, mutation_chance, strategy, prevalence) %>%
+  drop_na() %>% 
+  select(where(is.numeric))
+
+pca_fit <- r_trondheim_pca %>% 
+  prcomp(scale = TRUE)
+
+pca_fit %>%
+  augment(r_trondheim_pca %>% drop_na()) %>% # add original dataset back in
+  ggplot(aes(.fittedPC1, .fittedPC2, color = r)) + 
+  geom_point(size = 3, alpha = 0.8)
+
+# plot rotation matrix
+pca_fit %>%
+  broom::tidy(matrix = "rotation") %>%
+  pivot_wider(names_from = "PC",
+              names_prefix = "PC",
+              values_from = "value") %>%
+  ggplot(aes(PC1, PC2)) +
+  geom_segment(
+    xend = 0,
+    yend = 0,
+    arrow = arrow(
+      angle = 20,
+      ends = "first",
+      type = "closed",
+      length = grid::unit(8, "pt")
+    )
+  ) +
+  geom_text(
+    aes(label = column),
+    hjust = 1,
+    nudge_x = -0.02,
+    color = "#904C2F"
+  ) +
+  # xlim(-1.25, .5) + ylim(-.5, 1) +
+  coord_fixed() # fix aspect ratio to 1:1
+
+pca_fit %>%
+  tidy(matrix = "eigenvalues") %>%
+  ggplot(aes(PC, percent, fill = PC)) +
+  geom_col(alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(labels = scales::percent_format(),
+                     expand = expansion(mult = c(0, 0.01)))
+
+```
+
+```{r factorial}
+r_factorial_filename <- 'results/summaries/R_fractional.txt'
+r_factorial <- read_r_file(r_factorial_filename)
+
+r_factorial_mean <- r_factorial %>% 
+	filter(municipality == 'trondelag') %>% 
+	filter(day < 15 & day < 45) %>% 
+	select(!c(municipality, seed, population, color)) %>% 
+	group_by(across(-c(day, r))) %>% 
+	summarise(r = mean(r, na.rm = TRUE), .groups = 'drop') %>% 
+	ungroup() %>% 
+	mutate(across(!r, .fns = scale)) %>% 
+	select(!run)
+```
+
+
+```{r factorial_anova}
+factorial_lm <- lm(r ~ ., data = r_factorial_mean)
+
+lm(r ~ ., data = r_factorial_mean) %>% 
+	summary() #%>% tidy() %>% knitr::kable('latex', booktabs = 'T', digits = 3)
+lm(r ~ ., data = r_factorial_mean) %>% 
+	anova() #%>% knitr::kable('latex', booktabs = 'T', digits = 3)
+
+```
+
+
+```{r factorial_anova2}
+a <- r_factorial_mean %>% 
+	mutate(commuter_fraction = factor(commuter_fraction),
+				 mutation_chance = factor(mutation_chance),
+				 strategy = factor(strategy),
+				 prevalence = factor(prevalence)) %>% 
+	aov(r ~ commuter_fraction + mutation_chance + strategy + prevalence, data = .)
+
+summary(a)
+
+TukeyHSD(a)
+
+plot(a)
+
+```
+

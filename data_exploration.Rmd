@@ -1,0 +1,537 @@
+---
+title: "Data Exploration"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+source('set_up.R')
+
+```
+
+
+```{r, eval=FALSE}
+commuters <- read_csv('data/commuter_df.csv', col_types = cols()) %>% 
+    rename(municipality = X1) %>% 
+    pivot_longer(!municipality, names_to = 'to', values_to = 'commuters')
+
+commuters_in <- commuters %>% 
+    group_by(municipality) %>% 
+    summarise(commuters_in = sum(commuters)) %>% 
+    ungroup()
+
+commuters_out <- commuters %>% 
+    group_by(to) %>% 
+    summarise(commuters_out = sum(commuters)) %>% 
+    rename(municipality = to)
+
+municipalities <- read_csv('data/municipalities.csv', col_types = cols()) %>% 
+  janitor::clean_names() %>% 
+    rename(municipality = name) %>% 
+    mutate(pop_density = population/area) %>% 
+    left_join(commuters_in) %>% 
+    left_join(commuters_out) %>% 
+    left_join(
+      read_csv('data/ages.csv') %>% 
+      rename(municipality = X1)
+    ) %>% 
+  rename(population_model = pop)
+```
+
+
+```{r municipalities_write, eval=FALSE}
+municipalities %>% 
+  write_csv('data/municipalities_data.csv')
+```
+
+
+```{r municipalities, eval=FALSE}
+municipalities <- read_csv('data/municipalities_data.csv', col_types = cols()) %>% 
+	mutate(commuters_in = commuters_in/population_model,
+				 commuters_out = commuters_out/population_model
+				 ) %>% 
+	left_join(colors) %>% 
+	mutate(color = replace_na(color, default_color))
+
+municipalities
+```
+
+```{r commuter_fraction_trondelag, eval = FALSE}
+municipalities %>%
+	filter(county == 'Trøndelag') %>%
+	drop_na() %>%
+	filter(commuters_in > 0.05) %>% 
+	ggplot(aes(commuters_in, commuters_out)) +
+	geom_smooth(method = 'lm', color = 'black', alpha = 0.2, linetype = 'dashed'
+	) +
+	geom_point(aes(size = population, color = I(color))) +
+	geom_text_repel(aes(label = municipality, size = ifelse(municipality %in% highlights,20000,2000), color = I(color)), box.padding = 0.3) +
+	# scale_x_log10() +
+	# scale_y_log10() +
+	scale_size_continuous(trans = 'log10', breaks = c(1000, 10000, 100000), labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+	guides(size = guide_legend()) +
+	labs(
+		x = 'Fraction of incoming commuters',
+		y = 'Fraction of outgoing commuters',
+		color = 'Population size',
+		size = 'Population size'
+	)
+
+ggsave('commuter_fraction_trondelag.png',width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r commuter_fraction_trondelag2, eval=FALSE}
+municipalities %>%
+	filter(county == 'Trøndelag') %>%
+	drop_na() %>%
+	filter(commuters_in > 0.05) %>% 
+	ggplot(aes(commuters_out, commuters_in)) +
+	geom_smooth(method = 'lm', color = 'black', alpha = 0.2, linetype = 'dashed'
+	) +
+	geom_point(aes(size = population, color = I(color))) +
+	geom_text_repel(aes(label = municipality, size = ifelse(municipality %in% highlights,20000,2000), color = I(color)), box.padding = 0.3) +
+	scale_size_continuous(trans = 'log10', breaks = c(1000, 10000, 100000), labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+	guides(size = guide_legend()) +
+	labs(
+		y = str_wrap('Fraction of incoming commuters', width = 20),
+		x = 'Fraction of outgoing commuters',
+		size = 'Population size'
+	)
+
+ggsave('commuter_fraction_trondelag2.png',width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+
+```{r cliques}
+cliques <- read_csv('data/cliques.csv') %>% 
+	select(!X1) %>% 
+  filter(Layer != 'R') %>% 
+	rename(name = Municipality) %>% 
+  left_join(read_csv('data/municipalities_data.csv') %>% rename(name = municipality)) %>% 
+	janitor::clean_names() %>% 
+	select(!c(number,area))
+
+cliques
+```
+
+```{r, eval=FALSE}
+cliques %>% 
+  # filter(Layer == 'HH') %>%
+  filter(name == 'Trondheim') %>% 
+  ggplot(aes(clique, fill = layer)) +
+  geom_bar() +
+  facet_wrap(~layer, scales = 'free') +
+	theme_minimal() 
+
+```
+
+```{r clique_distribution, eval=FALSE}
+cliques %>% 
+  drop_na() %>% 
+  filter(layer %in% c('BS','US','VS','W')) %>%
+  # filter(Municipality == 'Trondheim') %>% 
+	filter(ifelse(layer == 'W', clique < 75, clique > 0)) %>% 
+  ggplot(aes(clique, fill = layer)) +
+  geom_histogram(bins = 75, position = 'dodge') +
+  facet_wrap(~layer, scales = 'free') +
+	labs(
+		x = 'Clique size',
+		y = 'Count',
+		fill = 'Layer type'
+	) +
+	scale_fill_brewer(palette = 'Set1')
+	NULL
+
+	ggsave('clique_distribution.png', width = 12, height = 8, dpi = 300, path = 'results/plots')
+```
+
+
+```{r household_distribution, eval=FALSE}
+cliques %>% 
+  filter(layer == 'HH') %>%
+  ggplot(aes(clique)) +
+  geom_bar(aes(y = stat(prop)), fill = 'steelblue') +
+  # theme_minimal() +
+	labs(
+		x = 'Clique size',
+		y = 'Proportion'
+	) +
+  # scale_fill_brewer(palette = 'Set1') +
+	NULL
+ggsave('household_distribution.png', width = 12, height = 8, dpi = 300, path = 'results/plots')
+```
+
+
+```{r eval=FALSE}
+cliques %>% 
+  filter(layer == 'NH') %>%
+	filter(clique < 100) %>% 
+  ggplot(aes(clique)) +
+  geom_bar(bins = 20, fill = 'darkred') +
+  theme_minimal()
+```
+
+```{r eval=FALSE}
+cliques %>% 
+  drop_na() %>% 
+  filter(layer %in% c('BS','US', 'VS')) %>%
+  # filter(Municipality == 'Trondheim') %>% 
+  ggplot(aes(clique, after_stat(density), fill = layer)) +
+  geom_histogram(bins = 10, position = 'dodge') +
+  facet_wrap(~county) +
+  theme_minimal()
+
+cliques %>% 
+  drop_na() %>% 
+  filter(layer %in% c('W')) %>%
+  # filter(Municipality == 'Trondheim') %>% 
+  ggplot(aes(clique, after_stat(density), fill = county)) +
+  geom_histogram(bins = 30, position = 'dodge') +
+  facet_wrap(~county) +
+  theme_minimal() +
+  xlim(0, 200) +
+	NULL
+
+```
+
+```{r clique_commuter_distribution, eval=FALSE}
+cliques %>% 
+  drop_na() %>% 
+  filter(layer %in% c('C')) %>%
+  ggplot(aes(clique, after_stat(density), fill = county)) +
+  geom_histogram(bins = 15, position = 'dodge') +
+  facet_wrap(~county) +
+  # theme_minimal() +
+	labs(
+		x = 'Clique size',
+		y = 'Density'
+	) +
+	theme(
+		legend.position = 'none'
+	) + 
+  scale_x_log10()
+	
+```
+
+```{r population_distribution, eval=FALSE}
+population_distribution <- municipalities %>% 
+	mutate(population_median = median(population)) %>% 
+	mutate(population_fraction = population/population_median) %>% 
+	mutate(county = fct_reorder(county, population, sum)) %>% 
+	ggplot(aes(population, county, color = county)) + 
+	geom_jitter(size = 5, alpha = 0.6, width = 0.0, height = 0.25) +
+	scale_x_continuous(breaks = scales::breaks_log(5), labels = scales::label_number()) +
+	expand_limits(x = 1.5e6) +
+	scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+	coord_trans(x = 'log10') +
+	theme(legend.position = 'none',
+				axis.text.x = element_text(angle = 0)) +
+	labs(
+		x = 'Population size',
+		y = ''
+	)
+	
+ggsave('population_distribution.png', width = width, height = height, dpi = dpi, path = path)
+
+population_distribution +
+	geom_text_repel(aes(label = ifelse(population_fraction > 10 | population_fraction < 0.1, municipality, '')))
+
+ggsave('population_distribution_label.png', width = width, height = height*.75, dpi = dpi, path = path)
+```
+
+```{r population_density_distribution, eval=FALSE}
+population_density_distribution <- municipalities %>% 
+	mutate(population_density_median = median(pop_density)) %>% 
+	mutate(population_density_fraction = population/population_density_median) %>% 
+	mutate(county = fct_reorder(county, population, sum)) %>% 
+	ggplot(aes(pop_density, county, color = county)) + 
+	geom_jitter(size = 5, alpha = 0.6, width = 0.0, height = 0.25) +
+	scale_x_log10(breaks = scales::breaks_log(5), labels = scales::label_number()) +
+	# expand_limits(x = 1.5e6) +
+	scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+	theme(legend.position = 'none',
+				axis.text.x = element_text(angle = 0)) +
+	labs(
+		x = 'Population density',
+		y = 'Counties'
+	)
+	
+ggsave('population_density_distribution.png', width = width, height = height, dpi = dpi, path = path)
+
+population_density_distribution +
+	geom_text_repel(aes(label = ifelse(population_density_fraction > 1e4 | population_density_fraction < 1e-2, municipality, '')))
+
+ggsave('population_density_distribution_label.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r, eval=FALSE}
+breaks <- c(5e2, 5e3, 5e4, 5e5)
+labels <- c('500', '5 000', '50 000', '500 000')
+
+municipalities %>% 
+	mutate(county = fct_reorder(county, population, .desc = TRUE)) %>% 
+	ggplot(aes(population, population_model, color = county)) +
+	geom_abline(linetype = 2) +
+	geom_point(alpha = 0.6, size = 5) +
+	geom_text_repel(aes(label = ifelse(population_model > population * 1.5 | population_model < population * 0.5, municipality,''))) +
+	scale_x_continuous(breaks = breaks, labels = labels, minor_breaks = 10^seq(1, 10, 1)) +
+	scale_y_continuous(breaks = breaks, labels = labels) +
+	scale_color_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+	theme(legend.position = 'none') +
+	coord_trans(x = 'log10', y = 'log10') +
+	labs(x = 'Actual population size',
+			 y = 'Model population size'
+			 )
+
+ggsave('population_model_vs_actual.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+
+```{r}
+municipalities %>% 
+	# group_by(county) %>% 
+	drop_na() %>% 
+	summarise(population_model = sum(population_model, na.rm = TRUE),
+						population = sum(population, na.rm = TRUE),
+						municipalities = n(), .groups = 'keep')
+
+municipalities %>% 
+	drop_na() %>% 
+	filter(population_model < population * 1.5 & population_model > population * 0.5) %>% 
+	summarise(population_model = sum(population_model, na.rm = TRUE),
+						population = sum(population, na.rm = TRUE),
+						municipalities = n(), .groups = 'keep')
+
+municipalities %>% filter(is.na(population_model))
+	
+```
+
+```{r population_model_vs_actual_facet, eval=FALSE}
+municipalities %>% 
+	mutate(county = fct_reorder(county, population, .desc = TRUE)) %>% 
+	ggplot(aes(population, population_model, color = county)) +
+	geom_point(alpha = 0.6, size = 3) +
+	geom_abline(slope = 1, linetype = 2) +
+	scale_x_log10(breaks = scales::breaks_log(4), labels = scales::label_number()) +
+	scale_y_log10(breaks = scales::breaks_log(4), labels = scales::label_number()) +
+	facet_wrap(~county) +
+	theme(legend.position = 'none') +
+	labs(x = 'Actual population size',
+			 y = 'Model population size'
+			 )
+
+ggsave('population_model_vs_actual_facet.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+
+```{r population_scaled, eval=FALSE}
+municipalities %>% 
+	mutate(population_median = median(population)) %>% 
+	group_by(municipality, county, population) %>% 
+	mutate(population_fraction = population/population_median) %>% 
+	ungroup() %>% 
+	mutate(county = fct_reorder(county, population_fraction, mean)) %>% 
+	ggplot(aes(population_fraction, county, color = county)) +
+	geom_jitter(width = 0, height = 0.05, alpha = 0.6, size = 5) +
+	geom_vline(xintercept = 1, linetype = 2) +
+	geom_text_repel(aes(label = ifelse(population_fraction > 10, municipality, ''))) +
+	geom_text_repel(aes(label = ifelse(population_fraction < 0.1, municipality, ''))) +
+	scale_x_log10() +
+	theme(legend.position = 'none') +
+	labs(x = 'Population size / median',
+			 y = 'County'
+			 )
+	
+ggsave('population_fraction.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+```{r population_scaled_ordered, eval=FALSE}
+municipalities %>% 
+	mutate(population_median = median(population),
+				 population_fraction = population/population_median,
+				 county = fct_reorder(county, population, max, .desc = TRUE)) %>% 
+	arrange(desc(population_fraction)) %>%
+	mutate(order = row_number()) %>% 
+	ggplot(aes(order, population_fraction, color = county)) +
+	geom_hline(yintercept = 1, linetype = 2) +
+	geom_point() +
+	geom_text_repel(aes(label = ifelse(population_fraction > 10 | population_fraction < 0.1, municipality, ''))) +
+	scale_y_log10() +
+	facet_wrap(~county) +
+	theme(legend.position = 'none',
+				# axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()
+				) +
+	labs(x = 'Ordered municipalities',
+			 y = 'Population size / median'
+	)
+	
+ggsave('population_fraction_ordered.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r counties_age, eval=FALSE}
+municipalities %>% 
+	drop_na() %>% 
+	mutate(age_median = median(age_mean),
+				 age_fraction = age_mean/age_median,
+				 county = fct_reorder(county, population, max, .desc = TRUE)) %>%
+	arrange(desc(age_fraction)) %>% 
+	mutate(order = row_number()) %>% 
+	ggplot(aes(order, age_fraction, color = county)) +
+	geom_point() +
+	geom_hline(yintercept = 1, linetype = 2) +
+	geom_text_repel(aes(label = ifelse(age_fraction > 1.1, municipality, ''))) +
+	geom_text_repel(aes(label = ifelse(age_fraction < 0.9, municipality, ''))) +
+	scale_y_log10() +
+	facet_wrap(~county) +
+	theme(legend.position = 'none',
+				axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank()
+				) +
+	labs(x = '',
+			 y = 'Age / median'
+	)
+	
+ggsave('age_fraction_ordered.png', width = width, height = height, dpi = dpi, path = path)
+```
+
+
+```{r population_size_ordered_trondelag, eval=FALSE}
+municipalities %>% 
+	filter(county == 'Trøndelag') %>% 
+	mutate(population_median = median(population),
+				 population_fraction = population/population_median) %>% 
+	arrange(desc(population)) %>% 
+	mutate(order = row_number()) %>% 
+	ggplot(aes(order, population, color = I(color))) +
+	geom_hline(yintercept = 4798, linetype = 2) +
+	geom_point(aes(size = population), alpha = 0.8) +
+	geom_text_repel(aes(label = ifelse(municipality %in% highlights, municipality, ''), size = 10000)) +
+	scale_y_log10(labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+	scale_size_continuous(trans = 'log10') +
+	theme(legend.position = 'none',
+				axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank()
+				) +
+	labs(x = 'Municipalities ordered by size',
+			 y = 'Population size'
+	)
+
+ggsave('population_size_ordered_trondelag.png', width = width, height = height*0.6, dpi = dpi, path = path)
+```
+
+```{r population_size_ordered_trondelag2, eval=FALSE}
+municipalities %>% 
+	filter(county == 'Trøndelag') %>% 
+	mutate(population_median = median(population),
+				 population_fraction = population/population_median) %>% 
+	arrange(desc(population)) %>% 
+	mutate(order = row_number()) %>% 
+	ggplot(aes(order, population, color = I(color))) +
+	geom_hline(yintercept = 4798, linetype = 2) +
+	geom_point(aes(size = population), alpha = 0.8) +
+	geom_text_repel(aes(label = ifelse(municipality %in% highlights, municipality, ''), size = 10000)) +
+	# scale_y_log10(labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+	scale_y_continuous(breaks = c(500, 2000, 5000, 20000,50000, 200000), labels = scales::comma_format(accuracy = 1, big.mark = ' ')) +
+	scale_size_continuous(trans = 'log10') +
+	coord_trans(y = 'log10') +
+	theme(legend.position = 'none',
+				axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+				# panel.grid.major.y = element_line(colour = "grey50"),
+				# panel.grid.minor.y = element_line(colour = "grey50"),
+				panel.grid.major.x = element_blank(),
+				panel.grid.minor.x = element_blank()
+				) +
+	labs(x = 'Municipalities ordered by size',
+			 y = 'Population size'
+	)
+
+ggsave('population_size_ordered_trondelag.png', width = width, height = height*0.6, dpi = dpi, path = path)
+```
+
+
+
+```{r highlight_selection, eval=FALSE}
+municipalities %>% filter(county == 'Trøndelag') %>% 
+	arrange(desc(population)) %>% 
+	filter(municipality %in% highlights) %>% 
+	select(!c(number, county, age_std, population_model, color)) %>% 
+	knitr::kable('latex',booktabs = 'T')
+
+municipalities %>% filter(county == 'Trøndelag') %>% 
+	arrange(desc(population)) %>% 
+	filter(municipality %in% highlights) %>% 
+	select(!c(number, county, age_std, population_model, color))
+```
+
+
+```{r highlight_plot, eval=FALSE}
+municipalities %>% filter(municipality %in% highlights) %>% 
+	select(!c(number, county, age_std, population_model)) %>% 
+	mutate(municipality = fct_reorder(municipality, population)) %>% 
+	rename(Age = age_mean,
+				 Area = area,
+				 'Commuters in' = commuters_in,
+				 'Commuters out' = commuters_out,
+				 'Population density' = pop_density,
+				 Population = population) %>% 
+	pivot_longer(cols = !c(municipality,color), names_to = 'key', values_to = 'value') %>% 
+	mutate(value = round(value, 2)) %>% 
+	mutate(key = fct_relevel(key, c('Commuters out','Commuters in', 'Age', 'Population', 'Population density'))) %>% 
+	ggplot(aes(value, municipality, fill = I(color))) +
+	geom_col() +
+	facet_wrap(~key, scales = 'free_x') +
+	theme(
+		axis.title.x = element_blank(),
+		axis.title.y = element_blank(),
+	)
+
+ggsave('highlighted_trondelag.png', width = width, height = height*0.75, dpi = dpi, path = path)
+
+```
+
+
+```{r highlighted_norge, eval=FALSE}
+municipalities %>% select(!c(number, age_std, population_model, color)) %>% 
+	drop_na() %>% 
+	group_by(county) %>% 
+	summarise(age_mean = mean(age_mean),
+						area = sum(area),
+						commuters_in = mean(commuters_in),
+						commuters_out = mean(commuters_out),
+						population = sum(population),
+						pop_density = population/area) %>% 
+	ungroup() %>% 
+	rename(Age = age_mean,
+				 Area = area,
+				 'Commuters in' = commuters_in,
+				 'Commuters out' = commuters_out,
+				 'Population density' = pop_density,
+				 Population = population) %>% 
+	mutate(county = fct_reorder(county, Population, .desc = FALSE)) %>%
+	pivot_longer(cols = !c(county), names_to = 'key', values_to = 'value') %>% 
+	mutate(value = round(value, 2)) %>% 
+	mutate(key = fct_relevel(key, c('Commuters out','Commuters in', 'Age', 'Population', 'Population density'))) %>%
+	ggplot(aes(value, county, fill = county)) +
+	geom_col() +
+	facet_wrap(~key, scales = 'free_x') +
+	scale_fill_viridis_d(option = 'inferno', begin = 0.2, end = 0.8) +
+	theme(
+		axis.title.x = element_blank(),
+		axis.title.y = element_blank(),
+		axis.text.x = element_text(size = 14),
+		axis.text.y = element_text(size = 14),
+		legend.position = 'none'
+	)
+
+ggsave('highlighted_norge.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+

@@ -1,0 +1,363 @@
+---
+title: "Statistical Analysis"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+
+```{r setup, include=FALSE}
+source('set_up.R')
+```
+
+
+```{r}
+r_norway <- read_csv('results/summaries/R40Prev0.005norge.txt', col_types = cols(), guess_max = 10000) %>%
+		pivot_longer(
+			cols = !c(commuter_fraction, mutation_chance, run, day),
+			names_to = "municipality",
+			values_to = "r"
+		) %>%
+  select(!c(commuter_fraction, mutation_chance)) %>% 
+  left_join(municipalities, by = 'municipality') %>% 
+	mutate(county = fct_reorder(county, population, sum, .desc = TRUE)) %>% 
+  select(!c(number, color)) %>% 
+	rename(age = age_mean)
+
+mean_r <- r_norway %>% 
+  filter(day > 15 & day < 45) %>% 
+	rename(commuter_fraction_out = commuters_out,
+				 commuter_fraction_in = commuters_in) %>% 
+	mutate(commuters_out = as.integer(commuter_fraction_out*population),
+				 commuters_in = as.integer(commuter_fraction_in*population)) %>%
+  group_by(across(!c(day, r))) %>% 
+  summarise(r = mean(r, na.rm = TRUE), .groups = 'drop') %>% 
+  ungroup()
+
+```
+
+
+```{r anova_trondelag, eval=FALSE}
+filename_r <- 'results/summaries/R40Prev0.005trondelag.txt'
+r_trondelag <- read_r_file(filename_r)
+
+model <- r_trondelag %>% 
+  mutate(commuter_fraction = as_factor(commuter_fraction),
+         mutation_chance = as_factor(mutation_chance)) %>% 
+  lm(r~commuter_fraction + mutation_chance + municipality, 
+     data = .)
+
+anova(model)
+tidy(model)
+
+```
+
+## ANOVA Norway
+
+```{r anova_norway, eval=FALSE}
+model_all <- lm(r ~ .-run -county -municipality -population_model, data = mean_r)
+
+model_all_glm <- glm(r ~ .-run -county -municipality -population_model, data = mean_r)
+
+model_min <- lm(r ~ population + pop_density + age, data = mean_r)
+
+model_log <- lm(r ~ population + log(population), data = mean_r)
+
+summary(model_all)
+summary(model_all_glm)
+
+anova(model_all, model_all_glm)
+
+anova(model_all)
+anova(model_min)
+tidy(model_all)
+
+anova(model_min, model_all, model_log)
+
+par(mfrow = c(2, 2))
+plot(model_norway2)
+
+knitr::kable(anova(model_norway2), digits = 2)
+```
+```{r anova2, eval=FALSE}
+m1 <- lm(r ~ population, data = mean_r)
+m2 <- lm(r ~ population + pop_density, data = mean_r)
+m3 <- lm(r ~ population + pop_density + commuters_in + commuters_out, data = mean_r)
+m4 <- lm(r ~ population + pop_density + commuters_in + commuters_out + age, data = mean_r)
+
+anova(m1, m2, m3, m4)
+
+summary(m4)
+tidy(m4)
+anova(m4)
+```
+```{r scaled, eval=FALSE}
+mean_r_scaled <- mean_r %>% 
+	select(population, pop_density, age, commuters_in, commuters_out, commuter_fraction_in, commuter_fraction_out, r) %>% 
+	mutate(across(.cols = !r, .fns = scale)) %>% 
+	drop_na()
+
+lm(r ~ . - commuter_fraction_out - commuter_fraction_in, data = mean_r_scaled) %>% 
+	summary() #%>% tidy() %>% knitr::kable('latex', booktabs = 'T', digits = 3)
+lm(r ~ . - commuter_fraction_out - commuter_fraction_in, data = mean_r_scaled) %>% 
+	anova() #%>% knitr::kable('latex', booktabs = 'T', digits = 3)
+
+lm(r ~ ., data = mean_r_scaled) %>% 
+	summary() #%>% tidy() %>% knitr::kable('latex', booktabs = 'T', digits = 3)
+lm(r ~ ., data = mean_r_scaled) %>% 
+	anova() #%>% knitr::kable('latex', booktabs = 'T', digits = 3)
+
+lm <- lm(r ~ . - commuter_fraction_out - commuter_fraction_in, data = mean_r_scaled)
+lm_all <- lm(r ~ ., data = mean_r_scaled)
+summary(lm_all)
+anova(lm_all)
+anova(lm, lm_all)
+```
+
+
+
+```{r, eval=FALSE}
+library(leaps)
+regfit.full = regsubsets(r ~ ., data = mean_r_scaled)
+reg.summary = summary(regfit.full)
+reg.summary
+reg.summary$rsq
+
+par(mfrow = c(2, 2))
+plot(reg.summary$rss,
+     xlab = "Number of Variables",
+     ylab = "RSS",
+     type = "l")
+plot(reg.summary$adjr2,
+     xlab = "Number of Variables",
+     ylab = "Adjusted RSq",
+     type = "l")
+which.max(reg.summary$adjr2)
+```
+
+```{r pcr, eval=FALSE}
+library(pls)
+pcr.fit <- pcr(r ~ ., data = mean_r_scaled, scale = FALSE, validation = "CV")
+summary(pcr.fit)
+
+validationplot(pcr.fit, val.type = "MSEP")
+pcr.pred = predict(pcr.fit, x[test, ], ncomp = 2)
+```
+
+
+```{r pca, eval=FALSE}
+mean_r_pca <- mean_r %>% 
+  # select(r,age, population, pop_density) %>%
+  drop_na() %>% 
+  select(where(is.numeric))
+
+pca_fit <- mean_r_pca %>% 
+  prcomp(scale = TRUE)
+
+pca_fit %>%
+  augment(mean_r %>% drop_na()) %>% # add original dataset back in
+  ggplot(aes(.fittedPC1, .fittedPC2, color = r)) + 
+  geom_point(size = 3, alpha = 0.8)
+
+# plot rotation matrix
+pca_fit %>%
+  broom::tidy(matrix = "rotation") %>%
+  pivot_wider(names_from = "PC",
+              names_prefix = "PC",
+              values_from = "value") %>%
+  ggplot(aes(PC1, PC2)) +
+  geom_segment(
+    xend = 0,
+    yend = 0,
+    arrow = arrow(
+      angle = 20,
+      ends = "first",
+      type = "closed",
+      length = grid::unit(8, "pt")
+    )
+  ) +
+  geom_text(
+    aes(label = column),
+    hjust = 1,
+    nudge_x = -0.02,
+    color = "#904C2F"
+  ) +
+  # xlim(-1.25, .5) + ylim(-.5, 1) +
+  coord_fixed() # fix aspect ratio to 1:1
+
+pca_fit %>%
+  tidy(matrix = "eigenvalues") %>%
+  ggplot(aes(PC, percent, fill = PC)) +
+  geom_col(alpha = 0.8) +
+  scale_x_continuous(breaks = 1:9) +
+  scale_y_continuous(labels = scales::percent_format(),
+                     expand = expansion(mult = c(0, 0.01)))
+
+```
+
+
+```{r activity_functions}
+act1 <- function(n, mu=10, sigma=3) {
+	r <- rnorm(n, mean = mu, sd = sigma)
+	r <- ifelse(r > 100,100,r)
+	return(as.integer(r))
+}
+
+act2 <- function(n, mu=10, sigma=3, gamma=-0.5) {
+	r <- act1(n, mu, sigma) + runif(n)^gamma
+	r <- ifelse(r > 100, 100, r)
+	return(as.integer(r))
+}
+```
+
+
+```{r activity_distribution_plot, eval=FALSE}
+n <- 1e6
+
+dist <- tibble('act1' = act1(n), 'act2' = act2(n)) %>% 
+	pivot_longer(cols = c('act1','act2'), names_to = 'distribution', values_to = 'x')
+
+median_1 <- dist %>% filter(distribution == 'act1') %>% summarise(median(x)) %>% as.integer()
+median_2 <- dist %>% filter(distribution == 'act2') %>% summarise(median(x)) %>% as.integer()
+mean_1 <- dist %>% filter(distribution == 'act1') %>% summarise(mean(x)) %>% as.double()
+mean_2 <- dist %>% filter(distribution == 'act2') %>% summarise(mean(x)) %>% as.double()
+
+dist %>% 
+	ggplot(aes(x, after_stat(density), fill = distribution)) +
+	geom_histogram(alpha = 0.8, binwidth = 1) +
+	geom_vline(xintercept = median_1, linetype = 2, size = 0.8, color = '#821010') +
+	geom_vline(xintercept = median_2, linetype = 2, size = 0.8, color = '#245278') +
+	xlim(0,30) +
+	scale_fill_brewer(palette = 'Set1') +
+	labs(
+		y = 'Density',
+	  fill = 'Activity'
+	) +
+	theme(
+		plot.margin = margin(10, 10, 10, 10)
+	)
+
+ggsave('activity.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r, eval=FALSE}
+d1 <- dist %>% 
+	ggplot(aes(x, after_stat(density), fill = distribution)) +
+	geom_histogram(alpha = 0.8, binwidth = 1) +
+	geom_vline(xintercept = median_1, linetype = 2, size = 0.8, color = '#821010') +
+	geom_vline(xintercept = median_2, linetype = 2, size = 0.8, color = '#245278') +
+	xlim(0,30) +
+	scale_fill_brewer(palette = 'Set1') +
+	labs(
+		y = 'Density',
+	  fill = 'Activity'
+	) +
+	theme(
+		plot.margin = margin(10, 10, 10, 10),
+		legend.text = element_text(face = 'italic')
+	)
+
+d2 <- dist %>% 
+	group_by(distribution, x) %>% 
+	count() %>% 
+	filter(x > 0) %>% 
+	ggplot(aes(x, n, color = distribution)) +
+	# geom_smooth(alpha = 0.4) +
+	geom_point(size = 2, alpha = 0.8) +
+	scale_x_continuous(trans = 'log10', breaks = c(1,3,10,30,100)) +
+	scale_y_continuous(trans = 'log10', labels = label_number()) +
+	scale_color_brewer(palette = 'Set1', guide = 'none') +
+	labs(color = 'Activity',
+			 y = 'Count'
+			) +
+	theme(axis.title.y = element_text(vjust = 0))
+
+d1 + d2 +
+	plot_layout(guides = 'collect')
+
+ggsave('activity2.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+```{r, eval=FALSE}
+dist_panels <- dist %>% 
+	mutate(panel = ifelse(distribution == 'act1','Activity 1','Activity 2')) %>% 
+	rbind(dist %>% mutate(distribution = 'total', panel = 'Activity 1')) %>% 
+	rbind(dist %>% mutate(distribution = 'total', panel = 'Activity 2'))
+
+dist_panels %>% 
+	mutate(distribution = fct_relevel(distribution, 'total','act1','act2')) %>% 
+	ggplot(aes(x, after_stat(count), fill = distribution)) +
+	geom_density(alpha = 0.8, bw = 0.7) +
+	geom_vline(xintercept = median(dist_panels$distribution)) +
+	xlim(0,25) +
+	scale_fill_manual(values = c('grey50','#e41a1c','#377eb8')) +
+	facet_wrap(~panel)
+
+
+dist %>% 
+	ggplot(aes(x, after_stat(density), fill = distribution)) +
+	geom_density(alpha = 0.8, kernel = 'gaussian', bw = 0.5) +
+	xlim(0,25) +
+	scale_fill_brewer(palette = 'Set1') +
+	labs(
+		y = 'Density',
+	  fill = 'Activity'
+	) +
+	theme(
+		plot.margin = margin(10, 10, 10, 10)
+	)
+
+```
+
+```{r daily_activity}
+daily_activity1 <- function(n) {
+	activity <- act1(n)
+	r <- as.integer(runif(n, 0, activity))
+	return(r)
+}
+daily_activity2 <- function(n) {
+	activity <- act2(n)
+	r <- as.integer(runif(n, 0, activity))
+	return(r)
+}
+
+n <- 1e6
+
+dist_daily_activity <- tibble('daily_act1' = daily_activity1(n), 'daily_act2' = daily_activity2(n)) %>% 
+	pivot_longer(cols = c('daily_act1','daily_act2'), names_to = 'distribution', values_to = 'x')
+
+dist_daily_activity %>% 
+	group_by(distribution, x) %>% 
+	count() %>% 
+	filter(x > 0) %>% 
+	ggplot(aes(x, n, color = distribution)) +
+	# geom_smooth(alpha = 0.4) +
+	geom_point(size = 2, alpha = 0.8) +
+	scale_x_continuous(trans = 'log10', breaks = c(1,3,10,30,100)) +
+	scale_y_continuous(trans = 'log10', labels = label_number()) +
+	scale_color_brewer(palette = 'Set1', guide = 'none') +
+	labs(color = 'Activity',
+			 y = 'Count'
+			) +
+	theme(axis.title.y = element_text(vjust = 0))
+
+ggsave('daily_activity.png', width = width, height = height*0.75, dpi = dpi, path = path)
+```
+
+
+```{r population_distributions}
+municipalities %>% 
+	mutate(population_cut = cut_width(population, 10000)) %>% 
+	group_by(population_cut) %>% 
+	count() %>% 
+	mutate(x = as.numeric(str_remove(str_split(population_cut,',')[[1]][2],']'))) %>% 
+	ggplot(aes(x,n)) +
+	# geom_smooth() +
+	geom_point(size = 2, color = '#377eb8') +
+	scale_x_log10(labels = label_number()) +
+	scale_y_log10(labels = label_number(accuracy = 1))
+
+```
+
+
+

@@ -1,0 +1,211 @@
+,type of school,sex,age,contents,year,value
+0,"Public maintained schools, total",Both sexes,All ages,"Pupils, apprentices, students and participants",2019,260341
+1,"Public maintained schools, total",Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,186
+2,"Public maintained schools, total",Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,176923
+3,"Public maintained schools, total",Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,58448
+4,"Public maintained schools, total",Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,9570
+5,"Public maintained schools, total",Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,5976
+6,"Public maintained schools, total",Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,9238
+7,"Public maintained schools, total",Males,All ages,"Pupils, apprentices, students and participants",2019,139117
+8,"Public maintained schools, total",Males,0-15 years,"Pupils, apprentices, students and participants",2019,81
+9,"Public maintained schools, total",Males,16-18 years,"Pupils, apprentices, students and participants",2019,90281
+10,"Public maintained schools, total",Males,19-24 years,"Pupils, apprentices, students and participants",2019,36409
+11,"Public maintained schools, total",Males,25-29 years,"Pupils, apprentices, students and participants",2019,5560
+12,"Public maintained schools, total",Males,30-34 years,"Pupils, apprentices, students and participants",2019,2909
+13,"Public maintained schools, total",Males,35 years or older,"Pupils, apprentices, students and participants",2019,3877
+14,"Public maintained schools, total",Females,All ages,"Pupils, apprentices, students and participants",2019,121224
+15,"Public maintained schools, total",Females,0-15 years,"Pupils, apprentices, students and participants",2019,105
+16,"Public maintained schools, total",Females,16-18 years,"Pupils, apprentices, students and participants",2019,86642
+17,"Public maintained schools, total",Females,19-24 years,"Pupils, apprentices, students and participants",2019,22039
+18,"Public maintained schools, total",Females,25-29 years,"Pupils, apprentices, students and participants",2019,4010
+19,"Public maintained schools, total",Females,30-34 years,"Pupils, apprentices, students and participants",2019,3067
+20,"Public maintained schools, total",Females,35 years or older,"Pupils, apprentices, students and participants",2019,5361
+21,Upper secondary education,Both sexes,All ages,"Pupils, apprentices, students and participants",2019,196629
+22,Upper secondary education,Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,147
+23,Upper secondary education,Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,164688
+24,Upper secondary education,Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,19854
+25,Upper secondary education,Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,4386
+26,Upper secondary education,Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,3187
+27,Upper secondary education,Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,4367
+28,Upper secondary education,Males,All ages,"Pupils, apprentices, students and participants",2019,97208
+29,Upper secondary education,Males,0-15 years,"Pupils, apprentices, students and participants",2019,64
+30,Upper secondary education,Males,16-18 years,"Pupils, apprentices, students and participants",2019,81461
+31,Upper secondary education,Males,19-24 years,"Pupils, apprentices, students and participants",2019,10582
+32,Upper secondary education,Males,25-29 years,"Pupils, apprentices, students and participants",2019,2201
+33,Upper secondary education,Males,30-34 years,"Pupils, apprentices, students and participants",2019,1373
+34,Upper secondary education,Males,35 years or older,"Pupils, apprentices, students and participants",2019,1527
+35,Upper secondary education,Females,All ages,"Pupils, apprentices, students and participants",2019,99421
+36,Upper secondary education,Females,0-15 years,"Pupils, apprentices, students and participants",2019,83
+37,Upper secondary education,Females,16-18 years,"Pupils, apprentices, students and participants",2019,83227
+38,Upper secondary education,Females,19-24 years,"Pupils, apprentices, students and participants",2019,9272
+39,Upper secondary education,Females,25-29 years,"Pupils, apprentices, students and participants",2019,2185
+40,Upper secondary education,Females,30-34 years,"Pupils, apprentices, students and participants",2019,1814
+41,Upper secondary education,Females,35 years or older,"Pupils, apprentices, students and participants",2019,2840
+42,"Apprenticeship training, apprentices",Both sexes,All ages,"Pupils, apprentices, students and participants",2019,46597
+43,"Apprenticeship training, apprentices",Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+44,"Apprenticeship training, apprentices",Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,11111
+45,"Apprenticeship training, apprentices",Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,28059
+46,"Apprenticeship training, apprentices",Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,3978
+47,"Apprenticeship training, apprentices",Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,1711
+48,"Apprenticeship training, apprentices",Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,1738
+49,"Apprenticeship training, apprentices",Males,All ages,"Pupils, apprentices, students and participants",2019,33463
+50,"Apprenticeship training, apprentices",Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+51,"Apprenticeship training, apprentices",Males,16-18 years,"Pupils, apprentices, students and participants",2019,8114
+52,"Apprenticeship training, apprentices",Males,19-24 years,"Pupils, apprentices, students and participants",2019,20610
+53,"Apprenticeship training, apprentices",Males,25-29 years,"Pupils, apprentices, students and participants",2019,2698
+54,"Apprenticeship training, apprentices",Males,30-34 years,"Pupils, apprentices, students and participants",2019,1074
+55,"Apprenticeship training, apprentices",Males,35 years or older,"Pupils, apprentices, students and participants",2019,967
+56,"Apprenticeship training, apprentices",Females,All ages,"Pupils, apprentices, students and participants",2019,13134
+57,"Apprenticeship training, apprentices",Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+58,"Apprenticeship training, apprentices",Females,16-18 years,"Pupils, apprentices, students and participants",2019,2997
+59,"Apprenticeship training, apprentices",Females,19-24 years,"Pupils, apprentices, students and participants",2019,7449
+60,"Apprenticeship training, apprentices",Females,25-29 years,"Pupils, apprentices, students and participants",2019,1280
+61,"Apprenticeship training, apprentices",Females,30-34 years,"Pupils, apprentices, students and participants",2019,637
+62,"Apprenticeship training, apprentices",Females,35 years or older,"Pupils, apprentices, students and participants",2019,771
+63,"Apprenticeship training, trainees",Both sexes,All ages,"Pupils, apprentices, students and participants",2019,1860
+64,"Apprenticeship training, trainees",Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+65,"Apprenticeship training, trainees",Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,400
+66,"Apprenticeship training, trainees",Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,1265
+67,"Apprenticeship training, trainees",Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,111
+68,"Apprenticeship training, trainees",Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,42
+69,"Apprenticeship training, trainees",Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,42
+70,"Apprenticeship training, trainees",Males,All ages,"Pupils, apprentices, students and participants",2019,1319
+71,"Apprenticeship training, trainees",Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+72,"Apprenticeship training, trainees",Males,16-18 years,"Pupils, apprentices, students and participants",2019,301
+73,"Apprenticeship training, trainees",Males,19-24 years,"Pupils, apprentices, students and participants",2019,890
+74,"Apprenticeship training, trainees",Males,25-29 years,"Pupils, apprentices, students and participants",2019,73
+75,"Apprenticeship training, trainees",Males,30-34 years,"Pupils, apprentices, students and participants",2019,30
+76,"Apprenticeship training, trainees",Males,35 years or older,"Pupils, apprentices, students and participants",2019,25
+77,"Apprenticeship training, trainees",Females,All ages,"Pupils, apprentices, students and participants",2019,541
+78,"Apprenticeship training, trainees",Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+79,"Apprenticeship training, trainees",Females,16-18 years,"Pupils, apprentices, students and participants",2019,99
+80,"Apprenticeship training, trainees",Females,19-24 years,"Pupils, apprentices, students and participants",2019,375
+81,"Apprenticeship training, trainees",Females,25-29 years,"Pupils, apprentices, students and participants",2019,38
+82,"Apprenticeship training, trainees",Females,30-34 years,"Pupils, apprentices, students and participants",2019,12
+83,"Apprenticeship training, trainees",Females,35 years or older,"Pupils, apprentices, students and participants",2019,17
+84,Other upper secondary education programmes,Both sexes,All ages,"Pupils, apprentices, students and participants",2019,1349
+85,Other upper secondary education programmes,Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,39
+86,Other upper secondary education programmes,Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,154
+87,Other upper secondary education programmes,Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,763
+88,Other upper secondary education programmes,Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,167
+89,Other upper secondary education programmes,Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,84
+90,Other upper secondary education programmes,Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,142
+91,Other upper secondary education programmes,Males,All ages,"Pupils, apprentices, students and participants",2019,526
+92,Other upper secondary education programmes,Males,0-15 years,"Pupils, apprentices, students and participants",2019,17
+93,Other upper secondary education programmes,Males,16-18 years,"Pupils, apprentices, students and participants",2019,81
+94,Other upper secondary education programmes,Males,19-24 years,"Pupils, apprentices, students and participants",2019,294
+95,Other upper secondary education programmes,Males,25-29 years,"Pupils, apprentices, students and participants",2019,61
+96,Other upper secondary education programmes,Males,30-34 years,"Pupils, apprentices, students and participants",2019,32
+97,Other upper secondary education programmes,Males,35 years or older,"Pupils, apprentices, students and participants",2019,41
+98,Other upper secondary education programmes,Females,All ages,"Pupils, apprentices, students and participants",2019,823
+99,Other upper secondary education programmes,Females,0-15 years,"Pupils, apprentices, students and participants",2019,22
+100,Other upper secondary education programmes,Females,16-18 years,"Pupils, apprentices, students and participants",2019,73
+101,Other upper secondary education programmes,Females,19-24 years,"Pupils, apprentices, students and participants",2019,469
+102,Other upper secondary education programmes,Females,25-29 years,"Pupils, apprentices, students and participants",2019,106
+103,Other upper secondary education programmes,Females,30-34 years,"Pupils, apprentices, students and participants",2019,52
+104,Other upper secondary education programmes,Females,35 years or older,"Pupils, apprentices, students and participants",2019,101
+105,Folk high schools,Both sexes,All ages,"Pupils, apprentices, students and participants",2019,7859
+106,Folk high schools,Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+107,Folk high schools,Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,551
+108,Folk high schools,Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,7163
+109,Folk high schools,Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,87
+110,Folk high schools,Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,18
+111,Folk high schools,Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,40
+112,Folk high schools,Males,All ages,"Pupils, apprentices, students and participants",2019,3442
+113,Folk high schools,Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+114,Folk high schools,Males,16-18 years,"Pupils, apprentices, students and participants",2019,306
+115,Folk high schools,Males,19-24 years,"Pupils, apprentices, students and participants",2019,3046
+116,Folk high schools,Males,25-29 years,"Pupils, apprentices, students and participants",2019,55
+117,Folk high schools,Males,30-34 years,"Pupils, apprentices, students and participants",2019,10
+118,Folk high schools,Males,35 years or older,"Pupils, apprentices, students and participants",2019,25
+119,Folk high schools,Females,All ages,"Pupils, apprentices, students and participants",2019,4417
+120,Folk high schools,Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+121,Folk high schools,Females,16-18 years,"Pupils, apprentices, students and participants",2019,245
+122,Folk high schools,Females,19-24 years,"Pupils, apprentices, students and participants",2019,4117
+123,Folk high schools,Females,25-29 years,"Pupils, apprentices, students and participants",2019,32
+124,Folk high schools,Females,30-34 years,"Pupils, apprentices, students and participants",2019,8
+125,Folk high schools,Females,35 years or older,"Pupils, apprentices, students and participants",2019,15
+126,Employment training,Both sexes,All ages,"Pupils, apprentices, students and participants",2019,5048
+127,Employment training,Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+128,Employment training,Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,1
+129,Employment training,Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,582
+130,Employment training,Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,712
+131,Employment training,Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,880
+132,Employment training,Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,2873
+133,Employment training,Males,All ages,"Pupils, apprentices, students and participants",2019,2313
+134,Employment training,Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+135,Employment training,Males,16-18 years,"Pupils, apprentices, students and participants",2019,0
+136,Employment training,Males,19-24 years,"Pupils, apprentices, students and participants",2019,346
+137,Employment training,Males,25-29 years,"Pupils, apprentices, students and participants",2019,364
+138,Employment training,Males,30-34 years,"Pupils, apprentices, students and participants",2019,341
+139,Employment training,Males,35 years or older,"Pupils, apprentices, students and participants",2019,1262
+140,Employment training,Females,All ages,"Pupils, apprentices, students and participants",2019,2735
+141,Employment training,Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+142,Employment training,Females,16-18 years,"Pupils, apprentices, students and participants",2019,1
+143,Employment training,Females,19-24 years,"Pupils, apprentices, students and participants",2019,236
+144,Employment training,Females,25-29 years,"Pupils, apprentices, students and participants",2019,348
+145,Employment training,Females,30-34 years,"Pupils, apprentices, students and participants",2019,539
+146,Employment training,Females,35 years or older,"Pupils, apprentices, students and participants",2019,1611
+147,"Vocational school, public",Both sexes,All ages,"Pupils, apprentices, students and participants",2019,0
+148,"Vocational school, public",Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+149,"Vocational school, public",Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,0
+150,"Vocational school, public",Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,0
+151,"Vocational school, public",Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,0
+152,"Vocational school, public",Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,0
+153,"Vocational school, public",Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,0
+154,"Vocational school, public",Males,All ages,"Pupils, apprentices, students and participants",2019,0
+155,"Vocational school, public",Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+156,"Vocational school, public",Males,16-18 years,"Pupils, apprentices, students and participants",2019,0
+157,"Vocational school, public",Males,19-24 years,"Pupils, apprentices, students and participants",2019,0
+158,"Vocational school, public",Males,25-29 years,"Pupils, apprentices, students and participants",2019,0
+159,"Vocational school, public",Males,30-34 years,"Pupils, apprentices, students and participants",2019,0
+160,"Vocational school, public",Males,35 years or older,"Pupils, apprentices, students and participants",2019,0
+161,"Vocational school, public",Females,All ages,"Pupils, apprentices, students and participants",2019,0
+162,"Vocational school, public",Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+163,"Vocational school, public",Females,16-18 years,"Pupils, apprentices, students and participants",2019,0
+164,"Vocational school, public",Females,19-24 years,"Pupils, apprentices, students and participants",2019,0
+165,"Vocational school, public",Females,25-29 years,"Pupils, apprentices, students and participants",2019,0
+166,"Vocational school, public",Females,30-34 years,"Pupils, apprentices, students and participants",2019,0
+167,"Vocational school, public",Females,35 years or older,"Pupils, apprentices, students and participants",2019,0
+168,"Vocational schools, private",Both sexes,All ages,"Pupils, apprentices, students and participants",2019,0
+169,"Vocational schools, private",Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+170,"Vocational schools, private",Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,0
+171,"Vocational schools, private",Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,0
+172,"Vocational schools, private",Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,0
+173,"Vocational schools, private",Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,0
+174,"Vocational schools, private",Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,0
+175,"Vocational schools, private",Males,All ages,"Pupils, apprentices, students and participants",2019,0
+176,"Vocational schools, private",Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+177,"Vocational schools, private",Males,16-18 years,"Pupils, apprentices, students and participants",2019,0
+178,"Vocational schools, private",Males,19-24 years,"Pupils, apprentices, students and participants",2019,0
+179,"Vocational schools, private",Males,25-29 years,"Pupils, apprentices, students and participants",2019,0
+180,"Vocational schools, private",Males,30-34 years,"Pupils, apprentices, students and participants",2019,0
+181,"Vocational schools, private",Males,35 years or older,"Pupils, apprentices, students and participants",2019,0
+182,"Vocational schools, private",Females,All ages,"Pupils, apprentices, students and participants",2019,0
+183,"Vocational schools, private",Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+184,"Vocational schools, private",Females,16-18 years,"Pupils, apprentices, students and participants",2019,0
+185,"Vocational schools, private",Females,19-24 years,"Pupils, apprentices, students and participants",2019,0
+186,"Vocational schools, private",Females,25-29 years,"Pupils, apprentices, students and participants",2019,0
+187,"Vocational schools, private",Females,30-34 years,"Pupils, apprentices, students and participants",2019,0
+188,"Vocational schools, private",Females,35 years or older,"Pupils, apprentices, students and participants",2019,0
+189,Preparatory course for engineering education,Both sexes,All ages,"Pupils, apprentices, students and participants",2019,999
+190,Preparatory course for engineering education,Both sexes,0-15 years,"Pupils, apprentices, students and participants",2019,0
+191,Preparatory course for engineering education,Both sexes,16-18 years,"Pupils, apprentices, students and participants",2019,18
+192,Preparatory course for engineering education,Both sexes,19-24 years,"Pupils, apprentices, students and participants",2019,762
+193,Preparatory course for engineering education,Both sexes,25-29 years,"Pupils, apprentices, students and participants",2019,129
+194,Preparatory course for engineering education,Both sexes,30-34 years,"Pupils, apprentices, students and participants",2019,54
+195,Preparatory course for engineering education,Both sexes,35 years or older,"Pupils, apprentices, students and participants",2019,36
+196,Preparatory course for engineering education,Males,All ages,"Pupils, apprentices, students and participants",2019,846
+197,Preparatory course for engineering education,Males,0-15 years,"Pupils, apprentices, students and participants",2019,0
+198,Preparatory course for engineering education,Males,16-18 years,"Pupils, apprentices, students and participants",2019,18
+199,Preparatory course for engineering education,Males,19-24 years,"Pupils, apprentices, students and participants",2019,641
+200,Preparatory course for engineering education,Males,25-29 years,"Pupils, apprentices, students and participants",2019,108
+201,Preparatory course for engineering education,Males,30-34 years,"Pupils, apprentices, students and participants",2019,49
+202,Preparatory course for engineering education,Males,35 years or older,"Pupils, apprentices, students and participants",2019,30
+203,Preparatory course for engineering education,Females,All ages,"Pupils, apprentices, students and participants",2019,153
+204,Preparatory course for engineering education,Females,0-15 years,"Pupils, apprentices, students and participants",2019,0
+205,Preparatory course for engineering education,Females,16-18 years,"Pupils, apprentices, students and participants",2019,0
+206,Preparatory course for engineering education,Females,19-24 years,"Pupils, apprentices, students and participants",2019,121
+207,Preparatory course for engineering education,Females,25-29 years,"Pupils, apprentices, students and participants",2019,21
+208,Preparatory course for engineering education,Females,30-34 years,"Pupils, apprentices, students and participants",2019,5
+209,Preparatory course for engineering education,Females,35 years or older,"Pupils, apprentices, students and participants",2019,6

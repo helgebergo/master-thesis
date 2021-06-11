@@ -1,0 +1,261 @@
+,region,ownership,contents,year,value
+0,Viken,"Ownership, total",Institutions,2018,0.0
+1,Viken,"Ownership, total",Beds,2018,
+2,Viken,Municipal,Institutions,2018,0.0
+3,Viken,Municipal,Beds,2018,
+4,Viken,Private non-profit,Institutions,2018,0.0
+5,Viken,Private non-profit,Beds,2018,
+6,Viken,Private commercial,Institutions,2018,0.0
+7,Viken,Private commercial,Beds,2018,
+8,Viken,Othe / unknown ownership,Institutions,2018,0.0
+9,Viken,Othe / unknown ownership,Beds,2018,
+10,Østfold (-2019),"Ownership, total",Institutions,2018,41.0
+11,Østfold (-2019),"Ownership, total",Beds,2018,2078.0
+12,Østfold (-2019),Municipal,Institutions,2018,41.0
+13,Østfold (-2019),Municipal,Beds,2018,
+14,Østfold (-2019),Private non-profit,Institutions,2018,0.0
+15,Østfold (-2019),Private non-profit,Beds,2018,
+16,Østfold (-2019),Private commercial,Institutions,2018,0.0
+17,Østfold (-2019),Private commercial,Beds,2018,
+18,Østfold (-2019),Othe / unknown ownership,Institutions,2018,0.0
+19,Østfold (-2019),Othe / unknown ownership,Beds,2018,
+20,Akershus (-2019),"Ownership, total",Institutions,2018,66.0
+21,Akershus (-2019),"Ownership, total",Beds,2018,4008.0
+22,Akershus (-2019),Municipal,Institutions,2018,61.0
+23,Akershus (-2019),Municipal,Beds,2018,
+24,Akershus (-2019),Private non-profit,Institutions,2018,0.0
+25,Akershus (-2019),Private non-profit,Beds,2018,
+26,Akershus (-2019),Private commercial,Institutions,2018,5.0
+27,Akershus (-2019),Private commercial,Beds,2018,
+28,Akershus (-2019),Othe / unknown ownership,Institutions,2018,0.0
+29,Akershus (-2019),Othe / unknown ownership,Beds,2018,
+30,Buskerud (-2019),"Ownership, total",Institutions,2018,49.0
+31,Buskerud (-2019),"Ownership, total",Beds,2018,1964.0
+32,Buskerud (-2019),Municipal,Institutions,2018,47.0
+33,Buskerud (-2019),Municipal,Beds,2018,
+34,Buskerud (-2019),Private non-profit,Institutions,2018,0.0
+35,Buskerud (-2019),Private non-profit,Beds,2018,
+36,Buskerud (-2019),Private commercial,Institutions,2018,2.0
+37,Buskerud (-2019),Private commercial,Beds,2018,
+38,Buskerud (-2019),Othe / unknown ownership,Institutions,2018,0.0
+39,Buskerud (-2019),Othe / unknown ownership,Beds,2018,
+40,Oslo,"Ownership, total",Institutions,2018,45.0
+41,Oslo,"Ownership, total",Beds,2018,4161.0
+42,Oslo,Municipal,Institutions,2018,22.0
+43,Oslo,Municipal,Beds,2018,
+44,Oslo,Private non-profit,Institutions,2018,8.0
+45,Oslo,Private non-profit,Beds,2018,
+46,Oslo,Private commercial,Institutions,2018,15.0
+47,Oslo,Private commercial,Beds,2018,
+48,Oslo,Othe / unknown ownership,Institutions,2018,0.0
+49,Oslo,Othe / unknown ownership,Beds,2018,
+50,Innlandet,"Ownership, total",Institutions,2018,0.0
+51,Innlandet,"Ownership, total",Beds,2018,
+52,Innlandet,Municipal,Institutions,2018,0.0
+53,Innlandet,Municipal,Beds,2018,
+54,Innlandet,Private non-profit,Institutions,2018,0.0
+55,Innlandet,Private non-profit,Beds,2018,
+56,Innlandet,Private commercial,Institutions,2018,0.0
+57,Innlandet,Private commercial,Beds,2018,
+58,Innlandet,Othe / unknown ownership,Institutions,2018,0.0
+59,Innlandet,Othe / unknown ownership,Beds,2018,
+60,Hedmark (-2019),"Ownership, total",Institutions,2018,41.0
+61,Hedmark (-2019),"Ownership, total",Beds,2018,1966.0
+62,Hedmark (-2019),Municipal,Institutions,2018,41.0
+63,Hedmark (-2019),Municipal,Beds,2018,
+64,Hedmark (-2019),Private non-profit,Institutions,2018,0.0
+65,Hedmark (-2019),Private non-profit,Beds,2018,
+66,Hedmark (-2019),Private commercial,Institutions,2018,0.0
+67,Hedmark (-2019),Private commercial,Beds,2018,
+68,Hedmark (-2019),Othe / unknown ownership,Institutions,2018,0.0
+69,Hedmark (-2019),Othe / unknown ownership,Beds,2018,
+70,Oppland (-2019),"Ownership, total",Institutions,2018,43.0
+71,Oppland (-2019),"Ownership, total",Beds,2018,1749.0
+72,Oppland (-2019),Municipal,Institutions,2018,39.0
+73,Oppland (-2019),Municipal,Beds,2018,
+74,Oppland (-2019),Private non-profit,Institutions,2018,1.0
+75,Oppland (-2019),Private non-profit,Beds,2018,
+76,Oppland (-2019),Private commercial,Institutions,2018,3.0
+77,Oppland (-2019),Private commercial,Beds,2018,
+78,Oppland (-2019),Othe / unknown ownership,Institutions,2018,0.0
+79,Oppland (-2019),Othe / unknown ownership,Beds,2018,
+80,Vestfold og Telemark,"Ownership, total",Institutions,2018,0.0
+81,Vestfold og Telemark,"Ownership, total",Beds,2018,
+82,Vestfold og Telemark,Municipal,Institutions,2018,0.0
+83,Vestfold og Telemark,Municipal,Beds,2018,
+84,Vestfold og Telemark,Private non-profit,Institutions,2018,0.0
+85,Vestfold og Telemark,Private non-profit,Beds,2018,
+86,Vestfold og Telemark,Private commercial,Institutions,2018,0.0
+87,Vestfold og Telemark,Private commercial,Beds,2018,
+88,Vestfold og Telemark,Othe / unknown ownership,Institutions,2018,0.0
+89,Vestfold og Telemark,Othe / unknown ownership,Beds,2018,
+90,Vestfold (-2019),"Ownership, total",Institutions,2018,36.0
+91,Vestfold (-2019),"Ownership, total",Beds,2018,1793.0
+92,Vestfold (-2019),Municipal,Institutions,2018,32.0
+93,Vestfold (-2019),Municipal,Beds,2018,
+94,Vestfold (-2019),Private non-profit,Institutions,2018,2.0
+95,Vestfold (-2019),Private non-profit,Beds,2018,
+96,Vestfold (-2019),Private commercial,Institutions,2018,2.0
+97,Vestfold (-2019),Private commercial,Beds,2018,
+98,Vestfold (-2019),Othe / unknown ownership,Institutions,2018,0.0
+99,Vestfold (-2019),Othe / unknown ownership,Beds,2018,
+100,Telemark (-2019),"Ownership, total",Institutions,2018,34.0
+101,Telemark (-2019),"Ownership, total",Beds,2018,1363.0
+102,Telemark (-2019),Municipal,Institutions,2018,34.0
+103,Telemark (-2019),Municipal,Beds,2018,
+104,Telemark (-2019),Private non-profit,Institutions,2018,0.0
+105,Telemark (-2019),Private non-profit,Beds,2018,
+106,Telemark (-2019),Private commercial,Institutions,2018,0.0
+107,Telemark (-2019),Private commercial,Beds,2018,
+108,Telemark (-2019),Othe / unknown ownership,Institutions,2018,0.0
+109,Telemark (-2019),Othe / unknown ownership,Beds,2018,
+110,Agder,"Ownership, total",Institutions,2018,0.0
+111,Agder,"Ownership, total",Beds,2018,
+112,Agder,Municipal,Institutions,2018,0.0
+113,Agder,Municipal,Beds,2018,
+114,Agder,Private non-profit,Institutions,2018,0.0
+115,Agder,Private non-profit,Beds,2018,
+116,Agder,Private commercial,Institutions,2018,0.0
+117,Agder,Private commercial,Beds,2018,
+118,Agder,Othe / unknown ownership,Institutions,2018,0.0
+119,Agder,Othe / unknown ownership,Beds,2018,
+120,Aust-Agder (-2019),"Ownership, total",Institutions,2018,27.0
+121,Aust-Agder (-2019),"Ownership, total",Beds,2018,855.0
+122,Aust-Agder (-2019),Municipal,Institutions,2018,27.0
+123,Aust-Agder (-2019),Municipal,Beds,2018,
+124,Aust-Agder (-2019),Private non-profit,Institutions,2018,0.0
+125,Aust-Agder (-2019),Private non-profit,Beds,2018,
+126,Aust-Agder (-2019),Private commercial,Institutions,2018,0.0
+127,Aust-Agder (-2019),Private commercial,Beds,2018,
+128,Aust-Agder (-2019),Othe / unknown ownership,Institutions,2018,0.0
+129,Aust-Agder (-2019),Othe / unknown ownership,Beds,2018,
+130,Vest-Agder (-2019),"Ownership, total",Institutions,2018,34.0
+131,Vest-Agder (-2019),"Ownership, total",Beds,2018,1274.0
+132,Vest-Agder (-2019),Municipal,Institutions,2018,34.0
+133,Vest-Agder (-2019),Municipal,Beds,2018,
+134,Vest-Agder (-2019),Private non-profit,Institutions,2018,0.0
+135,Vest-Agder (-2019),Private non-profit,Beds,2018,
+136,Vest-Agder (-2019),Private commercial,Institutions,2018,0.0
+137,Vest-Agder (-2019),Private commercial,Beds,2018,
+138,Vest-Agder (-2019),Othe / unknown ownership,Institutions,2018,0.0
+139,Vest-Agder (-2019),Othe / unknown ownership,Beds,2018,
+140,Rogaland,"Ownership, total",Institutions,2018,78.0
+141,Rogaland,"Ownership, total",Beds,2018,3144.0
+142,Rogaland,Municipal,Institutions,2018,71.0
+143,Rogaland,Municipal,Beds,2018,
+144,Rogaland,Private non-profit,Institutions,2018,6.0
+145,Rogaland,Private non-profit,Beds,2018,
+146,Rogaland,Private commercial,Institutions,2018,1.0
+147,Rogaland,Private commercial,Beds,2018,
+148,Rogaland,Othe / unknown ownership,Institutions,2018,0.0
+149,Rogaland,Othe / unknown ownership,Beds,2018,
+150,Vestland,"Ownership, total",Institutions,2018,0.0
+151,Vestland,"Ownership, total",Beds,2018,
+152,Vestland,Municipal,Institutions,2018,0.0
+153,Vestland,Municipal,Beds,2018,
+154,Vestland,Private non-profit,Institutions,2018,0.0
+155,Vestland,Private non-profit,Beds,2018,
+156,Vestland,Private commercial,Institutions,2018,0.0
+157,Vestland,Private commercial,Beds,2018,
+158,Vestland,Othe / unknown ownership,Institutions,2018,0.0
+159,Vestland,Othe / unknown ownership,Beds,2018,
+160,Hordaland (-2019),"Ownership, total",Institutions,2018,96.0
+161,Hordaland (-2019),"Ownership, total",Beds,2018,4246.0
+162,Hordaland (-2019),Municipal,Institutions,2018,81.0
+163,Hordaland (-2019),Municipal,Beds,2018,
+164,Hordaland (-2019),Private non-profit,Institutions,2018,12.0
+165,Hordaland (-2019),Private non-profit,Beds,2018,
+166,Hordaland (-2019),Private commercial,Institutions,2018,3.0
+167,Hordaland (-2019),Private commercial,Beds,2018,
+168,Hordaland (-2019),Othe / unknown ownership,Institutions,2018,0.0
+169,Hordaland (-2019),Othe / unknown ownership,Beds,2018,
+170,Sogn og Fjordane (-2019),"Ownership, total",Institutions,2018,35.0
+171,Sogn og Fjordane (-2019),"Ownership, total",Beds,2018,1048.0
+172,Sogn og Fjordane (-2019),Municipal,Institutions,2018,35.0
+173,Sogn og Fjordane (-2019),Municipal,Beds,2018,
+174,Sogn og Fjordane (-2019),Private non-profit,Institutions,2018,0.0
+175,Sogn og Fjordane (-2019),Private non-profit,Beds,2018,
+176,Sogn og Fjordane (-2019),Private commercial,Institutions,2018,0.0
+177,Sogn og Fjordane (-2019),Private commercial,Beds,2018,
+178,Sogn og Fjordane (-2019),Othe / unknown ownership,Institutions,2018,0.0
+179,Sogn og Fjordane (-2019),Othe / unknown ownership,Beds,2018,
+180,Møre og Romsdal,"Ownership, total",Institutions,2018,65.0
+181,Møre og Romsdal,"Ownership, total",Beds,2018,2329.0
+182,Møre og Romsdal,Municipal,Institutions,2018,65.0
+183,Møre og Romsdal,Municipal,Beds,2018,
+184,Møre og Romsdal,Private non-profit,Institutions,2018,0.0
+185,Møre og Romsdal,Private non-profit,Beds,2018,
+186,Møre og Romsdal,Private commercial,Institutions,2018,0.0
+187,Møre og Romsdal,Private commercial,Beds,2018,
+188,Møre og Romsdal,Othe / unknown ownership,Institutions,2018,0.0
+189,Møre og Romsdal,Othe / unknown ownership,Beds,2018,
+190,Trøndelag - Trööndelage,"Ownership, total",Institutions,2018,97.0
+191,Trøndelag - Trööndelage,"Ownership, total",Beds,2018,3530.0
+192,Trøndelag - Trööndelage,Municipal,Institutions,2018,93.0
+193,Trøndelag - Trööndelage,Municipal,Beds,2018,
+194,Trøndelag - Trööndelage,Private non-profit,Institutions,2018,4.0
+195,Trøndelag - Trööndelage,Private non-profit,Beds,2018,
+196,Trøndelag - Trööndelage,Private commercial,Institutions,2018,0.0
+197,Trøndelag - Trööndelage,Private commercial,Beds,2018,
+198,Trøndelag - Trööndelage,Othe / unknown ownership,Institutions,2018,0.0
+199,Trøndelag - Trööndelage,Othe / unknown ownership,Beds,2018,
+200,Sør-Trøndelag (-2017),"Ownership, total",Institutions,2018,0.0
+201,Sør-Trøndelag (-2017),"Ownership, total",Beds,2018,
+202,Sør-Trøndelag (-2017),Municipal,Institutions,2018,0.0
+203,Sør-Trøndelag (-2017),Municipal,Beds,2018,
+204,Sør-Trøndelag (-2017),Private non-profit,Institutions,2018,0.0
+205,Sør-Trøndelag (-2017),Private non-profit,Beds,2018,
+206,Sør-Trøndelag (-2017),Private commercial,Institutions,2018,0.0
+207,Sør-Trøndelag (-2017),Private commercial,Beds,2018,
+208,Sør-Trøndelag (-2017),Othe / unknown ownership,Institutions,2018,0.0
+209,Sør-Trøndelag (-2017),Othe / unknown ownership,Beds,2018,
+210,Nord-Trøndelag (-2017),"Ownership, total",Institutions,2018,0.0
+211,Nord-Trøndelag (-2017),"Ownership, total",Beds,2018,
+212,Nord-Trøndelag (-2017),Municipal,Institutions,2018,0.0
+213,Nord-Trøndelag (-2017),Municipal,Beds,2018,
+214,Nord-Trøndelag (-2017),Private non-profit,Institutions,2018,0.0
+215,Nord-Trøndelag (-2017),Private non-profit,Beds,2018,
+216,Nord-Trøndelag (-2017),Private commercial,Institutions,2018,0.0
+217,Nord-Trøndelag (-2017),Private commercial,Beds,2018,
+218,Nord-Trøndelag (-2017),Othe / unknown ownership,Institutions,2018,0.0
+219,Nord-Trøndelag (-2017),Othe / unknown ownership,Beds,2018,
+220,Nordland,"Ownership, total",Institutions,2018,75.0
+221,Nordland,"Ownership, total",Beds,2018,2422.0
+222,Nordland,Municipal,Institutions,2018,75.0
+223,Nordland,Municipal,Beds,2018,
+224,Nordland,Private non-profit,Institutions,2018,0.0
+225,Nordland,Private non-profit,Beds,2018,
+226,Nordland,Private commercial,Institutions,2018,0.0
+227,Nordland,Private commercial,Beds,2018,
+228,Nordland,Othe / unknown ownership,Institutions,2018,0.0
+229,Nordland,Othe / unknown ownership,Beds,2018,
+230,Troms og Finnmark - Romsa ja Finnmárku,"Ownership, total",Institutions,2018,0.0
+231,Troms og Finnmark - Romsa ja Finnmárku,"Ownership, total",Beds,2018,
+232,Troms og Finnmark - Romsa ja Finnmárku,Municipal,Institutions,2018,0.0
+233,Troms og Finnmark - Romsa ja Finnmárku,Municipal,Beds,2018,
+234,Troms og Finnmark - Romsa ja Finnmárku,Private non-profit,Institutions,2018,0.0
+235,Troms og Finnmark - Romsa ja Finnmárku,Private non-profit,Beds,2018,
+236,Troms og Finnmark - Romsa ja Finnmárku,Private commercial,Institutions,2018,0.0
+237,Troms og Finnmark - Romsa ja Finnmárku,Private commercial,Beds,2018,
+238,Troms og Finnmark - Romsa ja Finnmárku,Othe / unknown ownership,Institutions,2018,0.0
+239,Troms og Finnmark - Romsa ja Finnmárku,Othe / unknown ownership,Beds,2018,
+240,Troms - Romsa (-2019),"Ownership, total",Institutions,2018,49.0
+241,Troms - Romsa (-2019),"Ownership, total",Beds,2018,1539.0
+242,Troms - Romsa (-2019),Municipal,Institutions,2018,49.0
+243,Troms - Romsa (-2019),Municipal,Beds,2018,
+244,Troms - Romsa (-2019),Private non-profit,Institutions,2018,0.0
+245,Troms - Romsa (-2019),Private non-profit,Beds,2018,
+246,Troms - Romsa (-2019),Private commercial,Institutions,2018,0.0
+247,Troms - Romsa (-2019),Private commercial,Beds,2018,
+248,Troms - Romsa (-2019),Othe / unknown ownership,Institutions,2018,0.0
+249,Troms - Romsa (-2019),Othe / unknown ownership,Beds,2018,
+250,Finnmark - Finnmárku (-2019),"Ownership, total",Institutions,2018,31.0
+251,Finnmark - Finnmárku (-2019),"Ownership, total",Beds,2018,657.0
+252,Finnmark - Finnmárku (-2019),Municipal,Institutions,2018,28.0
+253,Finnmark - Finnmárku (-2019),Municipal,Beds,2018,
+254,Finnmark - Finnmárku (-2019),Private non-profit,Institutions,2018,3.0
+255,Finnmark - Finnmárku (-2019),Private non-profit,Beds,2018,
+256,Finnmark - Finnmárku (-2019),Private commercial,Institutions,2018,0.0
+257,Finnmark - Finnmárku (-2019),Private commercial,Beds,2018,
+258,Finnmark - Finnmárku (-2019),Othe / unknown ownership,Institutions,2018,0.0
+259,Finnmark - Finnmárku (-2019),Othe / unknown ownership,Beds,2018,

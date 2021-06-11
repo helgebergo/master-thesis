@@ -1,0 +1,452 @@
+0101	Halden	Halden	Østfold	30,790	642.30	NO 0101 Halden.svg	Halden komm.svg	Bokmål	Thor Edquist	H
+0104	Moss	Moss	Østfold	32,407	63.57	NO 0104 Moss.svg	Moss komm.svg	Neutral	Hanne Tollerud	Ap
+0105	Sarpsborg	Sarpsborg	Østfold	55,127	405.61	NO 0105 Sarpsborg.svg	Sarpsborg komm.svg	Bokmål	Sindre Martinsen-Evje	Ap
+0106	Fredrikstad	Fredrikstad	Østfold	80,121	292.55	NO 0106 Fredrikstad.svg	Fredrikstad komm.svg	Bokmål	Jon-Ivar Nygård	Ap
+0111	Hvaler	Skjærhalden	Østfold	4,517	90.12	NO 0111 Hvaler.svg	Hvaler komm.svg	Bokmål	Eivind N. Borge	Frp
+0118	Aremark	Fosby	Østfold	1,398	319.27	NO 0118 Aremark.svg	Aremark komm.svg	Bokmål	Geir Aarbu	Sp
+0119	Marker	Ørje	Østfold	3,597	412.90	NO 0119 Marker.svg	Marker komm.svg	Bokmål	Kjersti Nythe Nilsen	Ap
+0121	Rømskog	Rømskog	Østfold	689	183.14	NO 0121 Rømskog.svg	Rømskog komm.svg	Bokmål	Thor Håkon Ramberg	KrF
+0122	Trøgstad	Skjønhaug	Østfold	5,367	204.45	NO 0122 Trøgstad.svg	Trøgstad komm.svg	Bokmål	Svend Saxe Frøshaug	Sp
+0123	Spydeberg	Spydeberg	Østfold	5,765	142.03	NO 0123 Spydeberg.svg	Spydeberg komm.svg	Bokmål	Petter Schou	H
+0124	Askim	Askim	Østfold	15,720	69.15	NO 0124 Askim.svg	Askim komm.svg	Bokmål	Thor Hals	H
+0125	Eidsberg	Mysen	Østfold	11,406	235.91	NO 0125 Eidsberg.svg	Eidsberg komm.svg	Bokmål	Erik Unaas	H
+0127	Skiptvet	Meieribyen	Østfold	3,783	101.21	NO 0127 Skiptvet.svg	Skiptvet komm.svg	Bokmål	Svein Olav Agnalt	Ap
+0128	Rakkestad	Rakkestad	Østfold	8,173	434.71	NO 0128 Rakkestad.svg	Rakkestad komm.svg	Bokmål	Ellen Solbrække	Ap
+0135	Råde	Karlshus	Østfold	7,398	118.77	NO 0135 Råde.svg	Råde komm.svg	Bokmål	René Rafshol	H
+0136	Rygge	Rygge	Østfold	15,747	74.20	NO 0136 Rygge.svg	Rygge komm.svg	Bokmål	Inger-Lise Skartlien	Ap
+0137	Våler	Kirkebygden	Østfold	5,335	256.96	NO 0137 Våler.svg	Våler Østfold komm.svg	Bokmål	Reidar Kaabbel	Sp
+0138	Hobøl	Elvestad	Østfold	5,557	140.39	NO 0138 Hobøl.svg	Hobøl komm.svg	Neutral	Olav Breivik	H
+0211	Vestby	Vestby	Akershus	17,188	133.97	NO 0211 Vestby.svg	Vestby komm.svg	Bokmål	Tom Anders Ludvigsen	Ap
+0213	Ski	Ski	Akershus	30,698	165.53	NO 0213 Ski.svg	Ski komm.svg	Neutral	Hanne Opdan	Ap
+0214	Ås	Ås	Akershus	19,288	103.10	NO 0214 Ås.svg	Ås komm.svg	Neutral	Ola Nordal	Ap
+0215	Frogn	Drøbak	Akershus	15,743	85.70	NO 0215 Frogn.svg	Frogn komm.svg	Bokmål	Odd Haktor Slåke	H
+0216	Nesodden	Nesoddtangen	Akershus	18,869	61.46	NO 0216 Nesodden.svg	Nesodden komm.svg	Bokmål	Truls Wickholm	Ap
+0217	Oppegård	Kolbotn	Akershus	26,988	37.04	NO 0217 Oppegård.svg	Oppegård komm.svg	Bokmål	Thomas Sjøvold	H
+0219	Bærum	Sandvika	Akershus	124,008	192.26	NO 0219 Bærum.svg	Bærum komm.svg	Bokmål	Lisbeth Hammer Krog	H
+0220	Asker	Asker	Akershus	60,781	100.71	NO 0220 Asker.svg	Asker komm.svg	Bokmål	Lene Conradi	H
+0221	Aurskog-Høland	Bjørkelangen	Akershus	16,162	961.66	NO 0221 Aurskog-Høland.svg	Aurskog-Høland komm.svg	Bokmål	Jan Mærli	Ap
+0226	Sørum	Sørumsand	Akershus	17,665	206.62	NO 0226 Sørum.svg	Sørum komm.svg	Neutral	Marianne Grimstad Hansen	H
+0227	Fet	Fetsund	Akershus	11,555	176.36	NO 0227 Fet.svg	Fet komm.svg	Bokmål	John Harry Skoglund	Ap
+0228	Rælingen	Fjerdingby	Akershus	17,730	71.68	NO 0228 Rælingen.svg	Rælingen komm.svg	Neutral	Øivind Sand	Ap
+0229	Enebakk	Kirkebygda	Akershus	10,927	232.58	NO 0229 Enebakk.svg	Enebakk komm.svg	Bokmål	Øystein Slette	Ap
+0230	Lørenskog	Kjenn	Akershus	37,406	70.55	NO 0230 Lørenskog.svg	Lørenskog komm.svg	Neutral	Ragnhild Bergheim	Ap
+0231	Skedsmo	Lillestrøm	Akershus	53,276	77.04	NO 0231 Skedsmo.svg	Skedsmo komm.svg	Bokmål	Ole Jacob Flæten	Ap
+0233	Nittedal	Rotnes	Akershus	23,213	186.22	NO 0233 Nittedal.svg	Nittedal komm.svg	Bokmål	Hilde Thorkildsen	Ap
+0234	Gjerdrum	Ask	Akershus	6,576	83.19	NO 0234 Gjerdrum.svg	Gjerdrum komm.svg	Bokmål	Anders Østensen	Ap
+0235	Ullensaker	Jessheim	Akershus	35,102	252.47	NO 0235 Ullensaker.svg	Ullensaker komm.svg	Bokmål	Tom Staahle	Frp
+0236	Nes	Årnes	Akershus	21,241	637.35	NO 0236 Nes.svg	Nes Akershus komm.svg	Bokmål	Grete Sjøli	Ap
+0237	Eidsvoll	Sundet	Akershus	24,415	456.49	NO 0237 Eidsvoll.svg	Eidsvoll komm.svg	Bokmål	John-Erik Vika	Sp
+0238	Nannestad	Teigebyen	Akershus	12,657	340.99	NO 0238 Nannestad.svg	Nannestad komm.svg	Bokmål	Hans Thue	Ap
+0239	Hurdal	Hurdal	Akershus	2,910	284.96	NO 0239 Hurdal.svg	Hurdal komm.svg	Bokmål	Runar Bålsrud	V
+0301	Oslo	Oslo	Oslo	666,758	454.09	NO 0301 Oslo.svg	Oslo komm.svg	Neutral	Marianne Borgen	SV
+0402	Kongsvinger	Kongsvinger	Hedmark	17,857	1,036.45	NO 0402 Kongsvinger.svg	Kongsvinger komm.svg	Bokmål	Sjur Strand	Ap
+0403	Hamar	Hamar	Hedmark	30,598	350.94	NO 0403 Hamar.svg	Hamar komm.svg	Neutral	Einar Busterud	LL
+0412	Ringsaker	Brumunddal	Hedmark	33,842	1,280.09	NO 0412 Ringsaker.svg	Ringsaker komm.svg	Bokmål	Anita Ihle Steen	Ap
+0415	Løten	Løten	Hedmark	7,633	369.44	NO 0415 Løten.svg	Løten komm.svg	Bokmål	Bente Elin Lilleøkseth	Ap
+0417	Stange	Stangebyen	Hedmark	20,317	724.28	NO 0417 Stange.svg	Stange komm.svg	Bokmål	Nils A. Røhne	Ap
+0418	Nord-Odal	Sand	Hedmark	5,100	508.14	NO 0418 Nord-Odal.svg	Nord-Odal komm.svg	Bokmål	Lise Selnes	Ap
+0419	Sør-Odal	Skarnes	Hedmark	7,866	516.74	NO 0419 Sør-Odal.svg	Sør-Odal komm.svg	Bokmål	Knut Hvithammer	Ap
+0420	Eidskog	Skotterud	Hedmark	6,127	640.39	NO 0420 Eidskog.svg	Eidskog komm.svg	Bokmål	Knut Gustav Woie	Sp
+0423	Grue	Kirkenær	Hedmark	4,777	837.17	NO 0423 Grue.svg	Grue komm.svg	Bokmål	Herdis Bragelien	Ap
+0425	Åsnes	Flisa	Hedmark	7,329	1,040.94	NO 0425 Åsnes.svg	Åsnes komm.svg	Bokmål	Lars Petter Heggelund	V
+0426	Våler	Våler	Hedmark	3,743	705.28	NO 0426 Våler.svg	Våler Hedmark komm.svg	Bokmål	Kjell Konterud	Ap
+0427	Elverum	Elverum	Hedmark	21,086	1,229.29	NO 0427 Elverum.svg	Elverum komm.svg	Neutral	Erik Hanstad	Ap
+0428	Trysil	Innbygda	Hedmark	6,550	3,014.37	NO 0428 Trysil.svg	Trysil komm.svg	Bokmål	Erik Sletten	Sp
+0429	Åmot	Rena	Hedmark	4,518	1,339.92	NO 0429 Åmot.svg	Åmot komm.svg	Bokmål	Ole Gustav Narud	Sp
+0430	Stor-Elvdal	Koppang	Hedmark	2,530	2,165.78	NO 0430 Stor-Elvdal.svg	Stor-Elvdal komm.svg	Bokmål	Sigmund Vestad	LL
+0432	Rendalen	Bergset	Hedmark	1,858	3,179.52	NO 0432 Rendalen.svg	Rendalen komm.svg	Bokmål	Norvald Illevold	Ap
+0434	Engerdal	Engerdal	Hedmark	1,274	2,196.54	NO 0434 Engerdal.svg	Engerdal komm.svg	Bokmål	Reidar Åsgård	Ap
+0436	Tolga	Tolga	Hedmark	1,620	1,122.59	NO 0436 Tolga.svg	Tolga komm.svg	Neutral	Ragnhild Aashaug	Sp
+0437	Tynset	Tynset	Hedmark	5,584	1,880.51	NO 0437 Tynset.svg	Tynset komm.svg	Neutral	Bersvend Salbu	SV
+0438	Alvdal	Alvdal	Hedmark	2,441	942.15	NO 0438 Alvdal.svg	Alvdal komm.svg	Neutral	Olov Grøtting	Sp
+0439	Folldal	Folldal	Hedmark	1,577	1,276.88	NO 0439 Folldal.svg	Folldal komm.svg	Neutral	Hilde F. Tveråen	Ap
+0441	Os	Os i Østerdalen	Hedmark	1,963	1,040.40	NO 0441 Os.svg	Os Hedmark komm.svg	Neutral	Arnfinn Nergård	Sp
+0501	Lillehammer	Lillehammer	Oppland	27,781	478.17	NO 0501 Lillehammer.svg	Lillehammer komm.svg	Bokmål	Espen Johnson	Ap
+0502	Gjøvik	Gjøvik	Oppland	30,319	672.25	NO 0502 Gjøvik.svg	Gjøvik komm.svg	Bokmål	Bjørn Iddberg	Ap
+0511	Dovre	Dovre	Oppland	2,675	1,364.39	NO 0511 Dovre.svg	Dovre komm.svg	Neutral	Bengt Fasteraune	Sp
+0512	Lesja	Lesja	Oppland	2,048	2,259.50	NO 0512 Lesja.svg	Lesja komm.svg	Neutral	Mariann Skotte	Sp
+0513	Skjåk	Bismo	Oppland	2,202	2,075.52	NO 0513 Skjåk.svg	Skjåk komm.svg	Nynorsk	Elias Sperstad	Sp
+0514	Lom	Fossbergom	Oppland	2,360	1,968.55	NO 0514 Lom.svg	Lom komm.svg	Nynorsk	Bjarne Eiolf Holø	Sp
+0515	Vågå	Vågåmo	Oppland	3,640	1,330.00	NO 0515 Vågå.svg	Vågå komm.svg	Nynorsk	Iselin Jonassen	Ap
+0516	Nord-Fron	Vinstra	Oppland	5,723	1,141.48	NO 0516 Nord-Fron.svg	Nord-Fron komm.svg	Nynorsk	Rune Støstad	Ap
+0517	Sel	Otta	Oppland	5,916	904.93	NO 0517 Sel.svg	Sel komm.svg	Neutral	Dag Erik Pryhn	Ap
+0519	Sør-Fron	Hundorp	Oppland	3,163	742.18	NO 0519 Sør-Fron.svg	Sør-Fron komm.svg	Neutral	Ole Tvete Muriteigen	Ap
+0520	Ringebu	Vålebru	Oppland	4,502	1,247.53	NO 0520 Ringebu.svg	Ringebu komm.svg	Neutral	Arne Fossmo	Ap
+0521	Øyer	Tingberg	Oppland	5,082	639.90	NO 0521 Øyer.svg	Øyer komm.svg	Neutral	Brit Kramprud Lundgård	Ap
+0522	Gausdal	Segalstad bru	Oppland	6,204	1,191.16	NO 0522 Gausdal.svg	Gausdal komm.svg	Neutral	Hans Oddvar Høistad	Ap
+0528	Østre Toten	Lena	Oppland	14,887	562.57	NO 0528 Østre Toten.svg	Østre Toten komm.svg	Bokmål	Guri Bråthen	Ap
+0529	Vestre Toten	Raufoss	Oppland	13,179	249.52	NO 0529 Vestre Toten.svg	Vestre Toten komm.svg	Bokmål	Leif Waarum	Ap
+0532	Jevnaker	Jevnaker	Oppland	6,696	225.72	NO 0532 Jevnaker.svg	Jevnaker komm.svg	Bokmål	Lars Magnussen	Ap
+0533	Lunner	Roa	Oppland	9,080	291.84	NO 0533 Lunner.svg	Lunner komm.svg	Bokmål	Harald Tyrdal	Ap
+0534	Gran	Jaren	Oppland	13,707	756.65	NO 0534 Gran.svg	Gran komm.svg	Bokmål	Willy Westhagen	LL
+0536	Søndre Land	Hov	Oppland	5,717	728.36	NO 0536 Søndre Land.svg	Søndre Land komm.svg	Bokmål	Terje Odden	Ap
+0538	Nordre Land	Dokka	Oppland	6,773	955.31	NO 0538 Nordre Land.svg	Nordre Land komm.svg	Bokmål	Ola Tore Dokken	Sp
+0540	Sør-Aurdal	Bagn	Oppland	3,026	1,109.04	NO 0540 Sør-Aurdal.svg	Sør-Aurdal komm.svg	Neutral	Kåre Helland	Sp
+0541	Etnedal	Bruflat	Oppland	1,351	459.15	NO 0541 Etnedal.svg	Etnedal komm.svg	Neutral	Toril Grønbrekk	Ap
+0542	Nord-Aurdal	Fagernes	Oppland	6,490	906.52	NO 0542 Nord-Aurdal.svg	Nord-Aurdal komm.svg	Neutral	Inger Torun Klosbøle	Ap
+0543	Vestre Slidre	Slidre	Oppland	2,114	463.25	NO 0543 Vestre Slidre.svg	Vestre Slidre komm.svg	Nynorsk	Eivind Brenna	LL
+0544	Øystre Slidre	Heggenes	Oppland	3,248	963.11	NO 0544 Øystre Slidre.svg	Øystre Slidre komm.svg	Nynorsk	Kjell Berge Melbybråten	Ap
+0545	Vang	Vang i Valdres	Oppland	1,596	1,505.45	NO 0545 Vang.svg	Vang komm.svg	Nynorsk	Vidar Eltun	Ap
+0602	Drammen	Drammen	Buskerud	68,363	138.19	NO 0602 Drammen.svg	Drammen komm.svg	Neutral	Tore Opdal Hansen	H
+0604	Kongsberg	Kongsberg	Buskerud	27,216	793.09	NO 0604 Kongsberg.svg	Kongsberg komm.svg	Bokmål	Kari Anne Sand	Sp
+0605	Ringerike	Hønefoss	Buskerud	30,034	1,555.08	NO 0605 Ringerike.svg	Ringerike komm.svg	Bokmål	Kjell Børre Hansen	Ap
+0612	Hole	Vik	Buskerud	6,772	192.69	NO 0612 Hole.svg	Hole komm.svg	Bokmål	Per R. Berger	H
+0615	Flå	Flå	Buskerud	1,081	704.41	NO 0615 Flå.svg	Flå komm.svg	Bokmål	Tor Egil Buøen	LL
+0616	Nes	Nesbyen	Buskerud	3,357	809.67	NO 0616 Nes.svg	Nesbyen komm.svg	Bokmål	Tore Haraldset	LL
+0617	Gol	Gol	Buskerud	4,612	532.49	NO 0617 Gol.svg	Gol komm.svg	Nynorsk	Heidi Granli	Ap
+0618	Hemsedal	Trøym	Buskerud	2,442	753.54	NO 0618 Hemsedal.svg	Hemsedal komm.svg	Nynorsk	Oddvar Grøthe	Sp
+0619	Ål	Ål	Buskerud	4,719	1,174.92	NO 0619 Ål.svg	Ål komm.svg	Nynorsk	Solveig Vestenfor	Ap
+0620	Hol	Hol	Buskerud	4,535	1,854.62	NO 0620 Hol.svg	Hol komm.svg	Neutral	Petter Rukke	Ap
+0621	Sigdal	Prestfoss	Buskerud	3,502	842.28	NO 0621 Sigdal.svg	Sigdal komm.svg	Bokmål	Anne Kristin Norman	Sp
+0622	Krødsherad	Noresund	Buskerud	2,257	374.51	NO 0622 Krødsherad.svg	Krødsherad komm.svg	Neutral	Gustav Kalager	Ap
+0623	Modum	Vikersund	Buskerud	13,786	517.18	NO 0623 Modum.svg	Modum komm.svg	Bokmål	Ståle Versland	Ap
+0624	Øvre Eiker	Hokksund	Buskerud	18,562	456.69	NO 0624 Øvre Eiker.svg	Øvre Eiker komm.svg	Bokmål	Ann Sire Fjerdingstad	H
+0625	Nedre Eiker	Mjøndalen	Buskerud	24,718	121.76	NO 0625 Nedre Eiker.svg	Nedre Eiker komm.svg	Bokmål	Bent Inge Bye	Ap
+0626	Lier	Lierbyen	Buskerud	25,749	301.67	NO 0626 Lier.svg	Lier komm.svg	Bokmål	Gunn Cecilie Ringdal	H
+0627	Røyken	Midtbygda	Buskerud	21,931	112.63	NO 0627 Røyken.svg	Røyken komm.svg	Bokmål	Eva Norén Eriksen	H
+0628	Hurum	Sætre	Buskerud	9,462	163.26	NO 0628 Hurum.svg	Hurum komm.svg	Bokmål	Monica Vee Bratlie	H
+0631	Flesberg	Lampeland	Buskerud	2,696	561.91	NO 0631 Flesberg.svg	Flesberg komm.svg	Bokmål	Oddvar Garaas	Sp
+0632	Rollag	Rollag	Buskerud	1,399	449.29	NO 0632 Rollag.svg	Rollag komm.svg	Neutral	Dag Lislien	Sp
+0633	Nore og Uvdal	Rødberg	Buskerud	2,530	2,502.29	NO 0633 Nore og Uvdal.svg	Nore og Uvdal komm.svg	Neutral	Eli Hovd Prestegården	Sp
+0701	Horten	Horten	Vestfold	27,202	70.36	NO 0701 Horten.svg	Horten komm.png	Bokmål	Are Karlsen	Ap
+0704	Tønsberg	Tønsberg	Vestfold	44,922	110.03	NO 0704 Tønsberg.svg	Tønsberg komm.svg	Bokmål	Petter Berg	H
+0710	Sandefjord	Sandefjord	Vestfold	62,019	422.06	NO 0710 Sandefjord.svg	Sandefjord komm 2017.svg	Bokmål	Bjørn Ole Gleditsch	H
+0711	Svelvik	Svelvik	Vestfold	6,653	57.72	NO 0711 Svelvik.svg	Svelvik komm.svg	Bokmål	Andreas Muri	H
+0712	Larvik	Larvik	Vestfold	46,557	812.88	NO 0712 Larvik.svg	Larvik komm 2018.svg	Bokmål	Rune Høiseth	Ap
+0713	Sande	Sande i Vestfold	Vestfold	9,496	178.34	NO 0713 Sande.svg	Sande Vestfold komm.svg	Bokmål	Elin Weggesrud	Ap
+0715	Holmestrand	Holmestrand	Vestfold	14,037	249.18	NO 0715 Holmestrand.svg	Holmestrand komm.svg	Bokmål	Alf Johan Svele	H
+0716	Re	Revetal	Vestfold	9,486	224.66	NO 0716 Re.svg	Re komm.svg	Bokmål	Thorvald Hillestad	Sp
+0729	Færder	Borgheim	Vestfold	26,676	99.96	NO 0729 Færder.svg	Færder komm 2018.svg	Bokmål	Roar Jonstang	H
+0805	Porsgrunn	Porsgrunn	Telemark	36,198	164.45	NO 0805 Porsgrunn.svg	Porsgrunn komm.svg	Neutral	Robin Martin Kåss	Ap
+0806	Skien	Skien	Telemark	54,316	779.20	NO 0806 Skien.svg	Skien komm.svg	Neutral	Hedda Foss Five	Ap
+0807	Notodden	Notodden	Telemark	12,757	918.66	NO 0807 Notodden.svg	Notodden komm.svg	Neutral	Gry Fuglestveit Bløchlinger	Ap
+0811	Siljan	Siljan	Telemark	2,357	213.96	NO 0811 Siljan.svg	Siljan komm.svg	Neutral	Kjell Abraham Sølverød	Sp
+0814	Bamble	Langesund	Telemark	14,138	304.37	NO 0814 Bamble.svg	Bamble komm.svg	Neutral	Hallgeir Kjeldal	Ap
+0815	Kragerø	Kragerø	Telemark	10,586	305.46	NO 0815 Kragerø.svg	Kragerø komm.svg	Neutral	Jone Blirka	Ap
+0817	Drangedal	Prestestranda	Telemark	4,148	1,062.78	NO 0817 Drangedal.svg	Drangedal komm.svg	Neutral	Tor Peder Lohne	Sp
+0819	Nome	Ulefoss	Telemark	6,585	429.69	NO 0819 Nome.svg	Nome komm.svg	Neutral	Bjørg Tveito Lundefaret	Ap
+0821	Bø	Bø i Telemark	Telemark	6,262	263.21	NO 0821 Bø.svg	Bø Telemark komm.svg	Nynorsk	Olav Kasland	V
+0822	Sauherad	Akkerhaugen	Telemark	4,303	320.54	NO 0822 Sauherad.svg	Sauherad komm.svg	Neutral	Mette Haugholt	Ap
+0826	Tinn	Rjukan	Telemark	5,894	2,045.14	NO 0826 Tinn.svg	Tinn komm.svg	Neutral	Bjørn Sverre Birkeland	Sp
+0827	Hjartdal	Sauland	Telemark	1,593	791.60	NO 0827 Hjartdal.svg	Hjartdal komm.svg	Nynorsk	Bengt Halvard Odden	Ap
+0828	Seljord	Seljord	Telemark	2,979	715.09	NO 0828 Seljord.svg	Seljord komm.svg	Nynorsk	Halfdan Haugan	Ap
+0829	Kviteseid	Kviteseid	Telemark	2,442	708.46	NO 0829 Kviteseid.svg	Kviteseid komm.svg	Nynorsk	Tarjei Gjelstad	Ap
+0830	Nissedal	Treungen	Telemark	1,476	905.18	NO 0830 Nissedal.svg	Nissedal komm.svg	Nynorsk	Halvor Homme	Ap
+0831	Fyresdal	Fyresdal	Telemark	1,319	1,280.14	NO 0831 Fyresdal.svg	Fyresdal komm.svg	Nynorsk	Erik Skjervagen	Ap
+0833	Tokke	Dalen	Telemark	2,228	984.48	NO 0833 Tokke.svg	Tokke komm.svg	Nynorsk	Jarand Felland	Sp
+0834	Vinje	Åmot	Telemark	3,726	3,105.84	NO 0834 Vinje.svg	Vinje komm.svg	Nynorsk	Jon Rikard Kleven	Sp
+0901	Risør	Risør	Aust-Agder	6,935	192.98	NO 0901 Risør.svg	Risør komm.svg	Neutral	Per Kristian Lunden	Ap
+0904	Grimstad	Grimstad	Aust-Agder	22,692	303.58	NO 0904 Grimstad.svg	Grimstad komm.svg	Bokmål	Kjetil Glimsdal	KrF
+0906	Arendal	Arendal	Aust-Agder	44,576	270.21	NO 0906 Arendal.svg	Arendal komm.svg	Bokmål	Robert Nordli	Ap
+0911	Gjerstad	Gjerstad	Aust-Agder	2,511	322.14	NO 0911 Gjerstad.svg	Gjerstad komm.svg	Neutral	Inger Haldis Løite	Ap
+0912	Vegårshei	Myra	Aust-Agder	2,104	355.65	NO 0912 Vegårshei.svg	Vegårshei komm.svg	Neutral	Kirsten Helen Myren	Sp
+0914	Tvedestrand	Tvedestrand	Aust-Agder	6,051	215.05	NO 0914 Tvedestrand.svg	Tvedestrand komm.svg	Bokmål	Jan Dukene	LL
+0919	Froland	Blakstad	Aust-Agder	5,713	644.54	NO 0919 Froland.svg	Froland komm.svg	Neutral	Ove Gundersen	KrF
+0926	Lillesand	Lillesand	Aust-Agder	10,702	190.43	NO 0926 Lillesand.svg	Lillesand komm.svg	Bokmål	Arne Thomassen	H
+0928	Birkenes	Birkeland	Aust-Agder	5,178	674.21	NO 0928 Birkenes.svg	Birkenes komm.svg	Neutral	Anders Christiansen	Ap
+0929	Åmli	Åmli	Aust-Agder	1,856	1,130.61	NO 0929 Åmli.svg	Åmli komm.svg	Nynorsk	Reidar Saga	Ap
+0935	Iveland	Birketveit	Aust-Agder	1,342	261.63	NO 0935 Iveland.svg	Iveland komm.svg	Neutral	Gro Anita Mykjåland	Sp
+0937	Evje og Hornnes	Evje	Aust-Agder	3,614	550.23	NO 0937 Evje og Hornnes.svg	Evje og Hornnes komm.svg	Neutral	Bjørn Alfred Ropstad	KrF
+0938	Bygland	Bygland	Aust-Agder	1,200	1,311.66	NO 0938 Bygland.svg	Bygland komm.svg	Nynorsk	Leiv Rygg Langerak	Sp
+0940	Valle	Valle	Aust-Agder	1,246	1,265.31	NO 0940 Valle.svg	Valle komm.svg	Nynorsk	Steinar Kyrvestad	Ap
+0941	Bykle	Bykle	Aust-Agder	952	1,467.13	NO 0941 Bykle.svg	Bykle komm.svg	Nynorsk	Jon-Rolf Næss	Ap
+1001	Kristiansand	Kristiansand	Vest-Agder	89,268	276.88	NO 1001 Kristiansand.svg	Kristiansand komm.svg	Bokmål	Harald Furre	H
+1002	Mandal	Mandal	Vest-Agder	15,600	222.83	NO 1002 Mandal.svg	Mandal komm.svg	Bokmål	Alf Erik Andersen	Frp
+1003	Farsund	Farsund	Vest-Agder	9,769	262.55	NO 1003 Farsund.svg	Farsund komm.svg	Bokmål	Arnt Abrahamsen	Ap
+1004	Flekkefjord	Flekkefjord	Vest-Agder	9,090	543.53	NO 1004 Flekkefjord.svg	Flekkefjord komm.svg	Bokmål	Jan Sigbjørnsen	H
+1014	Vennesla	Vennesla	Vest-Agder	14,425	384.47	NO 1014 Vennesla.svg	Vennesla komm.svg	Neutral	Nils Olav Larsen	KrF
+1017	Songdalen	Nodeland	Vest-Agder	6,568	215.94	NO 1017 Songdalen.svg	Songdalen komm.svg	Neutral	Johnny Greibesland	Sp
+1018	Søgne	Tangvall	Vest-Agder	11,321	151.33	NO 1018 Søgne.svg	Søgne komm.svg	Bokmål	Astrid Hilde	Ap
+1021	Marnardal	Heddeland	Vest-Agder	2,309	395.01	NO 1021 Marnardal.svg	Marnardal komm.svg	Neutral	Helge Sandåker	Ap
+1026	Åseral	Kyrkjebygda	Vest-Agder	937	887.52	NO 1026 Åseral.svg	Åseral komm.svg	Nynorsk	Oddmund Ljosland	Sp
+1027	Audnedal	Konsmo	Vest-Agder	1,765	251.45	NO 1027 Audnedal.svg	Audnedal komm.svg	Neutral	Reidun Bakken	KrF
+1029	Lindesnes	Vigeland	Vest-Agder	4,950	316.47	NO 1029 Lindesnes.svg	Lindesnes komm.svg	Bokmål	Janne Fardal Kristoffersen	KrF
+1032	Lyngdal	Alleen	Vest-Agder	8,588	391.17	NO 1032 Lyngdal.svg	Lyngdal komm.svg	Bokmål	Jan Kristensen	H
+1034	Hægebostad	Tingvatn	Vest-Agder	1,702	461.33	NO 1034 Hægebostad.svg	Hægebostad komm.svg	Nynorsk	Margrethe Handeland	Sp
+1037	Kvinesdal	Liknes	Vest-Agder	5,988	963.22	NO 1037 Kvinesdal.svg	Kvinesdal komm.svg	Neutral	Per Sverre Kvinlaug	KrF
+1046	Sirdal	Tonstad	Vest-Agder	1,836	1,554.83	NO 1046 Sirdal.svg	Sirdal komm.svg	Neutral	Thor Jørgen Tjørhom	Sp
+1101	Eigersund	Egersund	Rogaland	14,899	432.48	NO 1101 Eigersund.svg	Eigersund komm.svg	Bokmål	Odd Stangeland	Ap
+1102	Sandnes	Sandnes	Rogaland	75,497	304.04	NO 1102 Sandnes.svg	Sandnes komm.svg	Neutral	Stanley Wirak	Ap
+1103	Stavanger	Stavanger	Rogaland	132,729	71.35	NO 1103 Stavanger.svg	Stavanger komm.svg	Bokmål	Christine Sagen Helgø	H
+1106	Haugesund	Haugesund	Rogaland	37,166	72.67	NO 1106 Haugesund.svg	Haugesund komm.svg	Bokmål	Arne-Christian Mohn	Ap
+1111	Sokndal	Hauge	Rogaland	3,316	294.98	NO 1111 Sokndal.svg	Sokndal komm.svg	Neutral	Trond Arne Pedersen	KrF
+1112	Lund	Moi	Rogaland	3,259	408.42	NO 1112 Lund.svg	Lund komm.svg	Neutral	Olav Hafstad	Ap
+1114	Bjerkreim	Vikeså	Rogaland	2,826	650.55	NO 1114 Bjerkreim.svg	Bjerkreim komm.svg	Nynorsk	Torbjørn Ognedal	Sp
+1119	Hå	Varhaug	Rogaland	18,800	257.99	NO 1119 Hå.svg	Hå komm.svg	Neutral	Jonas Skrettingland	KrF
+1120	Klepp	Kleppe	Rogaland	19,042	113.49	NO 1120 Klepp.svg	Klepp komm.svg	Nynorsk	Ane Mari Braut Nese	H
+1121	Time	Bryne	Rogaland	18,656	183.19	NO 1121 Time.svg	Time komm.svg	Nynorsk	Reinert Kverneland	H
+1122	Gjesdal	Ålgård	Rogaland	11,902	617.98	NO 1122 Gjesdal.svg	Gjesdal komm.svg	Neutral	Frode Fjeldsbø	Ap
+1124	Sola	Solakrossen	Rogaland	26,016	69.04	NO 1124 Sola.svg	Sola komm.svg	Neutral	Tom Henning Slethei	Frp
+1127	Randaberg	Randaberg	Rogaland	10,873	24.71	NO 1127 Randaberg.svg	Randaberg komm.svg	Neutral	Kristine Enger	Ap
+1129	Forsand	Forsand	Rogaland	1,245	780.06	NO 1129 Forsand.svg	Forsand komm.svg	Nynorsk	Bjarte Sveinsvoll Dagestad	H
+1130	Strand	Jørpeland	Rogaland	12,662	218.14	NO 1130 Strand.svg	Strand komm.svg	Neutral	Irene Heng Lauvsnes	H
+1133	Hjelmeland	Hjelmelandsvågen	Rogaland	2,708	1,088.82	NO 1133 Hjelmeland.svg	Hjelmeland komm.svg	Nynorsk	Bjørn Laugaland	Sp
+1134	Suldal	Sand	Rogaland	3,853	1,736.89	NO 1134 Suldal.svg	Suldal komm.svg	Nynorsk	Gerd Helen Bø	Sp
+1135	Sauda	Sauda	Rogaland	4,760	546.32	NO 1135 Sauda.svg	Sauda komm.svg	Nynorsk	Asbjørn Birkeland	Sp
+1141	Finnøy	Judaberg	Rogaland	3,235	104.39	NO 1141 Finnøy.svg	Finnøy komm.svg	Nynorsk	Henrik Halleland	KrF
+1142	Rennesøy	Vikevåg	Rogaland	4,892	65.51	NO 1142 Rennesøy.svg	Rennesøy komm.svg	Neutral	Dagny Sunnanå Hausken	Sp
+1144	Kvitsøy	Ydstebøhavn	Rogaland	534	6.29	NO 1144 Kvitsøy.svg	Kvitsøy komm.svg	Neutral	Mirjam Ydstebø	KrF
+1145	Bokn	Føresvik	Rogaland	855	47.16	NO 1145 Bokn.svg	Bokn komm.svg	Nynorsk	Tormod Våga	Sp
+1146	Tysvær	Aksdal	Rogaland	11,041	425.41	NO 1146 Tysvær.svg	Tysvær komm.svg	Nynorsk	Sigmund Lier	Ap
+1149	Karmøy	Kopervik	Rogaland	42,229	229.95	NO 1149 Karmøy.svg	Karmøy komm.svg	Neutral	Jarle Nilsen	Ap
+1151	Utsira	Utsira	Rogaland	201	6.33	NO 1151 Utsira.svg	Utsira komm.svg	Neutral	Marte Eide Klovning	Ap
+1160	Vindafjord	Ølensjøen	Rogaland	8,828	620.59	NO 1160 Vindafjord.svg	Vindafjord komm.svg	Nynorsk	Ole Johan Vierdal	Sp
+1201	Bergen	Bergen	Hordaland	278,556	464.70	NO 1201 Bergen.svg	Bergen komm.svg	Neutral	Marte Mjøs Persen	Ap
+1211	Etne	Etnesjøen	Hordaland	4,135	735.28	NO 1211 Etne.svg	Etne komm.svg	Nynorsk	Siri Klokkerstuen	Ap
+1216	Sveio	Sveio	Hordaland	5,656	246.14	NO 1216 Sveio.svg	Sveio komm.svg	Nynorsk	Jorunn Skåden	Ap
+1219	Bømlo	Svortland	Hordaland	11,806	246.56	NO 1219 Bømlo.svg	Bømlo komm.svg	Nynorsk	Odd Harald Hovland	Ap
+1221	Stord	Leirvik	Hordaland	18,821	143.69	NO 1221 Stord.svg	Stord komm.svg	Nynorsk	Gaute Straume Epland	Ap
+1222	Fitjar	Fitjar	Hordaland	3,189	142.43	NO 1222 Fitjar.svg	Fitjar komm.svg	Nynorsk	Wenche Tislevoll	H
+1223	Tysnes	Uggdal	Hordaland	2,847	255.11	NO 1223 Tysnes.svg	Tysnes komm.svg	Nynorsk	Kåre Martin Kleppe	H
+1224	Kvinnherad	Rosendal	Hordaland	13,241	1,090.74	NO 1224 Kvinnherad.svg	Kvinnherad komm.svg	Nynorsk	Peder Sjo Slettebø	H
+1227	Jondal	Jondal	Hordaland	1,108	247.07	NO 1227 Jondal.svg	Jondal komm.svg	Nynorsk	Jon Larsgard	Sp
+1228	Odda	Odda	Hordaland	7,025	1,615.89	NO 1228 Odda.svg	Odda komm.svg	Neutral	Roald Aga Haug	Ap
+1231	Ullensvang	Kinsarvik	Hordaland	3,377	1,398.53	NO 1231 Ullensvang.svg	Ullensvang komm.svg	Nynorsk	Solfrid Borge	Sp
+1232	Eidfjord	Eidfjord	Hordaland	921	1,491.46	NO 1232 Eidfjord.svg	Eidfjord komm.svg	Nynorsk	Anved Johan Tveit	Sp
+1233	Ulvik	Ulvik	Hordaland	1,131	722.00	NO 1233 Ulvik.svg	Ulvik komm.svg	Nynorsk	Hans Petter Thorbjørnsen	Ap
+1234	Granvin	Granvin	Hordaland	933	211.28	NO 1234 Granvin.svg	Granvin komm.svg	Nynorsk	Ingebjørg Winjum	V
+1235	Voss	Vossevangen	Hordaland	14,514	1,805.81	NO 1235 Voss.svg	Voss komm.svg	Nynorsk	Hans-Erik Ringkjøb	Ap
+1238	Kvam	Norheimsund	Hordaland	8,423	616.50	NO 1238 Kvam.svg	Kvam komm.svg	Nynorsk	Jostein Ljones	Sp
+1241	Fusa	Eikelandsosen	Hordaland	3,895	377.84	NO 1241 Fusa.svg	Fusa komm.svg	Nynorsk	Atle Kvåle	Ap
+1242	Samnanger	Tysse	Hordaland	2,488	269.07	NO 1242 Samnanger.svg	Samnanger komm.svg	Nynorsk	Knut Harald Frøland	LL
+1243	Os	Osøyro	Hordaland	20,152	139.57	NO 1243 Os.svg	Os Hordaland komm.svg	Nynorsk	Marie Lunde Bruarøy	H
+1244	Austevoll	Storebø	Hordaland	5,156	117.18	NO 1244 Austevoll.svg	Austevoll komm.svg	Nynorsk	Morten Storebø	H
+1245	Sund	Skogsvåg	Hordaland	7,058	99.54	NO 1245 Sund.svg	Sund komm.svg	Nynorsk	Kari-Anne Landro	H
+1246	Fjell	Straume	Hordaland	25,204	148.17	NO 1246 Fjell.svg	Fjell komm.svg	Nynorsk	Marianne Sandahl Bjorøy	Ap
+1247	Askøy	Kleppestø	Hordaland	28,821	101.12	NO 1247 Askøy.svg	Askøy komm.svg	Neutral	Terje Mathiassen	Ap
+1251	Vaksdal	Dale	Hordaland	4,123	715.37	NO 1251 Vaksdal.svg	Vaksdal komm.svg	Nynorsk	Eirik Haga	Ap
+1252	Modalen	Mo	Hordaland	383	411.99	NO 1252 Modalen.svg	Modalen komm.svg	Nynorsk	Tom Kristian Thorsen	LL
+1253	Osterøy	Lonevåg	Hordaland	8,026	255.12	NO 1253 Osterøy.svg	Osterøy komm.svg	Nynorsk	Jarle Skeidsvoll	KrF
+1256	Meland	Frekhaug	Hordaland	8,021	92.58	NO 1256 Meland.svg	Meland komm.svg	Nynorsk	Øyvind Helland Oddekalv	Ap
+1259	Øygarden	Rong	Hordaland	4,913	66.80	NO 1259 Øygarden.svg	Sund komm.svg	Nynorsk	Børge Haugetun	LL
+1260	Radøy	Manger	Hordaland	5,128	111.44	NO 1260 Radøy.svg	Radøy komm.svg	Nynorsk	Jon Askeland	Sp
+1263	Lindås	Knarvik	Hordaland	15,731	474.99	NO 1263 Lindås.svg	Lindås komm.svg	Nynorsk	Astrid Aarhus Byrknes	KrF
+1264	Austrheim	Årås	Hordaland	2,884	57.55	NO 1264 Austrheim.svg	Austrheim komm.svg	Nynorsk	Per Lerøy	Ap
+1265	Fedje	Fedje	Hordaland	587	9.28	NO 1265 Fedje.svg	Fedje komm.svg	Nynorsk	Stian Herøy	H
+1266	Masfjorden	Masfjordnes	Hordaland	1,710	556.07	NO 1266 Masfjorden.svg	Masfjorden komm.svg	Nynorsk	Karstein Totland	H
+1401	Flora	Florø	Sogn og Fjordane	11,999	693.33	NO 1401 Flora.svg	Flora komm.svg	Nynorsk	Ola Teigen	Ap
+1411	Gulen	Eivindvik	Sogn og Fjordane	2,371	597.21	NO 1411 Gulen.svg	Gulen komm.svg	Nynorsk	Hallvard Oppedal	Sp
+1412	Solund	Hardbakke	Sogn og Fjordane	794	228.25	NO 1412 Solund.svg	Solund komm.svg	Nynorsk	Gunn Åmdal Mongstad	Sp
+1413	Hyllestad	Hyllestad	Sogn og Fjordane	1,438	258.91	NO 1413 Hyllestad.svg	Hyllestad komm.svg	Nynorsk	Morten Askvik	Sp
+1416	Høyanger	Høyanger	Sogn og Fjordane	4,190	907.65	NO 1416 Høyanger.svg	Høyanger komm.svg	Nynorsk	Petter Sortland	Ap
+1417	Vik	Vikøyri	Sogn og Fjordane	2,722	833.33	NO 1417 Vik.svg	Vik komm.svg	Nynorsk	Olav Turvoll	Sp
+1418	Balestrand	Balestrand	Sogn og Fjordane	1,288	429.67	NO 1418 Balestrand.svg	Balestrand komm.svg	Nynorsk	Harald Offerdal	Ap
+1419	Leikanger	Hermansverk	Sogn og Fjordane	2,332	180.10	NO 1419 Leikanger.svg	Leikanger komm.svg	Nynorsk	Jon Håkon Odd	Ap
+1420	Sogndal	Sogndalsfjøra	Sogn og Fjordane	7,941	745.84	NO 1420 Sogndal.svg	Sogndal komm.svg	Nynorsk	Jarle Aarvoll	Ap
+1421	Aurland	Aurlandsvangen	Sogn og Fjordane	1,787	1,467.69	NO 1421 Aurland.svg	Aurland komm.svg	Nynorsk	Noralv Distad	H
+1422	Lærdal	Lærdalsøyri	Sogn og Fjordane	2,159	1,342.48	NO 1422 Lærdal.svg	Lærdal komm.svg	Nynorsk	Jan Geir Solheim	Sp
+1424	Årdal	Årdalstangen	Sogn og Fjordane	5,363	976.58	NO 1424 Årdal.svg	Årdal komm.svg	Nynorsk	Arild Ingar Lægreid	Ap
+1426	Luster	Gaupne	Sogn og Fjordane	5,151	2,706.22	NO 1426 Luster.svg	Luster komm.svg	Nynorsk	Ivar Kvalen	Sp
+1428	Askvoll	Askvoll	Sogn og Fjordane	3,065	326.17	NO 1428 Askvoll.svg	Askvoll komm.svg	Nynorsk	Frida Melvær	H
+1429	Fjaler	Dale	Sogn og Fjordane	2,862	416.51	NO 1429 Fjaler.svg	Fjaler komm.svg	Nynorsk	Gunhild Berge Stang	V
+1430	Gaular	Sande	Sogn og Fjordane	2,966	581.82	NO 1430 Gaular.svg	Gaular komm.svg	Nynorsk	Mathias Råheim	H
+1431	Jølster	Skei	Sogn og Fjordane	3,049	670.87	NO 1431 Jølster.svg	Jølster komm.svg	Nynorsk	Oddmund Klakegg	Sp
+1432	Førde	Førde	Sogn og Fjordane	13,009	585.82	NO 1432 Førde.svg	Førde komm.svg	Nynorsk	Olve Grotle	H
+1433	Naustdal	Naustdal	Sogn og Fjordane	2,848	369.49	NO 1433 Naustdal.svg	Naustdal komm.svg	Nynorsk	Håkon Myrvang	Ap
+1438	Bremanger	Svelgen	Sogn og Fjordane	3,847	832.85	NO 1438 Bremanger.svg	Bremanger komm.svg	Nynorsk	Audun Åge Røys	H
+1439	Vågsøy	Måløy	Sogn og Fjordane	6,031	176.69	NO 1439 Vågsøy.svg	Vågsøy komm.svg	Nynorsk	Kristin Maurstad	Ap
+1441	Selje	Selje	Sogn og Fjordane	2,791	226.12	NO 1441 Selje.svg	Selje komm.svg	Nynorsk	Stein Robert Osdal	KrF
+1443	Eid	Nordfjordeid	Sogn og Fjordane	6,064	469.22	NO 1443 Eid.svg	Eid komm.svg	Nynorsk	Alfred Bjørlo	V
+1444	Hornindal	Grodås	Sogn og Fjordane	1,198	191.60	NO 1444 Hornindal.svg	Hornindal komm.svg	Nynorsk	Stig Olav Lødemel	H
+1445	Gloppen	Sandane	Sogn og Fjordane	5,783	1,030.51	NO 1445 Gloppen.svg	Gloppen komm.svg	Nynorsk	Leidulf Gloppestad	Sp
+1449	Stryn	Stryn	Sogn og Fjordane	7,218	1,377.21	NO 1449 Stryn.svg	Stryn komm.svg	Nynorsk	Sven Flo	H
+1502	Molde	Molde	Møre og Romsdal	26,822	362.69	NO 1502 Molde.svg	Molde komm.svg	Neutral	Torgeir Dahl	H
+1504	Ålesund	Ålesund	Møre og Romsdal	47,199	98.62	NO 1504 Ålesund.svg	Ålesund komm.svg	Neutral	Eva Vinje Aurdal	Ap
+1505	Kristiansund	Kristiansund	Møre og Romsdal	24,442	87.38	NO 1505 Kristiansund.svg	Kristiansund vapen.svg	Neutral	Kjell Neergaard	Ap
+1511	Vanylven	Fiskåbygd	Møre og Romsdal	3,203	385.21	NO 1511 Vanylven.svg	Vanylven komm.svg	Nynorsk	Lena M. Landsverk Sande	V
+1514	Sande	Larsnes	Møre og Romsdal	2,540	93.21	NO 1514 Sande.svg	Sande Møre og Romsdal komm.svg	Nynorsk	Dag Vaagen	H
+1515	Herøy	Fosnavåg	Møre og Romsdal	8,957	119.53	NO 1515 Herøy.svg	Herøy Møre og Romsdal komm.svg	Nynorsk	Arnulf Goksøyr	H
+1516	Ulstein	Ulsteinvik	Møre og Romsdal	8,457	97.19	NO 1516 Ulstein.svg	Ulstein komm.svg	Nynorsk	Knut Erik Engh	Frp
+1517	Hareid	Hareid	Møre og Romsdal	5,185	82.26	NO 1517 Hareid.svg	Hareid komm.svg	Nynorsk	Anders Riise	H
+1519	Volda	Volda	Møre og Romsdal	9,102	547.24	NO 1519 Volda.svg	Volda komm.svg	Nynorsk	Jørgen Amdam	Ap
+1520	Ørsta	Ørsta	Møre og Romsdal	10,744	804.43	NO 1520 Ørsta.svg	Orsta komm.svg	Nynorsk	Stein Aam	Sp
+1523	Ørskog	Sjøholt	Møre og Romsdal	2,296	132.36	NO 1523 Ørskog.svg	Orskog komm.svg	Nynorsk	Knut Helge Harstad	H
+1524	Norddal	Valldal	Møre og Romsdal	1,663	943.52	NO 1524 Norddal.svg	Norddal komm.svg	Nynorsk	Arne Sandnes	Sp
+1525	Stranda	Stranda	Møre og Romsdal	4,623	865.86	NO 1525 Stranda.svg	Stranda komm.svg	Nynorsk	Jan Ove Tryggestad	Sp
+1526	Stordal	Stordal	Møre og Romsdal	1,005	247.07	NO 1526 Stordal.svg	Stordal komm.svg	Nynorsk	Eva Hove	Ap
+1528	Sykkylven	Aure	Møre og Romsdal	7,695	337.80	NO 1528 Sykkylven.svg	Sykkylven komm.svg	Nynorsk	Odd Jostein Drotninghaug	Sp
+1529	Skodje	Skodje	Møre og Romsdal	4,667	120.03	NO 1529 Skodje.svg	Skodje komm.svg	Nynorsk	Dag Olav Tennfjord	H
+1531	Sula	Langevåg	Møre og Romsdal	9,007	58.50	NO 1531 Sula.svg	Sula komm.svg	Nynorsk	Jim Arve Røssevoll	Ap
+1532	Giske	Valderøya	Møre og Romsdal	8,176	40.53	NO 1532 Giske.svg	Giske komm.svg	Nynorsk	Harry Valderhaug	KrF
+1534	Haram	Brattvåg	Møre og Romsdal	9,312	261.14	NO 1534 Haram.svg	Haram komm.svg	Nynorsk	Vebjørn Krogsæter	Sp
+1535	Vestnes	Vestnes	Møre og Romsdal	6,577	352.02	NO 1535 Vestnes.svg	Vestnes komm.svg	Nynorsk	Geir Inge Lien	Sp
+1539	Rauma	Åndalsnes	Møre og Romsdal	7,503	1,502.15	NO 1539 Rauma.svg	Rauma komm.svg	Neutral	Lars Olav Hustad	H
+1543	Nesset	Eidsvåg	Møre og Romsdal	2,963	1,046.07	NO 1543 Nesset.svg	Nesset komm.svg	Nynorsk	Rolf Jonas Hurlen	H
+1545	Midsund	Midsund	Møre og Romsdal	2,085	94.65	NO 1545 Midsund.svg	Midsund komm.svg	Nynorsk	Odd Helge Gangstad	Sp
+1546	Sandøy	Steinshamn	Møre og Romsdal	1,246	21.43	NO 1546 Sandøy.svg	Sandøy komm.svg	Nynorsk	Oddvar Myklebust	Ap
+1547	Aukra	Falkhytta	Møre og Romsdal	3,547	59.08	NO 1547 Aukra.svg	Aukra komm.svg	Nynorsk	Bernhard Riksfjord	Ap
+1548	Fræna	Elnesvågen	Møre og Romsdal	9,741	369.74	NO 1548 Fræna.svg	Fræna komm.svg	Nynorsk	Tove Henøen	Sp
+1551	Eide	Eide	Møre og Romsdal	3,454	152.09	NO 1551 Eide.svg	Eide komm.svg	Bokmål	Egil Karstein Strand	H
+1554	Averøy	Bruhagen	Møre og Romsdal	5,856	175.68	NO 1554 Averøy.svg	Averøy komm.svg	Neutral	Ingrid Ovidie Rangønes	Ap
+1557	Gjemnes	Batnfjordsøra	Møre og Romsdal	2,611	381.63	NO 1557 Gjemnes.svg	Gjemnes komm.svg	Neutral	Knut Sjømæling	Sp
+1560	Tingvoll	Tingvollvågen	Møre og Romsdal	3,109	336.76	NO 1560 Tingvoll.svg	Tingvoll komm.svg	Neutral	Milly Bente Nørsett	Ap
+1563	Sunndal	Sunndalsøra	Møre og Romsdal	7,126	1,713.44	NO 1563 Sunndal.svg	Sunndal komm.svg	Neutral	Ståle Refstie	Ap
+1566	Surnadal	Skei	Møre og Romsdal	5,986	1,366.05	NO 1566 Surnadal.svg	Surnadal komm.svg	Nynorsk	Lilly Gunn Nyheim	Ap
+1567	Rindal	Rindal	Møre og Romsdal	2,026	631.84	NO 1567 Rindal.svg	Rindal komm.svg	Neutral	Ola Heggem	Sp
+1571	Halsa	Liabø	Møre og Romsdal	1,599	300.53	NO 1571 Halsa.svg	Halsa komm.svg	Neutral	Ola Rognskog	Sp
+1573	Smøla	Hopen	Møre og Romsdal	2,160	271.91	NO 1573 Smøla.svg	Smøla komm.svg	Neutral	Roger Osen	Ap
+1576	Aure	Aure	Møre og Romsdal	3,590	641.38	NO 1576 Aure.svg	Aure komm.svg	Neutral	Ingunn Oldervik Golmen	Sp
+1804	Bodø	Bodø	Nordland	51,022	1,395.28	NO 1804 Bodø.svg	Bodo komm.svg	Neutral	Ida Maria Pinnerød	Ap
+1805	Narvik	Narvik	Nordland	18,756	2,023.03	NO 1805 Narvik.svg	Narvik komm.svg	Bokmål	Rune Edvardsen	Ap
+1811	Bindal	Terråk	Nordland	1,473	1,264.25	NO 1811 Bindal.svg	Bindal komm.svg	Bokmål	Britt Helstad	Ap
+1812	Sømna	Vik	Nordland	2,047	195.26	NO 1812 Sømna.svg	Sømna komm.svg	Bokmål	Andrine Solli Oppegaard	Ap
+1813	Brønnøy	Brønnøysund	Nordland	7,956	1,046.44	NO 1813 Brønnøy.svg	Brønnøy komm.svg	Neutral	Johnny Hanssen	Ap
+1815	Vega	Gladstad	Nordland	1,234	164.79	NO 1815 Vega.svg	Vega komm.svg	Bokmål	Andre Møller	Ap
+1816	Vevelstad	Forvika	Nordland	528	538.90	NO 1816 Vevelstad.svg	Vevelstad komm.svg	Bokmål	Kari Anne Bøkestad Andreassen	LL
+1818	Herøy	Silvalen	Nordland	1,788	64.40	NO 1818 Herøy.svg	Herøy Nordland komm.svg	Bokmål	Arnt Frode Jensen	Ap
+1820	Alstahaug	Sandnessjøen	Nordland	7,428	187.61	NO 1820 Alstahaug.svg	Alstahaug komm.svg	Neutral	Bård Anders Langø	Ap
+1822	Leirfjord	Leland	Nordland	2,278	465.22	NO 1822 Leirfjord.svg	Leirfjord komm.svg	Neutral	Ivan Haugland	Ap
+1824	Vefsn	Mosjøen	Nordland	13,465	1,929.10	NO 1824 Vefsn.svg	Vefsn komm.svg	Neutral	Jann-Arne Løvdal	Ap
+1825	Grane	Trofors	Nordland	1,469	2,004.15	NO 1825 Grane.svg	Grane komm.svg	Neutral	Bjørn Ivar Lamo	Ap
+1826	Hattfjelldal	Hattfjelldal	Nordland	1,414	2,684.31	NO 1826 Hattfjelldal.svg	Hattfjelldal komm.svg	Neutral	Harald Lie	Sp
+1827	Dønna	Solfjellsjøen	Nordland	1,410	191.94	NO 1827 Dønna.svg	Dønna komm.svg	Bokmål	John Erik S. Johansen	Ap
+1828	Nesna	Nesna	Nordland	1,837	183.18	NO 1828 Nesna.svg	Nesna komm.svg	Bokmål	Hanne Davidsen	Ap
+1832	Hemnes	Korgen	Nordland	4,524	1,589.42	NO 1832 Hemnes.svg	Hemnes komm.svg	Neutral	Christine Trones	H
+1833	Rana	Mo i Rana	Nordland	26,101	4,459.98	NO 1833 Rana.svg	Rana komm.svg	Neutral	Geir Waage	Ap
+1834	Lurøy	Lurøy	Nordland	1,920	265.19	NO 1834 Lurøy.svg	Lurøy komm.svg	Bokmål	Carl Einar Isachsen jr.	Sp
+1835	Træna	Husøy	Nordland	465	16.52	NO 1835 Træna.svg	Træna komm.svg	Bokmål	Per Pedersen	KrF
+1836	Rødøy	Vågaholmen	Nordland	1,267	711.29	NO 1836 Rødøy.svg	Rødøy komm.svg	Neutral	Olav Terje Hoff	Sp
+1837	Meløy	Ørnes	Nordland	6,435	873.83	NO 1837 Meløy.svg	Meløy komm.svg	Bokmål	Sigurd Stormo	Ap
+1838	Gildeskål	Inndyr	Nordland	2,024	664.68	NO 1838 Gildeskål.svg	Gildeskål komm.svg	Neutral	Petter Jørgen Pedersen	Ap
+1839	Beiarn	Moldjord	Nordland	1,043	1,222.32	NO 1839 Beiarn.svg	Beiarn komm.svg	Bokmål	Monika Sande	Sp
+1840	Saltdal	Rognan	Nordland	4,702	2,216.17	NO 1840 Saltdal.svg	Saltdal komm.svg	Bokmål	Rune Berg	Sp
+1841	Fauske	Fauske	Nordland	9,729	1,201.37	NO 1841 Fauske.svg	Fauske komm.svg	Bokmål	Jørn Stene	LL
+1845	Sørfold	Straumen	Nordland	1,958	1,637.35	NO 1845 Sørfold.svg	Sørfold komm.svg	Bokmål	Lars Evjenth	Ap
+1848	Steigen	Leinesfjord	Nordland	2,543	1,009.08	NO 1848 Steigen.svg	Steigen komm.svg	Bokmål	Asle Schrøder	Sp
+1849	Hamarøy
+Hábmer	Oppeid	Nordland	1,810	1,033.59	NO 1849 Hamarøy.svg	Hamarøy komm.svg	Neutral
+Lule Sami	Jan-Folke Sandnes	H
+1850	Tysfjord
+Divtasvuodna	Kjøpsvik	Nordland	1,960	1,463.72	NO 1850 Tysfjord.svg	Tysfjord komm.svg	Neutral
+Lule Sami	Tor Asgeir Johansen	Ap
+1851	Lødingen	Lødingen	Nordland	2,134	527.49	NO 1851 Lødingen.svg	Lødingen komm.svg	Bokmål	Atle Andersen	Ap
+1852	Tjeldsund	Hol	Nordland	1,252	319.26	NO 1852 Tjeldsund.svg	Tjeldsund komm.svg	Bokmål	Liv Kristin Johnsen	H
+1853	Evenes	Bogen	Nordland	1,402	252.78	NO 1853 Evenes.svg	Evenes komm.svg	Bokmål	Svein Erik Kristiansen	H
+1854	Ballangen	Ballangen	Nordland	2,554	932.21	NO 1854 Ballangen.svg	Ballangen komm.svg	Bokmål	Per Kristian Arntzen	Sp
+1856	Røst	Røstlandet	Nordland	535	10.13	NO 1856 Røst.svg	Røst komm.svg	Bokmål	Tor-Arne Andreassen	Ap
+1857	Værøy	Sørland	Nordland	744	18.64	NO 1857 Værøy.svg	Værøy komm.svg	Bokmål	Dagfinn Arntsen	KrF
+1859	Flakstad	Ramberg	Nordland	1,349	178.38	NO 1859 Flakstad.svg	Flakstad komm.svg	Neutral	Hans Fredrik Sørdal	Ap
+1860	Vestvågøy	Leknes	Nordland	11,294	424.55	NO 1860 Vestvågøy.svg	Vestvågøy komm.svg	Neutral	Remi Solberg	Ap
+1865	Vågan	Svolvær	Nordland	9,444	479.15	NO 1865 Vågan.svg	Vågan komm.svg	Neutral	Eivind Holst	H
+1866	Hadsel	Stokmarknes	Nordland	8,009	566.56	NO 1866 Hadsel.svg	Hadsel komm.svg	Bokmål	Siv Dagny Aasvik	Ap
+1867	Bø	Straume	Nordland	2,624	246.69	NO 1867 Bø.svg	Bø Nordland komm.svg	Neutral	Sture Pedersen	H
+1868	Øksnes	Myre	Nordland	4,580	319.51	NO 1868 Øksnes.svg	Øksnes komm.svg	Neutral	Karianne Bråthen	Ap
+1870	Sortland	Sortland	Nordland	10,378	721.92	NO 1870 Sortland.svg	Sortland komm.svg	Neutral	Tove Mette Bjørkmo	Ap
+1871	Andøy	Andenes	Nordland	4,908	656.12	NO 1871 Andøy.svg	Andøy komm.svg	Neutral	Jonni Solsvik	H
+1874	Moskenes	Reine	Nordland	1,073	118.79	NO 1874 Moskenes.svg	Moskenes komm.svg	Neutral	Lillian Rasmussen	LL
+1902	Tromsø	Tromsø	Troms	74,541	2,521.28	NO 1902 Tromsø.svg	Tromsø komm.svg	Neutral	Kristin Røymo	Ap
+1903	Harstad	Harstad	Troms	24,845	445.17	NO 1901 Harstad.svg	Harstad komm2.png	Neutral	Marianne Bremnes	Ap
+1911	Kvæfjord	Borkenes	Troms	2,986	512.58	NO 1911 Kvæfjord.svg	Kvæfjord komm.svg	Neutral	Torbjørn Larsen	Ap
+1913	Skånland	Evenskjer	Troms	3,048	495.00	NO 1913 Skånland.svg	Skånland komm.svg	Bokmål	Helene Berg Nilsen	Ap
+1917	Ibestad	Hamnvik	Troms	1,394	241.06	NO 1917 Ibestad.svg	Ibestad komm.svg	Bokmål	Dag Brustind	H
+1919	Gratangen	Årstein	Troms	1,121	312.74	NO 1919 Gratangen.svg	Gratangen komm.svg	Neutral	Eva Ottesen	Ap
+1920	Lavangen
+Loabák	Tennevoll	Troms	1,076	301.64	NO 1920 Lavangen.svg	Lavangen komm.svg	Neutral
+Northern Sami	Bernhardt Halvorsen	Sp
+1922	Bardu	Setermoen	Troms	3,994	2,703.88	NO 1922 Bardu.svg	Bardu komm.svg	Neutral	Toralf Heimdal	Sp
+1923	Salangen	Sjøvegan	Troms	2,220	457.88	NO 1923 Salangen.svg	Salangen komm.svg	Neutral	Sigrun W. Prestbakmo	Sp
+1924	Målselv	Moen	Troms	6,781	3,326.21	NO 1924 Målselv.svg	Målselv komm.svg	Neutral	Nils Ole Foshaug	Ap
+1925	Sørreisa	Sørreisa	Troms	3,496	361.17	NO 1925 Sørreisa.svg	Sørreisa komm.svg	Neutral	Jan-Eirik Nordahl	Ap
+1926	Dyrøy	Brøstadbotn	Troms	1,138	288.54	NO 1926 Dyrøy.svg	Dyrøy komm.svg	Bokmål	Marit Alvig Espenes	Ap
+1927	Tranøy	Vangsvik	Troms	1,540	523.87	NO 1927 Tranøy.svg	Tranøy komm.svg	Neutral	Jan Fredrik Jenssen	H
+1928	Torsken	Gryllefjord	Troms	921	243.42	NO 1928 Torsken.svg	Torsken komm.svg	Bokmål	Fred Flakstad	Ap
+1929	Berg	Skaland	Troms	914	293.89	NO 1929 Berg.svg	Berg komm.svg	Bokmål	Roar Jakobsen	LL
+1931	Lenvik	Finnsnes	Troms	11,697	892.69	NO 1931 Lenvik.svg	Lenvik komm.svg	Neutral	Geir-Inge Sivertsen	H
+1933	Balsfjord	Storsteinnes	Troms	5,685	1,496.91	NO 1933 Balsfjord.svg	Balsfjord komm.svg	Bokmål	Gunda Johansen	Ap
+1936	Karlsøy	Hansnes	Troms	2,273	1,091.59	NO 1936 Karlsøy.svg	Karlsøy komm.svg	Neutral	Mona Pedersen	LL
+1938	Lyngen	Lyngseidet	Troms	2,876	812.56	NO 1938 Lyngen.svg	Lyngen komm.svg	Neutral	Dan Håvard Johnsen	LL
+1939	Storfjord
+Omasvuotna
+Omasvuono	Hatteng	Troms	1,890	1,542.83	NO 1939 Storfjord.svg	Storfjord komm.svg	Neutral
+Northern Sami
+Kven	Knut Jentoft	LL
+1940	Kåfjord
+Gáivuotna
+Kaivuono	Olderdalen	Troms	2,132	991.18	NO 1940 Kåfjord.svg	Kåfjord komm.svg	Bokmål
+Northern Sami
+Kven	Svein O. Leiros	Sp
+1941	Skjervøy	Skjervøy	Troms	2,912	473.70	NO 1941 Skjervøy.svg	Skjervøy komm.svg	Bokmål	Ørjan Albrigtsen	LL
+1942	Nordreisa	Storslett	Troms	4,919	3,437.46	NO 1942 Nordreisa.svg	Nordreisa komm.svg	Bokmål	Øyvind Evanger	Ap
+1943	Kvænangen	Burfjord	Troms	1,233	2,109.48	NO 1943 Kvænangen.svg	Kvænangen komm.svg	Neutral	Eirik Losnegaard Mevik	Ap
+2002	Vardø	Vardø	Finnmark	2,104	600.61	NO 2002 Vardø.svg	Vardø komm.svg	Neutral	Robert Jensen	Ap
+2003	Vadsø	Vadsø	Finnmark	6,154	1,257.84	NO 2003 Vadsø.svg	Vadsø komm.svg	Bokmål	Hans-Jacob Bønå	H
+2004	Hammerfest	Hammerfest	Finnmark	10,527	848.20	NO 2004 Hammerfest.svg	Hammerfest kommunevåpen.jpg	Bokmål	Alf E. Jakobsen	Ap
+2011	Kautokeino
+Guovdageaidnu	Kautokeino	Finnmark	2,938	9,707.33	NO 2011 Kautokeino.svg	Kautokeino komm.svg	Bokmål
+Northern Sami	Johan Vasara	Ap
+2012	Alta	Alta	Finnmark	20,446	3,849.47	NO 2012 Alta.svg	Alta komm.svg	Bokmål	Monica Nielsen	Ap
+2014	Loppa	Øksfjord	Finnmark	968	688.87	NO 2014 Loppa.svg	Loppa komm.svg	Bokmål	Steinar Halvorsen	H
+2015	Hasvik	Breivikbotn	Finnmark	1,037	555.56	NO 2015 Hasvik.svg	Hasvik komm.svg	Bokmål	Eva D. Husby	Ap
+2017	Kvalsund	Kvalsund	Finnmark	1,027	1844.29	NO 2017 Kvalsund.svg	Kvalsund komm.svg	Bokmål	Terje Wikstrøm	Ap
+2018	Måsøy	Havøysund	Finnmark	1,204	1,135.82	NO 2018 Måsøy.svg	Måsøy komm.svg	Bokmål	Gudleif Kristiansen	Sp
+2019	Nordkapp	Honningsvåg	Finnmark	3,291	925.70	NO 2019 Nordkapp.svg	Nordkapp komm.svg	Neutral	Kristina Hansen	Ap
+2020	Porsanger
+Porsáŋgu
+Porsanki	Lakselv	Finnmark	3,971	4,872.58	NO 2020 Porsanger.svg	Porsanger komm.svg	Bokmål
+Northern Sami
+Kven	Aina Borch	Ap
+2021	Karasjok
+Kárášjohka	Karasjok	Finnmark	2,696	5,452.95	NO 2021 Karasjok.svg	Karasjok komm.svg	Bokmål
+Northern Sami	Svein Atle Somby	Ap
+2022	Lebesby	Kjøllefjord	Finnmark	1,330	3,459.41	NO 2022 Lebesby.svg	Lebesby komm.svg	Bokmål	Stine Akselsen	Ap
+2023	Gamvik	Mehamn	Finnmark	1,137	1416.34	NO 2023 Gamvik.svg	Gamvik komm.svg	Neutral	Trond Einar Olaussen	Ap
+2024	Berlevåg	Berlevåg	Finnmark	991	1121.78	NO 2024 Berlevåg.svg	Berlevåg komm.svg	Bokmål	Rolf Laupstad	Ap
+2025	Tana
+Deatnu	Tana bru	Finnmark	2,911	4,051.35	NO 2025 Tana.svg	Tana komm.svg	Bokmål
+Northern Sami	Frank Ingilæ	Ap
+2027	Nesseby
+Unjárga	Varangerbotn	Finnmark	951	1,434.72	NO 2027 Nesseby.svg	Nesseby komm.svg	Bokmål
+Northern Sami	Knut Inge Store	Ap
+2028	Båtsfjord	Båtsfjord	Finnmark	2,267	1,434.72	NO 2028 Båtsfjord.svg	Båtsfjord komm.svg	Neutral	Geir Knutsen	Ap
+2030	Sør-Varanger	Kirkenes	Finnmark	10,199	3,971.58	NO 2030 Sør-Varanger.svg	Sør-Varanger komm.svg	Bokmål	Rune Rafaelsen	Ap
+5001	Trondheim	Trondheim	Trøndelag	190,464	342.21	NO 5001 Trondheim.svg	Trondheim komm.svg	Neutral	Rita Ottervik	Ap
+5004	Steinkjer	Steinkjer	Trøndelag	21,972	1,564.55	NO 5004 Steinkjer.svg	Steinkjer komm.svg	Neutral	Bjørn Arild Gram	Sp
+5005	Namsos	Namsos	Trøndelag	13,051	778.61	NO 5005 Namsos.svg	Namsos komm.svg	Neutral	Arnhild Holstad	Ap
+5011	Hemne	Kyrksæterøra	Trøndelag	4,259	669.90	NO 5011 Hemne.svg	Hemne komm.svg	Neutral	Odd Jarle Svanem	Sp
+5012	Snillfjord	Krokstadøra	Trøndelag	982	508.12	NO 5012 Snillfjord.svg	Snillfjord komm.svg	Neutral	John Lernes	Ap
+5013	Hitra	Fillan	Trøndelag	4,659	680.39	NO 5013 Hitra.svg	Hitra komm.svg	Neutral	Ole Haugen	Ap
+5014	Frøya	Sistranda	Trøndelag	4,937	241.21	NO 5014 Frøya.svg	Frøya komm.svg	Bokmål	Berit Flåmo	Ap
+5015	Ørland	Brekstad	Trøndelag	5,291	73.18	NO 5015 Ørland.svg	Ørland komm.svg	Bokmål	Tom Myrvold	H
+5016	Agdenes	Selbekken	Trøndelag	1,711	317.29	NO 5016 Agdenes.svg	Agdenes komm.svg	Bokmål	Oddvar Indergård	LL
+5017	Bjugn	Botngård	Trøndelag	4,822	383.80	NO 5017 Bjugn.svg	Bjugn komm.svg	Bokmål	Ogne Undertun	Ap
+5018	Åfjord	Årnes	Trøndelag	3,263	954.66	NO 5018 Åfjord.svg	Åfjord komm.svg	Neutral	Vibeke Stjern	Ap
+5019	Roan	Roan	Trøndelag	959	374.64	NO 5019 Roan.svg	Roan komm.svg	Neutral	Einar Eian	H
+5020	Osen	Steinsdalen	Trøndelag	978	387.18	NO 5020 Osen.svg	Osen komm.svg	Bokmål	John Einar Høvik	Ap
+5021	Oppdal	Oppdal	Trøndelag	6,973	2,274.11	NO 5021 Oppdal.svg	Oppdal komm.svg	Neutral	Kirsti Welander	Ap
+5022	Rennebu	Berkåk	Trøndelag	2,556	947.97	NO 5022 Rennebu.svg	Rennebu komm.svg	Neutral	Ola Øie	Ap
+5023	Meldal	Meldal	Trøndelag	3,960	613.34	NO 5023 Meldal.svg	Meldal komm.svg	Neutral	Are Hilstad	Ap
+5024	Orkdal	Orkanger	Trøndelag	11,891	594.32	NO 5024 Orkdal.svg	Orkdal komm.svg	Neutral	Oddbjørn Bang	Sp
+5025	Røros	Røros	Trøndelag	5,623	1,956.46	NO 5025 Røros.svg	Røros komm.svg	Neutral	Hans Vintervold	Ap
+5026	Holtålen	Renbygda	Trøndelag	2,046	1,209.50	NO 5026 Holtålen.svg	Holtålen komm.svg	Neutral	Jan Håvard Refsethås	Sp
+5027	Midtre Gauldal	Støren	Trøndelag	6,319	1,860.51	NO 5027 Midtre Gauldal.svg	Midtre Gauldal komm.svg	Bokmål	Sivert Moen	Sp
+5028	Melhus	Melhus	Trøndelag	16,213	694.40	NO 5028 Melhus.svg	Melhus komm.svg	Neutral	Gunnar Krogstad	Ap
+5029	Skaun	Børsa	Trøndelag	8,000	224.21	NO 5029 Skaun.svg	Skaun komm.svg	Neutral	Jon P. Husby	Sp
+5030	Klæbu	Klæbu	Trøndelag	6,050	186.36	NO 5030 Klæbu.svg	Klæbu komm.svg	Bokmål	Kirsti Tømmervold	Ap
+5031	Malvik	Hommelvik	Trøndelag	13,820	168.44	NO 5031 Malvik.svg	Malvik komm.svg	Bokmål	Ingrid Aune	Ap
+5032	Selbu	Mebonden	Trøndelag	4,098	1,234.84	NO 5032 Selbu.svg	Selbu komm.svg	Neutral	Ole Morten Balstad	Ap
+5033	Tydal	Ås	Trøndelag	861	1,329.21	NO 5033 Tydal.svg	Tydal komm.svg	Bokmål	Ole Bjarne Østby	Sp
+5034	Meråker	Midtbygda	Trøndelag	2,508	1,273.42	NO 5034 Meråker.svg	Meråker komm.svg	Bokmål	Kari Anita Furunes	Sp
+5035	Stjørdal	Stjørdalshalsen	Trøndelag	23,625	938.28	NO 5035 Stjørdal.svg	Stjørdal komm.svg	Neutral	Ivar Vigdenes	Sp
+5036	Frosta	Frosta	Trøndelag	2,630	76.32	NO 5036 Frosta.svg	Frosta komm.svg	Neutral	Trine Haug	Sp
+5037	Levanger	Levanger	Trøndelag	19,892	645.80	NO 5037 Levanger.svg	Levanger komm.svg	Neutral	Robert Svarva	Ap
+5038	Verdal	Verdalsøra	Trøndelag	14,849	1,547.78	NO 5038 Verdal.svg	Verdal komm.svg	Neutral	Bjørn Iversen	Ap
+5039	Verran	Malm	Trøndelag	2,515	601.66	NO 5039 Verran.svg	Verran komm.svg	Neutral	Anders Lindstrøm	Ap
+5040	Namdalseid	Namdalseid	Trøndelag	1,593	769.64	NO 5040 Namdalseid.svg	Namdalseid komm.svg	Neutral	Steinar Lyngstad	Sp
+5041	Snåsa
+Snåase	Snåsa	Trøndelag	2,159	2,342.66	NO 5041 Snåsa.svg	Snåsa komm.svg	Neutral
+Southern Sami	Tone Våg	Ap
+5042	Lierne	Sandvika	Trøndelag	1,389	2,961.70	NO 5042 Lierne.svg	Lierne komm.svg	Neutral	Bente Estil	Ap
+5043	Røyrvik
+Raarvihke	Røyrvik	Trøndelag	469	1,584.76	NO 5043 Røyrvik.svg	Røyrvik komm.svg	Neutral
+Southern Sami	Hans Oskar Devik	Sp
+5044	Namsskogan	Namsskogan	Trøndelag	872	1,417.16	NO 5044 Namsskogan.svg	Namsskogan komm.svg	Neutral	Stian Brekkvassmo	Ap
+5045	Grong	Medjå	Trøndelag	2,467	1,136.17	NO 5045 Grong.svg	Grong komm.svg	Neutral	Skjalg Åkerøy	Ap
+5046	Høylandet	Høylandet	Trøndelag	1,264	754.68	NO 5046 Høylandet.svg	Høylandet komm.svg	Neutral	Hege Nordheim-Viken	Sp
+5047	Overhalla	Ranemsletta	Trøndelag	3,840	729.79	NO 5047 Overhalla.svg	Overhalla komm.svg	Neutral	Per Olav Tyldum	Sp
+5048	Fosnes	Jøa	Trøndelag	628	544.27	NO 5048 Fosnes.svg	Fosnes komm.svg	Bokmål	Trygve Sandvik	Sp
+5049	Flatanger	Lauvsnes	Trøndelag	1,090	458.71	NO 5049 Flatanger.svg	Flatanger komm.svg	Neutral	Olav Jørgen Bjørkås	Sp
+5050	Vikna	Rørvik	Trøndelag	4,418	318.69	NO 5050 Vikna.svg	Vikna komm.svg	Neutral	Amund Hellesø	Ap
+5051	Nærøy	Kolvereid	Trøndelag	5,138	1,067.54	NO 5051 Nærøy.svg	Nærøy komm.svg	Bokmål	Steinar Aspli	Sp
+5052	Leka	Leknes	Trøndelag	584	110.02	NO 5052 Leka.svg	Leka komm.svg	Neutral	Per Helge Johansen	Sp
+5053	Inderøy	Straumen	Trøndelag	6,800	365.67	NO 5053 Inderøy.svg	Inderøy komm.svg	Neutral	Ida Stuberg	Sp
+5054	Indre Fosen	Årnset	Trøndelag	10,108	1,051.59	NO 5054 Indre Fosen.svg	Leksvik komm.svg	Neutral	Steinar Saghaug	H
